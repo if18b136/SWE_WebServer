@@ -6,26 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="Added Parameter Dictionary - only one value per key possible.">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-00497693-5bf2-4fea-8d73-915c0f7c3820.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-05a2ab24-d68c-46fc-843a-2159ad6799a6.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-11f8d2ee-e757-47b1-b397-00e5d1670604.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-134eff6b-1113-4991-b1fe-df774821aa09.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-1c8eecd4-e994-4d6a-8c7a-984a7465d3b9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2e047a11-010f-44df-9b87-556924f7d6f7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-34f6d41e-74a2-4dd6-bcc0-5852786164f4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-41fc87e7-baa2-43ad-869a-607df0602da8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4a65a52b-415b-4f91-960a-f53974d76d32.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-540db8db-00ac-46df-b192-4a1202ba1ae7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-55d7f6ba-9599-41f5-9d89-0221a91bee0a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5e450425-70f4-4e7a-a18e-31acab277089.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6d563a53-20c4-4234-b98c-bf91480dc821.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7638bbf6-0ee2-42a9-a833-529a82b39790.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7ec49d0b-c24b-47ac-9036-ea183344331c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7efa4ac4-59b4-471a-abe1-fa732ebb889d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-81bc256b-5118-43e3-ad53-a4f33a7cc4b2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d2b18442-cd0c-409b-abf1-b27ee62db5bc.txt" afterDir="false" />
+    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-0b7406d5-5243-4a85-896a-da93c6fa6684.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-11585c5e-9cad-4173-96b6-b498ade01930.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-34156df9-b8e5-4e69-a714-a246ba8cfec9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6019fc16-5b1c-43f7-8d0c-c34f8b580a16.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-84471c68-6ef1-4005-9bce-ad661506a116.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-86cd1d24-77f2-49cb-b09b-00ec83a5dc97.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bad8bf0e-d2af-4394-9157-f24c239385da.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e9f4a78f-19b3-4d6d-a342-546f6c0763d2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f20ba1d1-0000-4996-bf37-cfd3161ed50e.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" afterDir="false" />
@@ -120,6 +110,14 @@
       <option name="presentableId" value="Default" />
       <updated>1569422575301</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added Parameter Dictionary - only one value per key possible.">
+      <created>1570741073380</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570741073380</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +132,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added Parameter Dictionary - only one value per key possible." />
     <option name="LAST_COMMIT_MESSAGE" value="Added Parameter Dictionary - only one value per key possible." />
