@@ -22,7 +22,9 @@ public class myUrl implements Url {
 
     @Override
     public String getPath() {
-
+        if(this.rawUrl == null){
+            return null;
+        }
         return rawUrl.split("\\?")[0];
     }
 
@@ -48,7 +50,7 @@ public class myUrl implements Url {
     @Override
     public int getParameterCount() {
         try {
-            if(this.getRawUrl().split("\\?")[0] == this.rawUrl){
+            if(this.rawUrl == null || this.getRawUrl().split("\\?")[0] == this.rawUrl){
                 return 0;
             }
             String query = this.getRawUrl().split("\\?")[1];

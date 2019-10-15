@@ -7,19 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-0b7406d5-5243-4a85-896a-da93c6fa6684.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-11585c5e-9cad-4173-96b6-b498ade01930.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-34156df9-b8e5-4e69-a714-a246ba8cfec9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6019fc16-5b1c-43f7-8d0c-c34f8b580a16.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-84471c68-6ef1-4005-9bce-ad661506a116.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-86cd1d24-77f2-49cb-b09b-00ec83a5dc97.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bad8bf0e-d2af-4394-9157-f24c239385da.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e9f4a78f-19b3-4d6d-a342-546f6c0763d2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f20ba1d1-0000-4996-bf37-cfd3161ed50e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-206bcd91-1b3d-430e-98ca-a60a1436b3f5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-30b5a3c6-0878-4591-b25b-743de4ed41d3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-48b1d112-014d-4965-972e-b06e33c4a75d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-51de2450-bcce-4437-b416-971091f50a94.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-54687251-ddec-46d1-8103-5a061f3bd28c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-64b7202d-1ad0-4603-a4f0-65d67f88d839.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-77b113bf-935a-4c03-abe3-23588ac8cf27.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8248c87d-cdd2-4231-a7d9-31ba3dfc1ef3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8f3dce35-ab8f-420b-8a10-041c468b49b7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-9e31dff1-97e6-4353-8790-31b28d543619.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a84d507e-def4-492a-8f9b-2a799b6b8d10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b8dfa2ab-db37-48ea-8abd-3f13c80c849c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bb1b75aa-1b81-457e-96c5-e76e1d521a5c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c5f2304c-5aac-485d-bbb4-988d9a622af8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d0d2619f-b503-4292-b557-81d440f555a8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d74ece3a-e295-4c22-bbd0-b7b3ea464da0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e6cf1224-3a27-4f03-bf35-991beb1de764.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f4b3fb8c-0451-40f1-90f8-7e67336b84cd.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/myUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebungen/UEB1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebungen/UEB1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570741073380</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Parameter Count - bad Code, should be changed for final Project.">
+      <created>1570742720837</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570742720837</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,7 +143,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -135,6 +155,18 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added Parameter Dictionary - only one value per key possible." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Parameter Dictionary - only one value per key possible." />
+    <MESSAGE value="Parameter Count - bad Code, should be changed for final Project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Parameter Count - bad Code, should be changed for final Project." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../unit-tests-BIF-SWE1_Java-master/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/UEB1Test.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -8,7 +8,9 @@ public class UEB1 {
 
 	public Url getUrl(String path) {
 		myUrl obj = new myUrl();
-		obj.setUrl(path);
+		if(path != null && !path.isEmpty()){
+			obj.setUrl(path);
+		}
 		return obj;
 	}
 
