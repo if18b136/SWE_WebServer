@@ -7,30 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-206bcd91-1b3d-430e-98ca-a60a1436b3f5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-30b5a3c6-0878-4591-b25b-743de4ed41d3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-48b1d112-014d-4965-972e-b06e33c4a75d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-51de2450-bcce-4437-b416-971091f50a94.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-54687251-ddec-46d1-8103-5a061f3bd28c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-64b7202d-1ad0-4603-a4f0-65d67f88d839.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-77b113bf-935a-4c03-abe3-23588ac8cf27.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8248c87d-cdd2-4231-a7d9-31ba3dfc1ef3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8f3dce35-ab8f-420b-8a10-041c468b49b7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-9e31dff1-97e6-4353-8790-31b28d543619.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a84d507e-def4-492a-8f9b-2a799b6b8d10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b8dfa2ab-db37-48ea-8abd-3f13c80c849c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bb1b75aa-1b81-457e-96c5-e76e1d521a5c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c5f2304c-5aac-485d-bbb4-988d9a622af8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d0d2619f-b503-4292-b557-81d440f555a8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d74ece3a-e295-4c22-bbd0-b7b3ea464da0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e6cf1224-3a27-4f03-bf35-991beb1de764.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f4b3fb8c-0451-40f1-90f8-7e67336b84cd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javasockets/ClientSocketExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javasockets/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javasockets/ServerSocketExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/myUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebungen/UEB1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebungen/UEB1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/Startup.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -64,6 +48,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -82,12 +67,42 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AllTests">
+  <component name="RunManager" selected="Application.WebServer">
+    <configuration name="ClientSocketExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javasockets.ClientSocketExample" />
+      <module name="MyWebServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javasockets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerSocketExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javasockets.ServerSocketExample" />
+      <module name="MyWebServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javasockets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebServer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="WebServer.Startup" />
       <module name="MyWebServer" />
+      <option name="PROGRAM_PARAMETERS" value="default" />
       <method v="2">
         <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="MyWebServer:jar" />
+        </option>
       </method>
     </configuration>
     <configuration name="AllTests" type="JUnit" factoryName="JUnit">
@@ -107,8 +122,16 @@
     </configuration>
     <list>
       <item itemvalue="Application.WebServer" />
+      <item itemvalue="Application.ServerSocketExample" />
+      <item itemvalue="Application.ClientSocketExample" />
       <item itemvalue="JUnit.AllTests" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClientSocketExample" />
+        <item itemvalue="Application.ServerSocketExample" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -135,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570742720837</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finished UEB1">
+      <created>1571132545976</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571132545976</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,7 +186,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added Parameter Dictionary - only one value per key possible." />
     <MESSAGE value="Parameter Count - bad Code, should be changed for final Project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Parameter Count - bad Code, should be changed for final Project." />
+    <MESSAGE value="Finished UEB1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished UEB1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
