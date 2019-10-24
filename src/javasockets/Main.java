@@ -1,3 +1,8 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 package javasockets;
 
 import java.io.BufferedReader;
@@ -11,8 +16,12 @@ import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
+/**
+ *
+ * @author arthur
+ */
 public class Main {
+
     /**
      * @param args the command line arguments
      */
@@ -23,7 +32,7 @@ public class Main {
 
     private static void read() {
         try {
-            Socket s = new Socket("127.0.0.1", 80);
+            Socket s = new Socket("orf.at", 80);
             write(s);
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             String line;
@@ -42,7 +51,7 @@ public class Main {
         try {
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
             out.write("GET / HTTP/1.1\r\n");
-            out.write("host: 127.0.0.1\r\n");
+            out.write("host: orf.at\r\n");
             out.write("connection: close\r\n");
             out.write("\r\n");
             out.flush();

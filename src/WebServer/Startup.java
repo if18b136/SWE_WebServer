@@ -11,6 +11,8 @@ import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+import java.util.Scanner;
+
 public class Startup {
     /**
      * @param args the command line arguments
@@ -36,7 +38,7 @@ public class Startup {
 
     private static void read() {
         try {
-            Socket s = new Socket("127.0.0.1", 8080);
+            Socket s = new Socket("127.0.0.1", 80);
             write(s);
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
             String line;
@@ -55,9 +57,16 @@ public class Startup {
     private static void write(Socket s) {
         try {
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
+            /*
+            Scanner input = new Scanner(System.in);
+            String str = input.nextLine();
+            while(!str.equals("close")){
+                out.write(str + "\n\r");
+            }*/
             out.write("GET / HTTP/1.1\r\n");
             out.write("host: 127.0.0.1\r\n");
             out.write("connection: close\r\n");
+
             out.write("\r\n");
             out.flush();
         } catch (IOException ex) {
@@ -67,17 +76,20 @@ public class Startup {
 
     private static void listen() {
         try {
-            ServerSocket listener = new ServerSocket(8080);
+            ServerSocket listener = new ServerSocket(8081);
             Socket s = listener.accept();
             BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
-            String line = in.readLine();
-            while(line  != null && !line.equals("")) {
+            //String line = in.readLine();
+            String line;
+            while((line = in.readLine()) != null) {
+                System.out.println(line);
+            }
+            /*while(line  != null && !line.equals("")) {
                 System.out.println(line);
                 line = in.readLine();
-            }
+            }*/
             s.close();
             listener.close();
-            System.exit(0);
         } catch (IOException ex) {
             Logger.getLogger(Startup.class.getName()).log(Level.SEVERE, null, ex);
         }

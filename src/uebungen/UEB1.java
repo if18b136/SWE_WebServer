@@ -5,7 +5,6 @@ import WebServer.myUrl;
 
 public class UEB1 {
 
-
 	public Url getUrl(String path) {
 		myUrl obj = new myUrl();
 		if(path != null && !path.isEmpty()){
