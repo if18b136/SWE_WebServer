@@ -26,8 +26,8 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        read();
-        //listen();
+        //read();
+        listen();
     }
 
     private static void read() {
@@ -68,7 +68,19 @@ public class Main {
             String line;
             while((line = in.readLine()) != null) {
                 System.out.println(line);
+                if("".equals(line)){
+                    break;
+                }
             }
+            String body = "<html><body><h1> Hello World </h1> Hello Blabla </body></html>";
+            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
+            out.write("HTTP/1.1 200 OK\r\n");
+            out.write("Content-Type: text/html\r\n");
+            out.write(String.format("Content-Length: %d\r\n",body.length()));
+            out.write("connection: close\r\n");
+            out.write("\r\n");
+            out.write(body);
+            out.flush();
             listener.close();
         } catch (IOException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);

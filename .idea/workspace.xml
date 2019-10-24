@@ -7,22 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-0283dd62-09d3-4dff-b87b-6d1ea39681d9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-18030d1b-1ffb-4f1f-81dc-6437b58df0ca.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-29bf14b5-e729-4bef-96e1-774ce6773ba7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-81490056-6fc5-4e2c-8dd5-ebf4b2453613.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-9f5ca6ff-6327-4695-94fd-f3d61d50ee5f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e07a852f-9af1-47ba-8a2e-3097f82b1bdc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WebServer/myRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/Startup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javasockets/ClientSocketExample.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/javasockets/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javasockets/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javasockets/ServerSocketExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebungen/UEB1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebungen/UEB1.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571644581458</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="socket bsp eingefuegt">
+      <created>1571912121347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571912121347</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -195,6 +188,7 @@
     <MESSAGE value="Parameter Count - bad Code, should be changed for final Project." />
     <MESSAGE value="Finished UEB1" />
     <MESSAGE value="Runnable Socket program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Runnable Socket program" />
+    <MESSAGE value="socket bsp eingefuegt" />
+    <option name="LAST_COMMIT_MESSAGE" value="socket bsp eingefuegt" />
   </component>
 </project>
