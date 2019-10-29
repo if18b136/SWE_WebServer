@@ -7,8 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-048d6cb5-4f0a-429f-a0e9-21cc5cca2423.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-0c65fa5b-de25-4647-b160-28f99ebeb382.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-1f53eee7-93a1-4bad-918d-c9d6eba86f1d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3b78b106-f8bb-4a8a-81e3-e4a330056851.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-443d370c-253d-4b26-9868-766a65093e1e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-518e83d0-469d-4226-b9d9-6bf08a57af5d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5621ab91-7e43-4779-908e-f9d58fddc616.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-72122da2-a6c1-48c1-8780-582ccd3b6339.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7e8e9b1e-e655-412f-98a3-6e8a891f4722.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-832950fd-2828-4baa-b78e-0e77b7c769d2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b4d30638-9983-4232-ba0d-37a23cb5839f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bdbf2d4a-8784-446d-ae4a-71b0e25e0a26.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c1c0f85d-d21a-4c23-8f3f-b6f86fb33bbd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c2a28bd4-d098-4f5f-8c2e-5bd8ba0bd90e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c8619970-ef37-48c2-a5f1-f1af6bcad7c5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javasockets/ClientSocket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javasockets/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javasockets/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/myUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javasockets/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javasockets/ServerSocket.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +63,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -61,9 +82,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javasockets.Main" />
+  <component name="RunManager" selected="Application.WebServer">
+    <configuration name="ServerSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javasockets.ServerSocket" />
       <module name="MyWebServer" />
       <extension name="coverage">
         <pattern>
@@ -78,7 +99,6 @@
     <configuration name="WebServer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="WebServer.Startup" />
       <module name="MyWebServer" />
-      <option name="PROGRAM_PARAMETERS" value="listen" />
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
@@ -103,12 +123,12 @@
     </configuration>
     <list>
       <item itemvalue="Application.WebServer" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ServerSocket" />
       <item itemvalue="JUnit.AllTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ServerSocket" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571912121347</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Webserver initialisiert">
+      <created>1571916414855</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571916414855</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +216,7 @@
     <MESSAGE value="Finished UEB1" />
     <MESSAGE value="Runnable Socket program" />
     <MESSAGE value="socket bsp eingefuegt" />
-    <option name="LAST_COMMIT_MESSAGE" value="socket bsp eingefuegt" />
+    <MESSAGE value="Webserver initialisiert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Webserver initialisiert" />
   </component>
 </project>

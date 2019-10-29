@@ -8,11 +8,19 @@ import java.util.Map;
 
 public class myUrl implements Url {
 
+    public myUrl(){
+        //Code goes here
+    }
+
     private String rawUrl;
+    private String path;
     private Map<String, String> params = new LinkedHashMap<>();
 
     public void setUrl(String path){
         this.rawUrl = path;
+    }
+    public String getUrl() {
+        return this.rawUrl;
     }
 
     @Override
@@ -22,16 +30,37 @@ public class myUrl implements Url {
 
     @Override
     public String getPath() {
-        if(this.rawUrl == null){
+        if(this.rawUrl == null) {
             return null;
         }
-        return rawUrl.split("\\?")[0];
+        String[] split = this.rawUrl.split(" ");
+        // satisfy the unit Tests
+        if(split.length != 3) {
+            this.path = this.rawUrl.split("\\?")[0];
+            return this.path;
+        }
+        else {
+            this.path = split[1].split("\\?")[0];;
+            return this.path;
+        }
     }
 
     @Override
     public Map<String, String> getParameter() {
         try {
-            String query = this.getRawUrl().split("\\?")[1];
+            String query;
+            String[] split = this.rawUrl.split(" ");
+            if(split.length == 3) {
+                query = split[1].split("\\?")[1];
+            }
+            else {
+                String[] split_query = this.rawUrl.split("\\?");
+                if(split_query.length < 2) {
+                    return params;
+                }
+                query = split_query[1];
+            }
+
             Map<String,String> params = this.params;
             for (String param : query.split("&")){
                 String[] keyValue = param.split("=", 2);
@@ -53,7 +82,18 @@ public class myUrl implements Url {
             if(this.rawUrl == null || this.getRawUrl().split("\\?")[0] == this.rawUrl){
                 return 0;
             }
-            String query = this.getRawUrl().split("\\?")[1];
+            String query;
+            String[] split = this.rawUrl.split(" ");
+            if(split.length == 3) {
+                query = split[1].split("\\?")[1];
+            }
+            else {
+                String[] split_query = this.rawUrl.split("\\?");
+                if(split_query.length < 2) {
+                    return 0;
+                }
+                query = split_query[1];
+            }
             Map<String,String> params = this.params;
             for (String param : query.split("&")){
                 String[] keyValue = param.split("=", 2);

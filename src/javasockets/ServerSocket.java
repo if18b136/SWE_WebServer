@@ -1,4 +1,9 @@
-package WebServer;
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package javasockets;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,11 +15,7 @@ import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-//import BIF.SWE1.interfaces.Url;
-//import WebServer.myUrl;
-
-
-public class Startup {
+public class ServerSocket {
 
     /**
      * @param args the command line arguments
@@ -28,20 +29,8 @@ public class Startup {
             java.net.ServerSocket listener = new java.net.ServerSocket(8080);
             while(true){
                 Socket s = listener.accept();
-
-                myUrl urlObj = new myUrl();
-
                 BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
-
                 String line;
-                line = in.readLine();
-                urlObj.setUrl(line);
-
-                System.out.println("Path: " + urlObj.getPath());
-                System.out.println("Parameter Count: " + urlObj.getParameterCount());
-                urlObj.getParameter();
-
-                System.out.println(urlObj.getUrl());
                 while((line = in.readLine()) != null) {
                     System.out.println(line);
                     if("".equals(line)){
@@ -60,7 +49,7 @@ public class Startup {
             }
             //listener.close();
         } catch (IOException ex) {
-            Logger.getLogger(Startup.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ServerSocket.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 }
