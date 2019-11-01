@@ -6,7 +6,6 @@ import BIF.SWE1.interfaces.Url;
 import java.io.*;
 
 import java.util.Map;
-
 import WebServer.myUrl;
 
 public class myRequest implements Request {
