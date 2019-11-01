@@ -15,6 +15,8 @@ public class myUrl implements Url {
     private String rawUrl;
     private String path;
     private Map<String, String> params = new LinkedHashMap<>();
+    private String fragment;
+    private String[] segments;
 
     public void setUrl(String path){
         this.rawUrl = path;
@@ -36,11 +38,14 @@ public class myUrl implements Url {
         String[] split = this.rawUrl.split(" ");
         // satisfy the unit Tests
         if(split.length != 3) {
+
             this.path = this.rawUrl.split("\\?")[0];
+            this.path = this.path.split("#")[0];
             return this.path;
         }
         else {
-            this.path = split[1].split("\\?")[0];;
+            this.path = split[1].split("\\?")[0];
+            this.path = split[1].split("#")[0]; // noxh nicht in Webserver getestet
             return this.path;
         }
     }
@@ -111,7 +116,11 @@ public class myUrl implements Url {
 
     @Override
     public String[] getSegments() {
-        return new String[0];
+        if(this.rawUrl == null) {
+            return null;
+        }
+        this.segments = this.rawUrl.replaceFirst("^/", "").split("/");
+        return this.segments;
     }
 
     @Override
@@ -126,6 +135,11 @@ public class myUrl implements Url {
 
     @Override
     public String getFragment() {
-        return null;
+        if(this.rawUrl == null) {
+            return null;
+        }
+        this.fragment = this.rawUrl.split("#")[1];
+
+        return this.fragment;
     }
 }

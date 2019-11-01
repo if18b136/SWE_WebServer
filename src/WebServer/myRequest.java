@@ -3,18 +3,49 @@ package WebServer;
 import BIF.SWE1.interfaces.Request;
 import BIF.SWE1.interfaces.Url;
 
-import java.io.InputStream;
+import java.io.*;
+
 import java.util.Map;
 
+import WebServer.myUrl;
+
 public class myRequest implements Request {
+
+    private InputStream is;
+    private String method;
+    private boolean isValid = true;
+
+    public void setRequest(InputStream inputStream) {
+        this.is = inputStream;
+    }
+
+    public InputStream getInputStream() {
+        return this.is;
+    }
+
     @Override
     public boolean isValid() {
-        return false;
+        if(this.method == null || this.method.isEmpty()) {
+            this.isValid = false;
+            return false;
+        }
+        if(!this.method.equals("GET") && !this.method.equals("POST")){
+            this.isValid = false;
+            return false;
+        }
+        return this.isValid;
     }
 
     @Override
     public String getMethod() {
-        return null;
+        try {
+            BufferedReader reader = new BufferedReader(new InputStreamReader(this.is));
+            String method = reader.readLine();
+            this.method = method.split(" ")[0];
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return this.method;
     }
 
     @Override

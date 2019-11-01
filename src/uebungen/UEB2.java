@@ -4,6 +4,9 @@ import BIF.SWE1.interfaces.Request;
 import BIF.SWE1.interfaces.Response;
 import BIF.SWE1.interfaces.Url;
 
+import WebServer.myUrl;
+import WebServer.myRequest;
+
 import java.io.InputStream;
 
 public class UEB2 {
@@ -12,12 +15,20 @@ public class UEB2 {
 
 	}
 
-	public Url getUrl(String s) {
-		return null;
+	public Url getUrl(String path) {
+		myUrl obj = new myUrl();
+		if(path != null && !path.isEmpty()){
+			obj.setUrl(path);
+		}
+		return obj;
 	}
 
 	public Request getRequest(InputStream inputStream) {
-		return null;
+		myRequest req = new myRequest();
+		if(inputStream != null){
+			req.setRequest(inputStream);
+		}
+		return req;
 	}
 
 	public Response getResponse() {
