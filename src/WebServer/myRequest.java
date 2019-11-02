@@ -14,6 +14,7 @@ public class myRequest implements Request {
     private InputStream is;
     private String method;
     private boolean isValid = true;
+    private myUrl url = new myUrl();
 
     public void setRequest(InputStream inputStream) {
         this.is = inputStream;
@@ -26,31 +27,44 @@ public class myRequest implements Request {
     @Override
     public boolean isValid() {
         if(this.method == null || this.method.isEmpty()) {
-            this.isValid = false;
-            return false;
+            try {
+                BufferedReader reader = new BufferedReader(new InputStreamReader(this.is));
+                String method = reader.readLine();
+                String[] first_line = method.split(" ");
+                if(first_line.length == 3){
+                    this.method = first_line[0].toUpperCase();
+                    this.url.setUrl(first_line[1]);
+
+                    if(!this.method.equals("GET") && !this.method.equals("POST")){
+                        this.isValid = false;
+                        return false;
+                    }
+                    else{
+                        this.isValid = true;
+                        return true;
+                    }
+                }
+                else{
+                    this.isValid = false;
+                    return false;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         }
-        if(!this.method.equals("GET") && !this.method.equals("POST")){
-            this.isValid = false;
-            return false;
-        }
+
         return this.isValid;
     }
 
     @Override
     public String getMethod() {
-        try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(this.is));
-            String method = reader.readLine();
-            this.method = method.split(" ")[0];
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
         return this.method;
     }
 
     @Override
     public Url getUrl() {
-        return null;
+        return this.url;
     }
 
     @Override
