@@ -6,52 +6,21 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-0219e9bd-ff61-4940-8e26-0689c5e270f5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-10b213a0-9f55-4064-8510-f2f14b4909f9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-1c4a1c3a-d66f-425d-8be8-af897212240b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-23f4f0c8-7b43-40d5-83e2-3064b8ede670.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2cee4f96-70b5-463f-8d73-3c6f64049afc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2d9b393f-511c-46e4-ab26-cc9ff2e93e62.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2e4fcd89-7d35-4394-9c80-dd2f9022da84.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3432487b-dbd4-4093-9646-93fcf8eeb024.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-351f0182-d447-4aed-80a3-8261852e0e35.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-375978b3-263d-4929-884b-bd4b31b33741.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3dd3d07b-04b6-489f-ac32-b792b73c27bf.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3f7832f4-91ce-4ee1-8b3d-13dd8a844f81.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-57bdc174-a6ef-4457-ba5f-cf6ecbc9a4c3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5bf2889e-e7de-44f0-b2ad-89224dafe103.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6380237c-3014-4f91-8b82-d2a09dbe232b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-669e9f22-5005-4a7f-b68b-2a035aeffbf5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6dc69bbb-4555-4cf8-a11d-4b36993f8c10.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6e3b5962-a258-4c6c-afc7-0bdc38cb702e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7446679f-96fe-493e-a9bd-9de537eeb02a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-879a729a-c08e-4110-94c1-b46418686a76.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8c8782b8-fb85-48ea-8d1b-917414651860.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-94277d10-6230-41c6-badb-ebb6238189fa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-9f6bd4df-95e9-47aa-9226-fc09c033c711.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a08163af-7ca0-49f4-bf86-fc2b452f1ea2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a631bda6-aebd-49a3-9420-3d1618882f89.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a7ff6737-9063-4a26-b8dc-0ecf79732c1b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ab53983e-0c2a-4ea8-b0e6-486ac9208b8d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b24e7018-ed13-47d9-a6b5-8a76a294bee4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b5a16faf-71a6-4321-9321-5a339cc99340.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bd7ba59f-25f5-4263-9066-32327b9d1484.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c62e0a4c-c3bb-416f-bc7d-8772359a8761.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c9d1bd28-c85e-4168-89e6-063ef125ab2d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ca15b5d5-c2a5-49f5-8059-95b183011e9f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d9bd9d7c-4a0e-4495-99ad-9dc0b8427143.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f31c79d5-3e0a-4e6b-a8cf-e1c5c623f5b2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f5aa06ff-aebf-46ae-bf99-832c0f2187d0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f8d90c50-963f-4f3c-97e1-821b293bee75.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fba41daa-09fb-4ae1-9423-70e2523c288c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fe1362d1-4878-4a14-916c-edf9e1bd2b61.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WebServer/myResponse.java" afterDir="false" />
+    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="Webserver threading implementiert.">
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-00796604-4adc-4b22-b162-d9125d26a1cc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-13f318b0-25b6-4bd1-9092-f7abf1da9126.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6c0633ba-a63b-4802-b8a4-5ed179d6da60.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WebServer/MyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javaThreads/LockThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javaThreads/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javaThreads/MyRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/javaThreads/MyThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/myRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebungen/UEB2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebungen/UEB2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/myUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myUrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javasockets/ClientSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaSockets/ClientSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/javasockets/ServerSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaSockets/ServerSocket.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +57,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\#FH_Technikum\Semester_3\SWE\MyWebServer\src\javaThreads" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="WebServer" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\#FH_Technikum\Semester_3\SWE\MyWebServer\src" />
     </key>
@@ -104,13 +79,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AllTests">
+  <component name="RunManager" selected="Application.WebServer">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javaThreads.Main" />
+      <module name="MyWebServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javaThreads.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServerSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javasockets.ServerSocket" />
       <module name="MyWebServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="javasockets.*" />
+          <option name="PATTERN" value="javaSockets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,13 +134,18 @@
     <list>
       <item itemvalue="Application.WebServer" />
       <item itemvalue="Application.ServerSocket" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.AllTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.ServerSocket" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -242,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572600596940</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="UE2 fertig">
+      <created>1572719085195</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572719085195</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -269,6 +269,8 @@
     <MESSAGE value="Webserver initialisiert" />
     <MESSAGE value="Listen um myUrl erweitert" />
     <MESSAGE value="UE2 Teil Url fertig" />
-    <option name="LAST_COMMIT_MESSAGE" value="UE2 Teil Url fertig" />
+    <MESSAGE value="UE2 fertig" />
+    <MESSAGE value="Webserver threading implementiert." />
+    <option name="LAST_COMMIT_MESSAGE" value="Webserver threading implementiert." />
   </component>
 </project>

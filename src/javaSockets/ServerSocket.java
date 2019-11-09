@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package javasockets;
+package javaSockets;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -53,21 +53,30 @@ public class myUrl implements Url {
     @Override
     public Map<String, String> getParameter() {
         try {
-            String query;
+            String parameter;
+            String[] query;
             String[] split = this.rawUrl.split(" ");
             if(split.length == 3) {
-                query = split[1].split("\\?")[1];
+                query = split[1].split("\\?");
+                if(query.length == 2) {
+                    parameter = query[1];
+                }
+                else {
+                    return this.params;
+                }
             }
             else {
                 String[] split_query = this.rawUrl.split("\\?");
                 if(split_query.length < 2) {
-                    return params;
+                    return this.params;
                 }
-                query = split_query[1];
+                else {
+                    parameter = split_query[1];
+                }
             }
 
             Map<String,String> params = this.params;
-            for (String param : query.split("&")){
+            for (String param : parameter.split("&")){
                 String[] keyValue = param.split("=", 2);
                 String key = URLDecoder.decode(keyValue[0], "UTF-8");
                 String value = keyValue.length > 1 ? URLDecoder.decode(keyValue[1], "UTF-8"): "";
@@ -75,7 +84,8 @@ public class myUrl implements Url {
                     params.put(key,value);
                 }
             }
-            return params;
+            this.params = params;
+            return this.params;
         } catch(UnsupportedEncodingException ex){
             throw new IllegalStateException(ex); // won't happen with UTF-8 encoding.
         }
