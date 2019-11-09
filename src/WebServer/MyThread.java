@@ -10,13 +10,16 @@ public class MyThread extends Thread {
     
     private boolean running = true;
     private String threadName;
-    private BufferedReader in;
-    private BufferedWriter out;
 
-    public MyThread(String name, BufferedReader in, BufferedWriter out) {
+    private InputStream is;
+    private OutputStream os;
+    //private BufferedReader in;
+    //private BufferedWriter out;
+
+    public MyThread(String name, InputStream is, OutputStream os) {
         this.threadName = name;
-        this.in = in;
-        this.out = out;
+        this.is = is;
+        this.os = os;
     }
 
     public void stopMyThread() {
@@ -27,22 +30,22 @@ public class MyThread extends Thread {
     public void run() {
         try {
             myUrl urlObj = new myUrl();
+            myRequest reqObj = new myRequest();
+            myResponse resObj = new myResponse();
 
-            String line;
-            line = in.readLine();
-            urlObj.setUrl(line);
+            reqObj.setRequest(this.is);
+            System.out.println("Request valid: " + reqObj.isValid() + ".");
+            System.out.println("Request Method: " + reqObj.getMethod() + ".");
+            System.out.println("Url from Request: " + reqObj.getUrl().getPath() + ".");
+            urlObj = reqObj.getUrl();
+
+
+            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(this.os));
 
             System.out.println("Path: " + urlObj.getPath());
             System.out.println("Parameter Count: " + urlObj.getParameterCount());
-            urlObj.getParameter();
 
-            System.out.println(urlObj.getUrl());
-            while((line = in.readLine()) != null) {
-                System.out.println(line);
-                if("".equals(line)){
-                    break;
-                }
-            }
+
             String body = "<html><body><h1> Hello World </h1> Hello Blabla </body></html>";
             //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
             out.write("HTTP/1.1 200 OK\r\n");

@@ -5,6 +5,7 @@ import BIF.SWE1.interfaces.Url;
 
 import java.io.*;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 import WebServer.myUrl;
@@ -15,6 +16,7 @@ public class myRequest implements Request {
     private String method;
     private boolean isValid = true;
     private myUrl url = new myUrl();
+    private Map<String, String> headers = new LinkedHashMap<>();;
 
     public void setRequest(InputStream inputStream) {
         this.is = inputStream;
@@ -35,16 +37,24 @@ public class myRequest implements Request {
                     this.method = first_line[0].toUpperCase();
                     this.url.setUrl(first_line[1]);
 
-                    if(!this.method.equals("GET") && !this.method.equals("POST")){
+                    if(!this.method.equals("GET") && !this.method.equals("POST")) {
                         this.isValid = false;
                         return false;
                     }
-                    else{
+                    else {
                         this.isValid = true;
+                        // set Headers and Content here?
+                        String line;
+                        while((line = reader.readLine()) != null && !line.equals("")) {
+                            String[] keyValue = line.split(":",2);
+                            String key = keyValue[0].toLowerCase();
+                            String value = keyValue.length > 1 ? keyValue[1]: "";
+                            this.headers.put(key,value);
+                        }
                         return true;
                     }
                 }
-                else{
+                else {
                     this.isValid = false;
                     return false;
                 }
@@ -53,7 +63,6 @@ public class myRequest implements Request {
             }
 
         }
-
         return this.isValid;
     }
 
@@ -63,18 +72,18 @@ public class myRequest implements Request {
     }
 
     @Override
-    public Url getUrl() {
+    public myUrl getUrl() {
         return this.url;
     }
 
     @Override
     public Map<String, String> getHeaders() {
-        return null;
+        return this.headers;
     }
 
     @Override
     public int getHeaderCount() {
-        return 0;
+        return this.headers.size();
     }
 
     @Override

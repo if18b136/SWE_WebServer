@@ -17,6 +17,8 @@ public class myUrl implements Url {
     private Map<String, String> params = new LinkedHashMap<>();
     private String fragment;
     private String[] segments;
+    private String fileName;
+    private String extension;
 
     public void setUrl(String path){
         this.rawUrl = path;
@@ -129,24 +131,36 @@ public class myUrl implements Url {
         if(this.rawUrl == null) {
             return null;
         }
-        this.segments = this.rawUrl.replaceFirst("^/", "").split("/");
+        if(this.path == null) { //please the unit test gods, should not be necessary in WebServer
+            getPath();
+        }
+        this.segments = this.path.replaceFirst("^/", "").split("/");
         return this.segments;
     }
 
     @Override
     public String getFileName() {
-        return null;
+        if(this.rawUrl == null || this.path == null) {
+            return "";
+        }
+        int segments = this.segments.length;
+        this.fileName = this.segments[segments - 1];
+        return this.fileName;
     }
 
     @Override
     public String getExtension() {
-        return null;
+        if(this.fileName == null) {
+            getFileName();
+        }
+        this.extension = this.fileName.split(".")[1];
+        return this.extension;
     }
 
     @Override
     public String getFragment() {
         if(this.rawUrl == null) {
-            return null;
+            return "";
         }
         this.fragment = this.rawUrl.split("#")[1];
 

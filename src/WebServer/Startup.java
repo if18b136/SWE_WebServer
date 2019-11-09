@@ -1,10 +1,6 @@
 package WebServer;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.LinkedList;
@@ -32,10 +28,10 @@ public class Startup {
                 Socket s = listener.accept();
                 System.out.println("New client connected : " + s);
 
-                BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream()));
-                BufferedWriter out = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
+                InputStream is = s.getInputStream();
+                OutputStream os = s.getOutputStream();
 
-                MyThread t = new MyThread("Thread " + thread_num, in, out);
+                MyThread t = new MyThread("Thread " + thread_num, is, os);
                 t.start();
                 threads.add(t);
                 thread_num++;

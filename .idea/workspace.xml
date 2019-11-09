@@ -6,21 +6,45 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="Webserver threading implementiert.">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-00796604-4adc-4b22-b162-d9125d26a1cc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-13f318b0-25b6-4bd1-9092-f7abf1da9126.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6c0633ba-a63b-4802-b8a4-5ed179d6da60.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WebServer/MyThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javaThreads/LockThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javaThreads/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javaThreads/MyRunnable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javaThreads/MyThread.java" afterDir="false" />
+    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-087435a1-1e9c-481a-9d77-15cf25410f9e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-27faa684-f1c9-4f8c-887d-57739ddf27ad.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2a340134-d10b-4347-994f-b61701d695c5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2b10cdf5-a797-47bf-bdf3-e02c8e769930.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2fa996a8-8a06-4925-865e-28a1dd0b7a44.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-44e4ae87-1ab6-479a-a05a-f96cfdf53abf.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4ff65ebf-d66e-4e8a-adb3-e0b0ccfe0c99.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-59ad8116-d783-4106-953c-de14fad34235.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-643fb206-3afe-4e2a-8a4b-e2f2e9d5bce3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-66a53c53-d194-47a4-8dba-934822a62b99.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-71337f60-771a-471f-a796-fde73ffa312b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8777b3c4-48d5-4c66-ab1d-9c6796611078.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8b8fec7b-67e4-4f25-8d45-c57f5a99c6a9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8e96ebeb-34f1-4a96-84a6-3770c7e54292.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-90c2d034-35f3-45ac-86c3-a994c46a81a7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a3f316d9-bc01-42b2-a9bf-fcd500313dc2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ac1d2b83-6734-4154-ba01-14d68bded539.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-adf9085f-1ca5-4c21-b0e7-a397da1a0695.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b3d94ad2-4108-4e17-b6ed-dd77ff47a463.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c21b60c0-c8c7-4fef-9959-24c7cecefbaa.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ced5b5ec-88f2-4c45-af1b-8f0136241e8e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d096ae87-eead-485f-9c5f-24bafea09a61.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e78bc691-c440-46c9-a3aa-53efeef4ea4d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ec7feffa-d402-4645-98e6-f878568697f5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f84d6476-9df1-4f83-9baf-dfaa0135e59e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fcdc53ed-a701-42dd-86ed-8a481357e5cb.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fde1f86d-4e2f-4f0f-84c9-baf9b678a336.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WebServer/myPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/MyThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/myRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/myUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javasockets/ClientSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaSockets/ClientSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javasockets/ServerSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/javaSockets/ServerSocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebungen/UEB3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebungen/UEB3.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572719085195</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Webserver threading implementiert.">
+      <created>1573297911162</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573297911162</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,5 +303,16 @@
     <MESSAGE value="UE2 fertig" />
     <MESSAGE value="Webserver threading implementiert." />
     <option name="LAST_COMMIT_MESSAGE" value="Webserver threading implementiert." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/WebServer/MyThread.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
