@@ -16,7 +16,6 @@ public class myResponse implements Response {
     private String content;
     private OutputStream network;
 
-
     @Override
     public Map<String, String> getHeaders() {
         return this.responseMap;
@@ -27,7 +26,7 @@ public class myResponse implements Response {
         try {
             return this.content.getBytes("UTF-8").length;
         } catch(UnsupportedEncodingException uex) {
-            System.out.println(uex);
+            uex.printStackTrace();
             return 0;
         }
     }
@@ -116,9 +115,14 @@ public class myResponse implements Response {
             if(this.content != null) {
                 network.write(this.content.getBytes());
             }
+            else {
+                if(this.contentType != null) {
+                    throw new IllegalStateException("Setting a content type but no content is not allowed");
+                }
+            }
             network.close();
-        } catch (IOException ioe) {
-            System.out.println(ioe);
+        } catch (IOException | IllegalStateException ie) {
+            ie.printStackTrace();
         }
     }
 }

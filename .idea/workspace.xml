@@ -7,31 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-15b4635c-6dce-446d-859f-e48aa5b6923e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3471ec94-b67d-4062-b603-f339f422628a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-43bbef2e-5d40-4ca6-9d74-3ac47f7c780f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-472f0ae9-1120-47ae-82bd-92d01fc4bd4f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4ace24f1-8e3e-42dd-a278-2673886f9e42.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-581e2b54-d981-4b8b-927d-f6b483c15864.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-67262931-5c6c-4d86-82df-2d81446a4f8b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-787fe367-fa05-479b-b16b-9ae2c43a2524.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-78b65e16-7c5c-49b7-9f03-937d6402418f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-891a6aa3-17e1-45ff-ab8d-f863736c54a7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8a591ff7-6e51-4ffc-998c-ebb173a71fc1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8e25f243-1444-4a5c-a26d-48bcca5cf5f5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-936debd6-4f46-4f43-bc82-9da4dd585442.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-9ab62a46-1608-45bd-b57a-4ae4f30c3321.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a147c38c-29ae-49bc-9c6f-aecb2b9bdc6e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c4322f39-1b28-4b94-9f4d-14f9e39c242f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c5f6d91f-3488-46f4-8090-3de43c8cd4a7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ca1ab066-b44c-45a5-ac08-bcbb6dc07599.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-da16b9cf-548d-4e69-8d06-1499ee3e468e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fcb83aaa-0c59-44da-b491-bd7576a276e5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-1dce5d84-7574-44e4-a2bb-04f6b7c90f6c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2c901012-562b-474f-b5e9-08f0daa0adf7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3ad95f48-2338-4baa-872f-518838e8aee4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3cbcd1c8-04e4-4379-b935-cc1673183d31.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3f398026-bf46-4ebe-8cc5-81ca1f6a05bd.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-42ff4cc8-e36a-41ad-8da4-7438185c8c00.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5821955d-4b92-4681-b57c-105424667717.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7ed7cc34-550a-482d-a6ae-3577e13f0c29.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7f389b61-301d-4b0b-85cc-a646676c5884.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-9d5d4bb8-5c27-41b3-b1cd-ce7ec5f0202f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c8857bb3-aaf2-4078-9f94-37c9cdcff0e4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e10bec89-1ca6-4909-84b1-e9b2c3c67b7d.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/MyThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/Startup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/myResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myResponse.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -275,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573393700088</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="UB3 send() now with content, first line and server header.">
+      <created>1573397435008</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1573397435008</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -306,6 +302,7 @@
     <MESSAGE value="Webserver threading implementiert." />
     <MESSAGE value="Client Request now completely handled." />
     <MESSAGE value="UB3 send() now with String.getBytes()." />
-    <option name="LAST_COMMIT_MESSAGE" value="UB3 send() now with String.getBytes()." />
+    <MESSAGE value="UB3 send() now with content, first line and server header." />
+    <option name="LAST_COMMIT_MESSAGE" value="UB3 send() now with content, first line and server header." />
   </component>
 </project>
