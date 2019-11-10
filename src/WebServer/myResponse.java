@@ -5,6 +5,8 @@ import BIF.SWE1.interfaces.Response;
 import java.io.*;
 import java.util.Map;
 import java.util.LinkedHashMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class myResponse implements Response {
 
@@ -118,11 +120,12 @@ public class myResponse implements Response {
             else {
                 if(this.contentType != null) {
                     throw new IllegalStateException("Setting a content type but no content is not allowed");
+                    //throw new java.lang.Error("Setting a content type but no content is not allowed");
                 }
             }
             network.close();
         } catch (IOException | IllegalStateException ie) {
-            ie.printStackTrace();
+            Logger.getLogger(Startup.class.getName()).log(Level.SEVERE, null, ie);
         }
     }
 }

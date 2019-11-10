@@ -6,19 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-1dce5d84-7574-44e4-a2bb-04f6b7c90f6c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2c901012-562b-474f-b5e9-08f0daa0adf7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3ad95f48-2338-4baa-872f-518838e8aee4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3cbcd1c8-04e4-4379-b935-cc1673183d31.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3f398026-bf46-4ebe-8cc5-81ca1f6a05bd.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-42ff4cc8-e36a-41ad-8da4-7438185c8c00.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5821955d-4b92-4681-b57c-105424667717.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7ed7cc34-550a-482d-a6ae-3577e13f0c29.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7f389b61-301d-4b0b-85cc-a646676c5884.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-9d5d4bb8-5c27-41b3-b1cd-ce7ec5f0202f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c8857bb3-aaf2-4078-9f94-37c9cdcff0e4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e10bec89-1ca6-4909-84b1-e9b2c3c67b7d.txt" afterDir="false" />
+    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="UB3 response should fail sending no content.">
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4da0ec1e-38f0-4e5c-8531-c599d64950d1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-85ac2fd8-0e4e-43ed-9e03-113fd05698b0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bd3cad2f-d3c5-41f5-91d0-a4a89144e06f.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/myResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myResponse.java" afterDir="false" />
@@ -271,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573397435008</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="UB3 response should fail sending no content.">
+      <created>1573399283466</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1573399283466</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,6 +301,7 @@
     <MESSAGE value="Client Request now completely handled." />
     <MESSAGE value="UB3 send() now with String.getBytes()." />
     <MESSAGE value="UB3 send() now with content, first line and server header." />
-    <option name="LAST_COMMIT_MESSAGE" value="UB3 send() now with content, first line and server header." />
+    <MESSAGE value="UB3 response should fail sending no content." />
+    <option name="LAST_COMMIT_MESSAGE" value="UB3 response should fail sending no content." />
   </component>
 </project>
