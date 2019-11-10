@@ -2,8 +2,7 @@ package WebServer;
 
 import BIF.SWE1.interfaces.Response;
 
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.util.Map;
 import java.util.LinkedHashMap;
 
@@ -12,6 +11,11 @@ public class myResponse implements Response {
     private Map<String, String> responseMap = new LinkedHashMap<>();
     private Integer statusCode;
     private String status;
+    private String contentType;
+    private String serverHeader = "BIF-SWE1-Server";
+    private String content;
+    private OutputStream network;
+
 
     @Override
     public Map<String, String> getHeaders() {
@@ -20,17 +24,22 @@ public class myResponse implements Response {
 
     @Override
     public int getContentLength() {
-        return 0;
+        try {
+            return this.content.getBytes("UTF-8").length;
+        } catch(UnsupportedEncodingException uex) {
+            System.out.println(uex);
+            return 0;
+        }
     }
 
     @Override
     public String getContentType() {
-        return null;
+        return this.contentType;
     }
 
     @Override
     public void setContentType(String contentType) {
-
+        this.contentType = contentType;
     }
 
     @Override
@@ -68,31 +77,39 @@ public class myResponse implements Response {
 
     @Override
     public String getServerHeader() {
-        return null;
+        return this.serverHeader;
     }
 
     @Override
     public void setServerHeader(String server) {
-
+        this.serverHeader = server;
     }
 
     @Override
     public void setContent(String content) {
-
+        this.content = content;
     }
 
     @Override
     public void setContent(byte[] content) {
-
+        this.content = String.valueOf(content);
     }
 
     @Override
     public void setContent(InputStream stream) {
-
+        this.content = String.valueOf(stream);
     }
 
     @Override
     public void send(OutputStream network) {
-
+        try {
+            for(Map.Entry elem : this.responseMap.entrySet()) {
+                String line = elem.getKey() + ": " + elem.getValue();
+                network.write(line.getBytes());
+            }
+            network.close();
+        } catch (IOException ioe) {
+            System.out.println(ioe);
+        }
     }
 }

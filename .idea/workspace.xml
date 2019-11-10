@@ -7,44 +7,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-087435a1-1e9c-481a-9d77-15cf25410f9e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-27faa684-f1c9-4f8c-887d-57739ddf27ad.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2a340134-d10b-4347-994f-b61701d695c5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2b10cdf5-a797-47bf-bdf3-e02c8e769930.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2fa996a8-8a06-4925-865e-28a1dd0b7a44.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-44e4ae87-1ab6-479a-a05a-f96cfdf53abf.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4ff65ebf-d66e-4e8a-adb3-e0b0ccfe0c99.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-59ad8116-d783-4106-953c-de14fad34235.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-643fb206-3afe-4e2a-8a4b-e2f2e9d5bce3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-66a53c53-d194-47a4-8dba-934822a62b99.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-71337f60-771a-471f-a796-fde73ffa312b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8777b3c4-48d5-4c66-ab1d-9c6796611078.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8b8fec7b-67e4-4f25-8d45-c57f5a99c6a9.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8e96ebeb-34f1-4a96-84a6-3770c7e54292.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-90c2d034-35f3-45ac-86c3-a994c46a81a7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a3f316d9-bc01-42b2-a9bf-fcd500313dc2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ac1d2b83-6734-4154-ba01-14d68bded539.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-adf9085f-1ca5-4c21-b0e7-a397da1a0695.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b3d94ad2-4108-4e17-b6ed-dd77ff47a463.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c21b60c0-c8c7-4fef-9959-24c7cecefbaa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ced5b5ec-88f2-4c45-af1b-8f0136241e8e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d096ae87-eead-485f-9c5f-24bafea09a61.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e78bc691-c440-46c9-a3aa-53efeef4ea4d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ec7feffa-d402-4645-98e6-f878568697f5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f84d6476-9df1-4f83-9baf-dfaa0135e59e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fcdc53ed-a701-42dd-86ed-8a481357e5cb.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fde1f86d-4e2f-4f0f-84c9-baf9b678a336.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WebServer/myPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-0890d556-923f-433a-a3cd-d61d05226d29.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-1774d6e0-39e9-4ba8-9818-d8c6831c4c75.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-1c759d30-0f12-4985-bea7-af1ea242b1a0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2c66ac99-65e1-492f-a58c-17532a580298.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-36d22848-1132-47b0-9a3a-47e3dad97bef.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4fa4ca46-54b2-44d1-96c2-e3fd346813a8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5678583e-a663-4bbd-bc85-9815dcdfb527.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5aa08302-16b1-437e-a1a5-56e182b8a837.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5c2a28f2-0135-4be1-ae7b-827a0fa19907.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-67f7b24e-e72b-4731-8a0b-8103be01df19.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6f425dd4-f6cd-403f-89b3-a04962618e77.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-738e1a33-0a3f-444a-bcd0-cbc86929e012.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7896c387-5304-4b1d-94ac-4bdf65d24006.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7ac82dd8-f6c1-49f6-88ad-29c6137c6033.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7bc471c7-4ae5-443d-a53e-cd8dd9633c00.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8ac8f22c-8691-46e0-afa5-5f6632d5e1ee.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-906f5bc7-7de8-4c49-bf08-62764c5ae928.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-9c9fd621-3ca4-4a5c-9341-cd673bfe8bd3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a06b8777-9fbf-4db0-923b-c013768e391d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a7154878-31cf-4747-be89-7b8383808346.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-aa0613ee-15f5-46da-9635-c1763aead097.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-adea69c8-fdf6-47e6-aa58-eefd0a5294fb.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b0af9494-697a-4662-b22f-072f0a60c70f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b28dcfbe-358e-4d5d-8752-3c770ed84f6d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b30583dc-8c28-4d5b-940b-15ac124d9450.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b7d57971-e2c2-4f60-9a7e-92effd083a4b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c28e3067-93f0-4e30-bfc8-22049398b838.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c6aa9b19-900b-4585-90fd-afa933bcd979.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-cb0a5125-9940-4f9c-8bbd-23ac05db5ce9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d1724699-65e2-435b-bcc6-6afdb84be5dc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d326ee2c-8522-43d5-8e48-ee62303f5bdb.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-dbf2b968-e388-4ecd-8259-0f7dcb131055.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-dc46bbb4-9104-477e-8a50-b6b0940ea374.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-dccb434e-490c-4296-a46c-d3468dee716d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-dd441576-e816-4100-95b4-47aaa4a7c737.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e7fdc243-d749-4961-96bd-cfb6a27d0b28.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fb1e9b5c-2205-4eae-be01-527ada0650d7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fb3b7b9d-c9a8-45bd-9ba4-a1d96e1f220b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fc3a07d3-b843-4f33-a436-e36b5b7c4b9c.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/MyThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/Startup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/myRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/myUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebungen/UEB3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebungen/UEB3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/myResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myResponse.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +108,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WebServer">
+  <component name="RunManager" selected="JUnit.AllTests">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaThreads.Main" />
       <module name="MyWebServer" />
@@ -273,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573297911162</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Client Request now completely handled.">
+      <created>1573311825504</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573311825504</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,15 +314,16 @@
     <MESSAGE value="UE2 Teil Url fertig" />
     <MESSAGE value="UE2 fertig" />
     <MESSAGE value="Webserver threading implementiert." />
-    <option name="LAST_COMMIT_MESSAGE" value="Webserver threading implementiert." />
+    <MESSAGE value="Client Request now completely handled." />
+    <option name="LAST_COMMIT_MESSAGE" value="Client Request now completely handled." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WebServer/MyThread.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/../unit-tests-BIF-SWE1_Java-master/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/UEB3Test.java</url>
+          <line>212</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -49,6 +49,7 @@ public class myRequest implements Request {
                             String[] keyValue = line.split(":",2);
                             String key = keyValue[0].toLowerCase();
                             String value = keyValue.length > 1 ? keyValue[1]: "";
+                            System.out.println(key + " : " + value);
                             this.headers.put(key,value);
                         }
                         return true;
@@ -88,7 +89,13 @@ public class myRequest implements Request {
 
     @Override
     public String getUserAgent() {
-        return null;
+        if(this.headers.size() == 0) { // otherwise the unit test wont initialize anything
+            isValid();
+        }
+        if(this.headers.containsKey("user-agent")) {
+            return this.headers.get("user-agent");
+        }
+        return "";
     }
 
     @Override
