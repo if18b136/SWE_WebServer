@@ -34,16 +34,17 @@ public class MyThread extends Thread {
             myResponse resObj = new myResponse();
 
             reqObj.setRequest(this.is);
-            System.out.println("Request valid: " + reqObj.isValid() + ".");
-            System.out.println("Request Method: " + reqObj.getMethod() + ".");
-            System.out.println("Url from Request: " + reqObj.getUrl().getPath() + ".");
+            reqObj.isValid();
+            //System.out.println("Request valid: " + reqObj.isValid() + ".");
+            //System.out.println("Request Method: " + reqObj.getMethod() + ".");
+            //System.out.println("Url from Request: " + reqObj.getUrl().getPath() + ".");
             urlObj = reqObj.getUrl();
 
 
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(this.os));
 
-            System.out.println("Path: " + urlObj.getPath());
-            System.out.println("Parameter Count: " + urlObj.getParameterCount());
+            //System.out.println("Path: " + urlObj.getPath());
+            //System.out.println("Parameter Count: " + urlObj.getParameterCount());
 
 
             String body = "<html><body><h1> Hello World </h1> Hello Blabla </body></html>";

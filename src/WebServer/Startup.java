@@ -26,7 +26,7 @@ public class Startup {
 
             while(true){
                 Socket s = listener.accept();
-                System.out.println("New client connected : " + s);
+                //System.out.println("New client connected : " + s);
 
                 InputStream is = s.getInputStream();
                 OutputStream os = s.getOutputStream();

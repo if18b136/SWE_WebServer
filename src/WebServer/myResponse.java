@@ -59,10 +59,10 @@ public class myResponse implements Response {
                 this.status = "200 OK";
                 break;
             case 404:
-                this.status = "404 NOT FOUND";
+                this.status = "404 Not Found";
                 break;
             case 500:
-                this.status = "500 INTERNAL SERVER ERROR";
+                this.status = "500 Internal Server Error";
                 break;
             default:
                 break;
@@ -83,6 +83,7 @@ public class myResponse implements Response {
     @Override
     public void setServerHeader(String server) {
         this.serverHeader = server;
+        this.responseMap.put("Server",this.serverHeader);
     }
 
     @Override
@@ -103,9 +104,17 @@ public class myResponse implements Response {
     @Override
     public void send(OutputStream network) {
         try {
+            if(this.statusCode != null) {
+                getStatus();
+                String line = "HTTP/1.1 " + this.status + "\r\n";
+                network.write(line.getBytes());
+            }
             for(Map.Entry elem : this.responseMap.entrySet()) {
                 String line = elem.getKey() + ": " + elem.getValue();
                 network.write(line.getBytes());
+            }
+            if(this.content != null) {
+                network.write(this.content.getBytes());
             }
             network.close();
         } catch (IOException ioe) {
