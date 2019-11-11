@@ -124,8 +124,11 @@ public class myResponse implements Response {
                 }
             }
             network.close();
-        } catch (IOException | IllegalStateException ie) {
-            Logger.getLogger(Startup.class.getName()).log(Level.SEVERE, null, ie);
+        } catch (Exception ex) {
+            //ex.printStackTrace();
+            //Logger.getLogger(Startup.class.getName()).log(Level.SEVERE, null, ex);
+            throw new IllegalStateException("Setting a content type but no content is not allowed");
+            // why do you have to throw the exception here again?
         }
     }
 }

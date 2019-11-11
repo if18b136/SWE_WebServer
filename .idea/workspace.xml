@@ -6,10 +6,24 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="UB3 response should fail sending no content.">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4da0ec1e-38f0-4e5c-8531-c599d64950d1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-85ac2fd8-0e4e-43ed-9e03-113fd05698b0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bd3cad2f-d3c5-41f5-91d0-a4a89144e06f.txt" afterDir="false" />
+    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-1fa63bf0-d834-4509-a42a-5a1e0f4b1038.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2d171b69-fb5a-4500-aa44-de37c4448c74.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-31143053-974d-4026-8cb1-bc112dc56acf.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3559b484-0086-41d8-adc2-3da4aa4b45be.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-426f8f5f-9bf6-4b00-a8a9-91ce8617c9fc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-59135d33-a0eb-4afb-a357-a50c2c5ac9e5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6ba8822c-415e-4ec7-ac0e-89753ee874d9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-72886511-1e9e-4daf-84ba-369cbbdc8e67.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7394faa2-6746-4fbf-ac96-3940c15682ee.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8c5e579b-3dfd-4ca9-ada9-7ee5b2db5fc0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b3b3e28c-6859-457d-b55c-84b8eb04d9e6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b7268dd4-5cf0-4c56-b65a-d7ffd3bd7b23.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bdd7164e-9633-4f3e-9fe2-426bfcf17e78.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d568892f-9807-468e-bd54-76812ce1322d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-dc4e674d-8780-432f-9c74-c55cc8ab29e9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e78838f7-efa4-46b6-b81a-d8fd5a52d2d4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ff2fc556-f9f0-4b45-92b4-bd8d7df0ebe4.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/myResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myResponse.java" afterDir="false" />
@@ -269,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573399283466</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="UB3 response should fail sending no content.">
+      <created>1573399620117</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573399620117</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -303,5 +324,16 @@
     <MESSAGE value="UB3 send() now with content, first line and server header." />
     <MESSAGE value="UB3 response should fail sending no content." />
     <option name="LAST_COMMIT_MESSAGE" value="UB3 response should fail sending no content." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../unit-tests-BIF-SWE1_Java-master/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/UEB3Test.java</url>
+          <line>293</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
