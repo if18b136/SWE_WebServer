@@ -47,6 +47,8 @@ public class MyThread extends Thread {
             //System.out.println("Parameter Count: " + urlObj.getParameterCount());
 
 
+            // body und buffered output sollte in response objekt gespeichert und dann ausgegeben werden.
+
             String body = "<html><body><h1> Hello World </h1> Hello Blabla </body></html>";
             //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(s.getOutputStream()));
             out.write("HTTP/1.1 200 OK\r\n");

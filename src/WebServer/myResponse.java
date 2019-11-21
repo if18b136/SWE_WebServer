@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 public class myResponse implements Response {
 
     private Map<String, String> responseMap = new LinkedHashMap<>();
-    private Integer statusCode;
+    private Integer statusCode; //integer because int is set to 0 standard
     private String status;
     private String contentType;
     private String serverHeader = "BIF-SWE1-Server";
