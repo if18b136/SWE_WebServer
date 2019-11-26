@@ -47,7 +47,7 @@ public class myUrl implements Url {
         }
         else {
             this.path = split[1].split("\\?")[0];
-            this.path = split[1].split("#")[0]; // noxh nicht in Webserver getestet
+            this.path = split[1].split("#")[0]; // noch nicht in Webserver getestet
             return this.path;
         }
     }

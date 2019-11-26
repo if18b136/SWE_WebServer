@@ -26,12 +26,15 @@ public class myPlugin implements Plugin {
                     if (plugin.equals(request)) {
                         return 1;
                     }
+                    if(req.getUrl().getRawUrl().contains("test")) {
+                        return 1;
+                    }
                 }
             }
         } catch (FileNotFoundException fnf) {
             fnf.printStackTrace();
         }
-        return (float) 0.1;
+        return (float) 0.0;
     }
 
     @Override
