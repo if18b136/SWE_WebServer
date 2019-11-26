@@ -10,13 +10,21 @@ import java.util.Map;
 
 import WebServer.myUrl;
 
+//static import for header value for content length parse to int - recommended by intellij
+import static java.lang.Integer.parseInt;
+
 public class myRequest implements Request {
 
     private InputStream is;
     private String method;
     private boolean isValid = true;
     private myUrl url = new myUrl();
-    private Map<String, String> headers = new LinkedHashMap<>();;
+    private Map<String, String> headers = new LinkedHashMap<>();
+    private int contentLength;
+    private String contentType;
+    private InputStream contentStream;
+    private String contentString;
+    private byte[] contentBytes;
 
     public void setRequest(InputStream inputStream) {
         this.is = inputStream;
@@ -43,14 +51,35 @@ public class myRequest implements Request {
                     }
                     else {
                         this.isValid = true;
-                        // set Headers and Content here?
                         String line;
-                        while((line = reader.readLine()) != null && !line.equals("")) {
+                        while((line = reader.readLine()) != null && !line.equals("")) {     // set Header-Value Map
                             String[] keyValue = line.split(":",2);
                             String key = keyValue[0].toLowerCase();
                             String value = keyValue.length > 1 ? keyValue[1]: "";
-                            System.out.println(key + " : " + value);
+
+                            System.out.println(key + " : " + value);    //testing
+
                             this.headers.put(key,value);
+                            if(key.equals("content-length")) {
+                                this.contentLength = parseInt(value.trim());    // set contentLength
+                            }
+                            if(key.equals("content-type")) {
+                                this.contentType = value.trim();    // set contentType
+                            }
+                        }
+                        // after header is finished, we can read the content (we could also set content-length here manually)
+                        if((line = reader.readLine()) != null && !line.equals("")) {
+                            this.contentStream = new ByteArrayInputStream(line.getBytes());
+
+                            ByteArrayOutputStream result = new ByteArrayOutputStream();
+                            byte[] buffer = new byte[1024];
+                            int length;
+                            while ((length = this.contentStream.read(buffer)) != -1) {
+                                result.write(buffer, 0, length);
+                            }
+                            this.contentString =  result.toString("UTF-8");
+
+                            this.contentBytes = this.contentString.getBytes();
                         }
                         return true;
                     }
@@ -100,26 +129,30 @@ public class myRequest implements Request {
 
     @Override
     public int getContentLength() {
-        return 0;
+        return this.contentLength;
     }
 
     @Override
     public String getContentType() {
-        return null;
+        return this.contentType;
     }
 
     @Override
     public InputStream getContentStream() {
+        if(this.contentStream != null) {
+            return this.contentStream;
+        }
         return null;
     }
 
     @Override
     public String getContentString() {
-        return null;
+       return this.contentString;
     }
 
     @Override
     public byte[] getContentBytes() {
-        return new byte[0];
+        return this.contentBytes;
+
     }
 }

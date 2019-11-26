@@ -3,6 +3,9 @@ package uebungen;
 import BIF.SWE1.interfaces.PluginManager;
 import BIF.SWE1.interfaces.Request;
 import BIF.SWE1.interfaces.Response;
+import WebServer.myRequest;
+import WebServer.myResponse;
+import WebServer.myPluginManager;
 
 import java.io.InputStream;
 
@@ -13,14 +16,20 @@ public class UEB4 {
 	}
 
 	public Request getRequest(InputStream inputStream) {
-		return null;
+		myRequest req = new myRequest();
+		if(inputStream != null){
+			req.setRequest(inputStream);
+		}
+		return req;
 	}
 
 	public Response getResponse() {
-		return null;
+		myResponse resp = new myResponse();
+		return resp;
 	}
 
 	public PluginManager getPluginManager() {
-		return null;
+		myPluginManager mng = new myPluginManager();
+		return mng;
 	}
 }

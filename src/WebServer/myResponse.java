@@ -94,12 +94,22 @@ public class myResponse implements Response {
 
     @Override
     public void setContent(byte[] content) {
-        this.content = String.valueOf(content);
+        this.content = new String(content);
     }
 
     @Override
     public void setContent(InputStream stream) {
-        this.content = String.valueOf(stream);
+        try {
+            ByteArrayOutputStream result = new ByteArrayOutputStream();
+            byte[] buffer = new byte[1024];
+            int length;
+            while ((length = stream.read(buffer)) != -1) {
+                result.write(buffer, 0, length);
+            }
+            this.content = result.toString("UTF-8");
+        } catch(IOException use) {
+            use.printStackTrace();
+        }
     }
 
     @Override
