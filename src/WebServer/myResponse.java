@@ -103,6 +103,7 @@ public class myResponse implements Response {
     }
 
     @Override
+    // every string that gets written into the network needs a linefeed! -> Add "\r\n" to every string
     public void send(OutputStream network) {
         try {
             if(this.statusCode != null) {
@@ -111,9 +112,11 @@ public class myResponse implements Response {
                 network.write(line.getBytes());
             }
             for(Map.Entry elem : this.responseMap.entrySet()) {
-                String line = elem.getKey() + ": " + elem.getValue();
+                String line = elem.getKey() + ": " + elem.getValue() + "\r\n";
                 network.write(line.getBytes());
             }
+            String lineEnd = "\r\n";
+            network.write(lineEnd.getBytes());
             if(this.content != null) {
                 network.write(this.content.getBytes());
             }
