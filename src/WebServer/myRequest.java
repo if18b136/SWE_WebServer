@@ -67,20 +67,23 @@ public class myRequest implements Request {
                                 this.contentType = value.trim();    // set contentType
                             }
                         }
+
                         // after header is finished, we can read the content (we could also set content-length here manually)
-                        if((line = reader.readLine()) != null && !line.equals("")) {
-                            this.contentStream = new ByteArrayInputStream(line.getBytes());
+                         if(reader.ready()){    // if no content will be following we want to skip the next part
+                             if((line = reader.readLine()) != null && !line.equals("")) {
+                                 this.contentStream = new ByteArrayInputStream(line.getBytes());
 
-                            ByteArrayOutputStream result = new ByteArrayOutputStream();
-                            byte[] buffer = new byte[1024];
-                            int length;
-                            while ((length = this.contentStream.read(buffer)) != -1) {
-                                result.write(buffer, 0, length);
-                            }
-                            this.contentString =  result.toString("UTF-8");
+                                 ByteArrayOutputStream result = new ByteArrayOutputStream();
+                                 byte[] buffer = new byte[1024];
+                                 int length;
+                                 while ((length = this.contentStream.read(buffer)) != -1) {
+                                     result.write(buffer, 0, length);
+                                 }
+                                 this.contentString =  result.toString("UTF-8");
 
-                            this.contentBytes = this.contentString.getBytes();
-                        }
+                                 this.contentBytes = this.contentString.getBytes();
+                             }
+                         }
                         return true;
                     }
                 }
