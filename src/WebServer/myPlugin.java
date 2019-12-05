@@ -1,7 +1,6 @@
 package WebServer;
 
 import BIF.SWE1.interfaces.Plugin;
-import BIF.SWE1.interfaces.PluginManager;
 import BIF.SWE1.interfaces.Request;
 import BIF.SWE1.interfaces.Response;
 import java.io.File;
@@ -9,8 +8,6 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class myPlugin implements Plugin {
-
-    private myPluginManager mgr;
 
     @Override
     public float canHandle(Request req) {

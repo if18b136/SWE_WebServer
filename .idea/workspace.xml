@@ -7,33 +7,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-11058ea4-e116-4d3f-a1d1-47ea0d834262.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2b801748-0ff6-4b84-a4f0-d17c004fddf4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3bdfec07-1917-4fba-be89-08b05ad7ebce.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-45ae9f0f-82c7-4a4d-85a6-40d892695b74.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4e51a312-81bb-43de-bd2a-eceda5d2a537.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5c623346-5860-44f7-b734-ec81524d6460.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5cf3bbd0-6253-406b-b7e4-059747e1342c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-875905d8-929f-44ec-9346-396e570eee3e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8eb727d1-6f84-4583-9b2a-28012d2b7eeb.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a3d81253-1b24-41c0-a6b1-d2392f1ce64d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b8cab5a5-9aaf-453a-9915-2b2362d1e711.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b99b4cc4-e42d-4fa6-b1d3-33e1dffa861d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bc5063c2-6c71-4541-bad9-a3a8d46ea270.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bde1ad13-06fc-419f-8897-27e4caea483c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c8d729d3-3776-42c1-9979-8502a1e6b019.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c9234cde-7d65-47d9-b377-693a41035903.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-df4ad960-96a3-4df7-8113-40f51a88361a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e82efd71-13cb-4469-9565-8e44c8829655.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-eb51e9ac-ad96-4f5f-acd3-b8b849dc30be.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f512d41a-4510-4364-9cf6-895a942a964c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f59eb850-6756-45a8-a7a1-c29bc794aae3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-1b31bffb-4032-41f3-829d-5679fa24f312.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2cb725db-438c-43ac-a5b8-1a71f2ed2b32.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-473722a0-ade2-4519-a005-9231c2f0c60f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5022cec6-3d7c-4f5f-9c1b-dca71aa69aed.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-51e0c094-1b4f-4c67-8b34-18fb7cddf3a6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-561a4979-3dca-4517-9367-05325ba8b1bb.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6b7f2d0f-f8b1-4fb7-a9b8-da1d25e13930.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-72172cf0-dc43-45c4-ad67-4cf7d946a52f.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-73eed72e-b5c0-4c8e-9599-1a47719fb85b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-75d2de2d-2d03-49f9-824e-2c2e89557d2e.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-7ebea351-4056-4666-9710-4568012bfb1b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-820ddba2-ea34-44cd-b182-f3f451852e88.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-8940ef5d-4a50-4ff5-aef1-73beb42fa970.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-90bb9575-e54a-4da0-8109-e6d3fd327539.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-9a5c6ac6-9c27-4efd-b72b-ee4484cc3e64.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a15dc9e2-7e09-4697-8186-531655c3e1d9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ae9c6b18-df93-410b-915a-3d6ec494d130.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b2f0091c-9877-4dc0-a8b3-a907404b40c1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-b462cda0-6d0f-4397-9a23-48f95e4c6edc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d60eb6a0-07d9-438e-ada6-5828909fd1d8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-dd664b11-c9c7-4254-8102-91074c8b57ff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ddd1e71b-bbdb-498c-aa97-a0f14556a5ae.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e9e48d8d-3f4d-4d71-ab13-50966005f2df.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f3bc1159-ab7b-446f-995e-038bc3be95a6.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BIF-SWE1.UnitTests/BIF/SWE1/unittests/UEB4Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BIF-SWE1.UnitTests/BIF/SWE1/unittests/UEB4Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BIF-SWE1.UnitTests/META-INF/BIF-SWE1.UnitTests.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/MyThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/myRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/myPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/myPluginManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myPluginManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/myResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myResponse.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +88,7 @@
       <recent name="D:\#FH_Technikum\Semester_3\SWE\MyWebServer\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WebServer">
+  <component name="RunManager" selected="JUnit.AllTests">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="javaThreads.Main" />
       <module name="MyWebServer" />
@@ -334,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574777463909</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Request object now detects if there is content after the headers.">
+      <created>1575538828112</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1575538828112</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -372,61 +383,56 @@
     <MESSAGE value="UB3 response/send() function debugged." />
     <MESSAGE value="UB3 finished, plugin now functional." />
     <MESSAGE value="UB4 startet." />
-    <option name="LAST_COMMIT_MESSAGE" value="UB4 startet." />
+    <MESSAGE value="Request object now detects if there is content after the headers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Request object now detects if there is content after the headers." />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1166" height="278" key="GridCell.Tab.0.bottom" timestamp="1575538715577">
+    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1575538825371">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1166" height="278" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1575538715577" />
-    <state width="1166" height="278" key="GridCell.Tab.0.center" timestamp="1575538715577">
+    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1575538825371" />
+    <state width="867" height="229" key="GridCell.Tab.0.bottom" timestamp="1575546614153">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1166" height="278" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1575538715577" />
-    <state width="1166" height="278" key="GridCell.Tab.0.left" timestamp="1575538715577">
+    <state width="867" height="229" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1575546614153" />
+    <state width="867" height="229" key="GridCell.Tab.0.center" timestamp="1575546614153">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1166" height="278" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1575538715577" />
-    <state width="1166" height="278" key="GridCell.Tab.0.right" timestamp="1575538715577">
+    <state width="867" height="229" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1575546614153" />
+    <state width="867" height="229" key="GridCell.Tab.0.left" timestamp="1575546614153">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1166" height="278" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1575538715577" />
-    <state width="1166" height="278" key="GridCell.Tab.1.bottom" timestamp="1575538715577">
+    <state width="867" height="229" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1575546614153" />
+    <state width="867" height="229" key="GridCell.Tab.0.right" timestamp="1575546614153">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1166" height="278" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1575538715577" />
-    <state width="1166" height="278" key="GridCell.Tab.1.center" timestamp="1575538715577">
+    <state width="867" height="229" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1575546614153" />
+    <state width="1784" height="278" key="GridCell.Tab.1.bottom" timestamp="1575544668818">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1166" height="278" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1575538715577" />
-    <state width="1166" height="278" key="GridCell.Tab.1.left" timestamp="1575538715577">
+    <state width="1784" height="278" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1575544668818" />
+    <state width="1784" height="278" key="GridCell.Tab.1.center" timestamp="1575544668818">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1166" height="278" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1575538715577" />
-    <state width="1166" height="278" key="GridCell.Tab.1.right" timestamp="1575538715577">
+    <state width="1784" height="278" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1575544668818" />
+    <state width="1784" height="278" key="GridCell.Tab.1.left" timestamp="1575544668818">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1166" height="278" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1575538715577" />
+    <state width="1784" height="278" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1575544668818" />
+    <state width="1784" height="278" key="GridCell.Tab.1.right" timestamp="1575544668818">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state width="1784" height="278" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1575544668818" />
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1575538830542">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1575538830542" />
     <state x="609" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1575533947628">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="609" y="363" key="com.intellij.ide.util.TipDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1575533947628" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../unit-tests-BIF-SWE1_Java-master/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/UEB4Test.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WebServer/MyThread.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="this" />

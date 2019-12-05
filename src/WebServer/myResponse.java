@@ -121,6 +121,7 @@ public class myResponse implements Response {
                 String line = "HTTP/1.1 " + this.status + "\r\n";
                 network.write(line.getBytes());
             }
+            // add content type as a header where?
             for(Map.Entry elem : this.responseMap.entrySet()) {
                 String line = elem.getKey() + ": " + elem.getValue() + "\r\n";
                 network.write(line.getBytes());
@@ -136,6 +137,7 @@ public class myResponse implements Response {
                     //throw new java.lang.Error("Setting a content type but no content is not allowed");
                 }
             }
+            network.flush();    // added while server configuration
             network.close();
         } catch (Exception ex) {
             //ex.printStackTrace();

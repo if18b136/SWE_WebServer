@@ -28,36 +28,41 @@ public class MyThread extends Thread {
 
     @Override
     public void run() {
-        try {
+        //try {
             myUrl urlObj = new myUrl();
             myRequest reqObj = new myRequest();
             myResponse resObj = new myResponse();
 
             reqObj.setRequest(this.is);
             reqObj.isValid();
-            //System.out.println("Request valid: " + reqObj.isValid() + ".");
-            //System.out.println("Request Method: " + reqObj.getMethod() + ".");
-            //System.out.println("Url from Request: " + reqObj.getUrl().getPath() + ".");
             urlObj = reqObj.getUrl();
 
+            String body = "<html><body><h1> Hello World </h1> Hello Blabla </body></html>";
+            resObj.setStatusCode(200);
+            resObj.addHeader("Content-Type", "text/html");
+            resObj.addHeader("Content-length", String.valueOf(body.length()));
+            resObj.addHeader("connection", "close");
+            resObj.setContentType("text/html");
+            resObj.setContent(body);
 
-            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(this.os));
+            resObj.send(os);
+
+            //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(this.os));
 
             // body und buffered output sollte in response objekt gespeichert und dann ausgegeben werden.
 
-            String body = "<html><body><h1> Hello World </h1> Hello Blabla </body></html>";
 
-            out.write("HTTP/1.1 200 OK\r\n");
-            out.write("Content-Type: text/html\r\n");
-            out.write(String.format("Content-Length: %d\r\n",body.length()));
-            //out.write("connection: close\r\n");
-            out.write("\r\n");
-            out.write(body);
-            out.flush();
+//            out.write("HTTP/1.1 200 OK\r\n");
+//            out.write("Content-Type: text/html\r\n");
+//            out.write(String.format("Content-Length: %d\r\n",body.length()));
+//            out.write("connection: close\r\n");
+//            out.write("\r\n");
+//            out.write(body);
+//            out.flush();
 
-        } catch (IOException ex) {
-            Logger.getLogger(MyRunnable.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        //} catch (IOException ex) {
+        //    Logger.getLogger(MyRunnable.class.getName()).log(Level.SEVERE, null, ex);
+        //}
     }
 
 }

@@ -18,12 +18,20 @@ public class myPluginManager implements PluginManager {
 
     @Override
     public Iterable<Plugin> getPlugins() {
-        return plugins;
+        return this::iterator;
     }
 
     @Override
     public void add(Plugin plugin) {
-
+        boolean exists = false;
+        for(Object pluginTemp : pluginList){
+            if(plugin == pluginTemp){
+                exists = true;
+            }
+        }
+        if(!exists){
+            this.pluginList.add(plugin);
+        }
     }
 
     @Override
@@ -33,6 +41,6 @@ public class myPluginManager implements PluginManager {
 
     @Override
     public void clear() {
-
+        this.pluginList = new ArrayList<Plugin>();
     }
 }
