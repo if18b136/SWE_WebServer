@@ -12,20 +12,17 @@ public class myPlugin implements Plugin {
     @Override
     public float canHandle(Request req) {
         try {
-            boolean valid_request = req.isValid();
-            if(valid_request) {
-                String request = req.getUrl().getPath();
-                File pluginFile = new File("D:\\#FH_Technikum\\Semester_3\\SWE\\MyWebServer\\src\\WebServer\\plugins.txt");
-                Scanner sc = new Scanner(pluginFile);
-                String plugin;
-                while (sc.hasNextLine()) {
-                    plugin = sc.nextLine();
-                    if (plugin.equals(request)) {
-                        return 1;
-                    }
-                    if(req.getUrl().getRawUrl().contains("test")) {
-                        return 1;
-                    }
+            String request = req.getUrl().getPath();
+            File pluginFile = new File("D:\\#FH_Technikum\\Semester_3\\SWE\\MyWebServer\\src\\WebServer\\plugins.txt");
+            Scanner sc = new Scanner(pluginFile);
+            String plugin;
+            while (sc.hasNextLine()) {
+                plugin = sc.nextLine();
+                if (plugin.equals(request)) {
+                    return 1;
+                }
+                if(req.getUrl().getRawUrl().contains("test")) {
+                    return 1;
                 }
             }
         } catch (FileNotFoundException fnf) {

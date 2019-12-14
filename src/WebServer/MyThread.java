@@ -1,5 +1,6 @@
 package WebServer;
 
+import BIF.SWE1.interfaces.Plugin;
 import javaThreads.MyRunnable;
 import java.io.*;
 import java.util.logging.Level;
@@ -29,23 +30,41 @@ public class MyThread extends Thread {
     @Override
     public void run() {
         //try {
-            myUrl urlObj = new myUrl();
+            myUrl urlObj;
             myRequest reqObj = new myRequest();
             myResponse resObj = new myResponse();
+            myPluginManager pmg = new myPluginManager();
 
             reqObj.setRequest(this.is);
-            reqObj.isValid();
-            urlObj = reqObj.getUrl();
 
-            String body = "<html><body><h1> Hello World </h1> Hello Blabla </body></html>";
-            resObj.setStatusCode(200);
-            resObj.addHeader("Content-Type", "text/html");
-            resObj.addHeader("Content-length", String.valueOf(body.length()));
-            resObj.addHeader("connection", "close");
-            resObj.setContentType("text/html");
-            resObj.setContent(body);
+            // check if request is valid
+            if(reqObj.isValid()) {
+                urlObj = reqObj.getUrl();
 
-            resObj.send(os);
+                // default webpage if path is empty
+                if(urlObj.getPath().equals("/")) { // eventuell in PluginManager verschieben und generalisieren zsm mit anderen paths
+                    String body = "<html><body><h1> Hello World </h1> Hello Blabla </body></html>";
+                    resObj.setStatusCode(200);
+                    resObj.addHeader("Content-Type", "text/html");
+                    resObj.addHeader("Content-length", String.valueOf(body.length()));
+                    resObj.addHeader("connection", "close");
+                    resObj.setContentType("text/html");
+                    resObj.setContent(body);
+
+                    resObj.send(os);
+                }
+                else {
+                    Plugin plugin = pmg.selectPlugin(reqObj);
+                    resObj = (myResponse) plugin.handle(reqObj);
+                    resObj.send(os);
+                }
+            }
+            else {
+                // error message to client that request is not valid
+            }
+
+
+
 
             //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(this.os));
 
