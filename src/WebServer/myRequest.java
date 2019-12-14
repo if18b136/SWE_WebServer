@@ -40,6 +40,10 @@ public class myRequest implements Request {
             try {
                 BufferedReader reader = new BufferedReader(new InputStreamReader(this.is));
                 String method = reader.readLine();
+                if(method == null) {    //After testing the html Bootstrap Version, some requests seemed to be completely empty
+                    this.isValid = false;
+                    return false;
+                }
                 String[] first_line = method.split(" ");
                 if(first_line.length == 3){
                     this.method = first_line[0].toUpperCase();
