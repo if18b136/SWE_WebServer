@@ -7,20 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-0775316d-17c4-418e-989a-a9b06e3732f4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-19099075-34ab-44a7-9894-c0472a6589aa.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-88075b95-b5e1-427c-8443-46baa380df16.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-9181fd4b-64b3-4c20-b2b6-f89691076e47.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f6a560ae-39a6-4832-bca3-d6ff821e1ff1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fe7ecc7f-59f2-4f78-bebe-18e9d117b599.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WebServer/tempPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WebServer/htmlConstructor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/MyThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/myPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/myPluginManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myPluginManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/plugins.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/plugins.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/tempPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/tempPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575546677453</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Included Plugin Constructor check in Webserver.">
+      <created>1576331529752</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1576331529752</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,68 +375,60 @@
     <MESSAGE value="UB4 startet." />
     <MESSAGE value="Request object now detects if there is content after the headers." />
     <MESSAGE value="Plugin Manager." />
-    <option name="LAST_COMMIT_MESSAGE" value="Plugin Manager." />
+    <MESSAGE value="Included Plugin Constructor check in Webserver." />
+    <option name="LAST_COMMIT_MESSAGE" value="Included Plugin Constructor check in Webserver." />
   </component>
   <component name="WindowStateProjectService">
     <state x="349" y="252" key="#com.intellij.ide.util.MemberChooser" timestamp="1576245576069">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="349" y="252" key="#com.intellij.ide.util.MemberChooser/0.0.1827.1080@0.0.1827.1080" timestamp="1576245576069" />
-    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1575546675365">
+    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1576331526742">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1575546675365" />
-    <state width="1784" height="229" key="GridCell.Tab.0.bottom" timestamp="1576251365682">
+    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1576331526742" />
+    <state width="1784" height="229" key="GridCell.Tab.0.bottom" timestamp="1576344687745">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="229" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576251365682" />
-    <state width="1784" height="229" key="GridCell.Tab.0.center" timestamp="1576251365682">
+    <state width="1784" height="229" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576344687745" />
+    <state width="1784" height="229" key="GridCell.Tab.0.center" timestamp="1576344687745">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="229" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576251365682" />
-    <state width="1784" height="229" key="GridCell.Tab.0.left" timestamp="1576251365682">
+    <state width="1784" height="229" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576344687745" />
+    <state width="1784" height="229" key="GridCell.Tab.0.left" timestamp="1576344687745">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="229" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576251365682" />
-    <state width="1784" height="229" key="GridCell.Tab.0.right" timestamp="1576251365682">
+    <state width="1784" height="229" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576344687745" />
+    <state width="1784" height="229" key="GridCell.Tab.0.right" timestamp="1576344687745">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="229" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576251365682" />
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1576251361308">
+    <state width="1784" height="229" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576344687745" />
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1576331551285">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576251361308" />
-    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1576251361308">
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576331551285" />
+    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1576331551285">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576251361308" />
-    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1576251361308">
+    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576331551285" />
+    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1576331551285">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576251361308" />
-    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1576251361308">
+    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576331551285" />
+    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1576331551285">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576251361308" />
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1575546682233">
+    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576331551285" />
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1576331534604">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1575546682233" />
-    <state x="640" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1576234631157">
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1576331534604" />
+    <state x="640" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1576339455720">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="640" y="363" key="com.intellij.ide.util.TipDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1576234631157" />
+    <state x="640" y="363" key="com.intellij.ide.util.TipDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1576339455720" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WebServer/myPluginManager.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="this" />

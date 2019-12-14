@@ -64,13 +64,13 @@ public class myPluginManager implements PluginManager {
             // add(plugin plugin)
             String pluginString = "WebServer." + plugin;
             Class pluginClass = Class.forName(pluginString);
-            //Plugin newPlugin = (Plugin) pluginClass.getDeclaredConstructor().newInstance();
+
             if(Class.forName(pluginString).newInstance() instanceof Plugin ) {
                 Plugin newPlugin = (Plugin) Class.forName(pluginString).newInstance();
                 this.add(newPlugin);
             }
-
-            // add(newPlugin);
+            //Plugin newPlugin = (Plugin) pluginClass.getDeclaredConstructor().newInstance();
+            //add(newPlugin);
         }
         catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
             e.printStackTrace();

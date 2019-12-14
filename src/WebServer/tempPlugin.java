@@ -17,14 +17,15 @@ public class tempPlugin implements Plugin {
 
     @Override
     public Response handle(Request req) {
+        htmlConstructor html = new htmlConstructor();
         myResponse res = new myResponse();
-        String body = "<html><body><h1> Hello World </h1> temperature Plugin </body></html>";
+        String htmlString = html.getTemp();
         res.setStatusCode(200);
         res.addHeader("Content-Type", "text/html");
-        res.addHeader("Content-length", String.valueOf(body.length()));
+        res.addHeader("Content-length", String.valueOf(htmlString.length()));
         res.addHeader("connection", "close");
         res.setContentType("text/html");
-        res.setContent(body);
+        res.setContent(htmlString);
         return res;
     }
 }

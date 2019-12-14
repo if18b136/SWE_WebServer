@@ -1,11 +1,7 @@
 package WebServer;
 
 import BIF.SWE1.interfaces.Plugin;
-import javaThreads.MyRunnable;
 import java.io.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 
 public class MyThread extends Thread {
     
@@ -34,6 +30,7 @@ public class MyThread extends Thread {
             myRequest reqObj = new myRequest();
             myResponse resObj = new myResponse();
             myPluginManager pmg = new myPluginManager();
+            htmlConstructor html = new htmlConstructor();
 
             reqObj.setRequest(this.is);
 
@@ -42,14 +39,15 @@ public class MyThread extends Thread {
                 urlObj = reqObj.getUrl();
 
                 // default webpage if path is empty
-                if(urlObj.getPath().equals("/")) { // eventuell in PluginManager verschieben und generalisieren zsm mit anderen paths
-                    String body = "<html><body><h1> Hello World </h1> Hello Blabla </body></html>";
+                if(urlObj.getPath().equals("/") || urlObj.getPath().equals("//") ) { // eventuell in PluginManager verschieben und generalisieren zsm mit anderen paths
+                    String htmlString = html.getHome();
+                    //String body = "<html><body><h1> Hello World </h1> Hello Blabla </body></html>";
                     resObj.setStatusCode(200);
                     resObj.addHeader("Content-Type", "text/html");
-                    resObj.addHeader("Content-length", String.valueOf(body.length()));
+                    resObj.addHeader("Content-length", String.valueOf(htmlString.length()));
                     resObj.addHeader("connection", "close");
                     resObj.setContentType("text/html");
-                    resObj.setContent(body);
+                    resObj.setContent(htmlString);
 
                     resObj.send(os);
                 }
@@ -62,26 +60,6 @@ public class MyThread extends Thread {
             else {
                 // error message to client that request is not valid
             }
-
-
-
-
-            //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(this.os));
-
-            // body und buffered output sollte in response objekt gespeichert und dann ausgegeben werden.
-
-
-//            out.write("HTTP/1.1 200 OK\r\n");
-//            out.write("Content-Type: text/html\r\n");
-//            out.write(String.format("Content-Length: %d\r\n",body.length()));
-//            out.write("connection: close\r\n");
-//            out.write("\r\n");
-//            out.write(body);
-//            out.flush();
-
-        //} catch (IOException ex) {
-        //    Logger.getLogger(MyRunnable.class.getName()).log(Level.SEVERE, null, ex);
-        //}
     }
 
 }

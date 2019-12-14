@@ -22,14 +22,15 @@ public class staticPlugin implements Plugin {
 
     @Override
     public Response handle(Request req) {
+        htmlConstructor html = new htmlConstructor();
         myResponse res = new myResponse();
-        String body = "<html><body><h1> Hello World </h1> static Plugin </body></html>";
+        String htmlString = html.getStatic();
         res.setStatusCode(200);
         res.addHeader("Content-Type", "text/html");
-        res.addHeader("Content-length", String.valueOf(body.length()));
+        res.addHeader("Content-length", String.valueOf(htmlString.length()));
         res.addHeader("connection", "close");
         res.setContentType("text/html");
-        res.setContent(body);
+        res.setContent(htmlString);
         return res;
     }
 }
