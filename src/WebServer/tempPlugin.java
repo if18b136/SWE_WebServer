@@ -7,12 +7,12 @@ import BIF.SWE1.interfaces.Response;
 public class tempPlugin implements Plugin {
     @Override
     public float canHandle(Request req) {
-        if(req.getUrl().getPath().contains("temp")) {
-            return (float) 0.9;
+        if(req.isValid()) {
+            if(req.getUrl().getPath().contains("temp")) {
+                return (float) 0.9;
+            }
         }
-        else {
-            return 0;
-        }
+        return 0;
     }
 
     @Override

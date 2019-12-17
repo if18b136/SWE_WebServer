@@ -17,7 +17,7 @@ public class myRequest implements Request {
 
     private InputStream is;
     private String method;
-    private boolean isValid = true;
+    private boolean isValid = false;
     private myUrl url = new myUrl();
     private Map<String, String> headers = new LinkedHashMap<>();
     private int contentLength;
@@ -33,6 +33,7 @@ public class myRequest implements Request {
     public InputStream getInputStream() {
         return this.is;
     }
+
 
     @Override
     public boolean isValid() {

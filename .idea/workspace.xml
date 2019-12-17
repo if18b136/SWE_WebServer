@@ -7,38 +7,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-03db6c4b-0020-49b9-b4b4-a1e39c3bf0ce.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-18b17fa5-652a-4b5d-ad17-1694ad370820.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-32b4cfa4-6190-48b4-98f3-b5de02370b4f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-35a5c989-e577-4471-9bad-4e40482d553b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3bd36ceb-dd5e-4eb1-85c3-a06724fe6d0e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-421b6c7d-471c-4951-bfc5-a072d37a5db7.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-42dc6eac-97d9-4533-983f-cbeb28228796.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-435e4673-35fa-44fc-92f7-09be507ebbbf.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-46ffca34-289c-4091-bdae-b37746765c00.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-484fc6fe-a652-4382-a9dc-e3e5c1bab02c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4e34f8e2-acc1-4524-9f60-a8e371fabb20.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-509f46c6-f883-45d0-91c4-97db51fdf363.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5417bec7-a9d7-46b2-b71f-84ca19b31c71.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5a183403-65f5-47f1-9eff-5d8dcb14f7f2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5b9326de-fc0d-40e8-bfc7-fe6c9ac75ec4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5d5d14b5-8800-454a-a424-457b56dd5316.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6b98e89c-8b9c-4cf0-b711-11e8e8a069ae.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-73b36a96-2b23-4345-a280-482a9d8c105b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-813bfd3f-c494-43dd-930f-48b89ed3ed1d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-879dcc1d-547a-42e5-9765-1a1579efd414.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-962e130a-a118-4101-b252-d07073176ba2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-a4caa95c-b814-49e0-978d-01fd9c74c95d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-d8d227f6-c050-451d-8864-9e539599f94b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e7c9f8fe-e636-443a-9b47-e178578e82fc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-ed880b4e-558f-4254-8370-173450fbbb7f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f1656bae-a3ee-4059-b4b3-9e34efa7d95f.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-fab3ac3f-4f7b-417f-b086-0d09110d41fc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-027840e5-33e8-4f73-924e-49ccc83ddb65.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-054ff831-9b55-4fa4-b126-d7268fbe08dc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-1263458e-287a-4b1b-a424-5292fdacf4a0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-19baa748-8c93-48fb-96b0-61534cb265eb.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-24cc9037-a40e-4d96-bd8a-7a8e0395e0ff.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2d6b2ed3-cc8d-43b9-86e1-73363d219f99.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-42fe3179-e843-4993-b343-93177acc08d5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4980a897-1265-4db2-be2f-f59923462ba5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4d03a5cf-18a3-4730-b86a-155d7e3e40a8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-51a2019d-f71d-420e-843c-6e48d90b389c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5906d16c-e58e-41e0-ab82-1850080b0327.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5ae329ef-0b92-4479-896d-e0548ee7f606.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-63e1a6b4-f4b0-47af-af5f-6e9ed5812565.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-67dbb60b-5f04-4856-a640-7d142e481240.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-68db1585-f533-496b-94f1-89a11c5929e0.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-82754cb7-55f3-4fa5-adc0-6f0aead3527d.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-accad4a2-6f2d-4a14-8345-2c8b661ff852.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bf1e1d5b-f4a2-49ec-a13d-be8ef4e0a8d4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c4a2a900-770c-400b-991b-005b6bbcd24b.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-caf0bbbc-39f7-4911-a955-ad03e64b9b97.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-cb2c9263-738f-4d76-8c8d-45a563d8fd36.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e5d73252-62fa-4e73-a03b-5fecd0119b50.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f0e73932-7df5-4bf7-9e02-660625716458.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f5187469-63ef-4ff6-9fbb-9869a12fabde.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/MyThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/htmlConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/htmlConstructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/myPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/myRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/tempPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/tempPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uebungen/UEB5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebungen/UEB5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,33 +90,7 @@
       <recent name="D:\#FH_Technikum\Semester_3\SWE\MyWebServer\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AllTests">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javaThreads.Main" />
-      <module name="MyWebServer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javaThreads.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ServerSocket" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="javasockets.ServerSocket" />
-      <module name="MyWebServer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="javaSockets.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.WebServer">
     <configuration name="WebServer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="WebServer.Startup" />
       <module name="MyWebServer" />
@@ -144,16 +118,8 @@
     </configuration>
     <list>
       <item itemvalue="Application.WebServer" />
-      <item itemvalue="Application.ServerSocket" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.AllTests" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ServerSocket" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -375,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576345457690</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Cleaned up testPlugin and UEB3">
+      <created>1576578306443</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1576578306443</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -418,68 +391,66 @@
     <MESSAGE value="Included Plugin Constructor check in Webserver." />
     <MESSAGE value="Added html Constructor with Bootstrap template." />
     <MESSAGE value="Some threads have empty requests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Some threads have empty requests." />
+    <MESSAGE value="Cleaned up testPlugin and UEB3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up testPlugin and UEB3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="367" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576580465001">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state x="367" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1576580465001" />
     <state x="349" y="252" key="#com.intellij.ide.util.MemberChooser" timestamp="1576245576069">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="349" y="252" key="#com.intellij.ide.util.MemberChooser/0.0.1827.1080@0.0.1827.1080" timestamp="1576245576069" />
-    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1576345455940">
+    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1576578304271">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1576345455940" />
-    <state width="1784" height="231" key="GridCell.Tab.0.bottom" timestamp="1576577493544">
+    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1576578304271" />
+    <state width="1784" height="231" key="GridCell.Tab.0.bottom" timestamp="1576581785314">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576577493544" />
-    <state width="1784" height="231" key="GridCell.Tab.0.center" timestamp="1576577493544">
+    <state width="1784" height="231" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576581785314" />
+    <state width="1784" height="231" key="GridCell.Tab.0.center" timestamp="1576581785314">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576577493544" />
-    <state width="1784" height="231" key="GridCell.Tab.0.left" timestamp="1576577493544">
+    <state width="1784" height="231" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576581785314" />
+    <state width="1784" height="231" key="GridCell.Tab.0.left" timestamp="1576581785314">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576577493544" />
-    <state width="1784" height="231" key="GridCell.Tab.0.right" timestamp="1576577493544">
+    <state width="1784" height="231" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576581785314" />
+    <state width="1784" height="231" key="GridCell.Tab.0.right" timestamp="1576581785314">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576577493544" />
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1576577130186">
+    <state width="1784" height="231" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576581785314" />
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1576580732172">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576577130186" />
-    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1576577130186">
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576580732172" />
+    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1576580732172">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576577130186" />
-    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1576577130186">
+    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576580732172" />
+    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1576580732172">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576577130186" />
-    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1576577130186">
+    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576580732172" />
+    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1576580732172">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576577130186" />
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1576345459113">
+    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576580732172" />
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1576578311083">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1576345459113" />
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1576578311083" />
     <state x="640" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1576575754716">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="640" y="363" key="com.intellij.ide.util.TipDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1576575754716" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../unit-tests-BIF-SWE1_Java-master/BIF-SWE1/Java/BIF-SWE1.UnitTests/src/BIF/SWE1/unittests/UEB3Test.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="112" y="254" key="run.anything.popup" timestamp="1576581525304">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state x="112" y="254" key="run.anything.popup/0.0.1827.1080@0.0.1827.1080" timestamp="1576581525304" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyWebServer$WebServer.ic" NAME="WebServer Coverage Results" MODIFIED="1576247462299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
