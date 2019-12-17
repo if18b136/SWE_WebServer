@@ -59,23 +59,26 @@ public class myPluginManager implements PluginManager {
     @Override
     public void add(String plugin) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
         try {
-            // check if class to plugin exists
-            // create instance of plugin
-            // add(plugin plugin)
-            String pluginString = "WebServer." + plugin;
-            Class pluginClass = Class.forName(pluginString);
+            String pluginString;
+
+            if(!plugin.contains(".")) {
+                pluginString = "WebServer." + plugin;
+            }
+            else {
+                pluginString = plugin;
+            }
 
             if(Class.forName(pluginString).newInstance() instanceof Plugin ) {
                 Plugin newPlugin = (Plugin) Class.forName(pluginString).newInstance();
                 this.add(newPlugin);
             }
+            //Class pluginClass = Class.forName(pluginString);
             //Plugin newPlugin = (Plugin) pluginClass.getDeclaredConstructor().newInstance();
             //add(newPlugin);
         }
         catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-
     }
 
     @Override

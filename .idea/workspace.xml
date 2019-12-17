@@ -7,38 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-027840e5-33e8-4f73-924e-49ccc83ddb65.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-054ff831-9b55-4fa4-b126-d7268fbe08dc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-1263458e-287a-4b1b-a424-5292fdacf4a0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-19baa748-8c93-48fb-96b0-61534cb265eb.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-24cc9037-a40e-4d96-bd8a-7a8e0395e0ff.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-2d6b2ed3-cc8d-43b9-86e1-73363d219f99.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-42fe3179-e843-4993-b343-93177acc08d5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4980a897-1265-4db2-be2f-f59923462ba5.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4d03a5cf-18a3-4730-b86a-155d7e3e40a8.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-51a2019d-f71d-420e-843c-6e48d90b389c.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5906d16c-e58e-41e0-ab82-1850080b0327.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-5ae329ef-0b92-4479-896d-e0548ee7f606.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-63e1a6b4-f4b0-47af-af5f-6e9ed5812565.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-67dbb60b-5f04-4856-a640-7d142e481240.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-68db1585-f533-496b-94f1-89a11c5929e0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-82754cb7-55f3-4fa5-adc0-6f0aead3527d.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-accad4a2-6f2d-4a14-8345-2c8b661ff852.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-bf1e1d5b-f4a2-49ec-a13d-be8ef4e0a8d4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c4a2a900-770c-400b-991b-005b6bbcd24b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-caf0bbbc-39f7-4911-a955-ad03e64b9b97.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-cb2c9263-738f-4d76-8c8d-45a563d8fd36.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e5d73252-62fa-4e73-a03b-5fecd0119b50.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f0e73932-7df5-4bf7-9e02-660625716458.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-f5187469-63ef-4ff6-9fbb-9869a12fabde.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-3210005c-3f46-4b93-a74f-1a390a326977.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4abc9e08-1efa-4d5a-883e-aa7d7af3593c.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-509094a4-8034-45d7-b3fa-329c53e4a77a.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-59da2f57-0598-4c37-be4f-0bc16e55e478.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-915456e1-b6a9-414e-bc96-f092e3a769c8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-94b5a1b4-7298-4191-85ee-93033bb7d589.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-9c112b70-8157-4f34-b867-b5bd45aa9df7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-c0c8908b-72c4-46eb-a010-ab917f427179.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e61ed1cc-0658-47b9-81c3-9ba886992b10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WebServer/naviPlugin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WebServer/toLowerPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/uebungen/UEB5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/htmlConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/htmlConstructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/myRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/tempPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/tempPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/uebungen/UEB5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/uebungen/UEB5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/myPluginManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myPluginManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/plugins.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/plugins.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +73,7 @@
       <recent name="D:\#FH_Technikum\Semester_3\SWE\MyWebServer\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.WebServer">
+  <component name="RunManager" selected="JUnit.AllTests">
     <configuration name="WebServer" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="WebServer.Startup" />
       <module name="MyWebServer" />
@@ -348,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576578306443</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="StaticPlugin now searches in Folder.">
+      <created>1576582036208</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1576582036208</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -367,7 +357,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added Parameter Dictionary - only one value per key possible." />
     <MESSAGE value="Parameter Count - bad Code, should be changed for final Project." />
     <MESSAGE value="Finished UEB1" />
     <MESSAGE value="Runnable Socket program" />
@@ -392,57 +381,62 @@
     <MESSAGE value="Added html Constructor with Bootstrap template." />
     <MESSAGE value="Some threads have empty requests." />
     <MESSAGE value="Cleaned up testPlugin and UEB3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up testPlugin and UEB3" />
+    <MESSAGE value="StaticPlugin now searches in Folder." />
+    <option name="LAST_COMMIT_MESSAGE" value="StaticPlugin now searches in Folder." />
   </component>
   <component name="WindowStateProjectService">
     <state x="367" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576580465001">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="367" y="194" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1576580465001" />
-    <state x="349" y="252" key="#com.intellij.ide.util.MemberChooser" timestamp="1576245576069">
+    <state x="349" y="252" key="#com.intellij.ide.util.MemberChooser" timestamp="1576582703476">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="349" y="252" key="#com.intellij.ide.util.MemberChooser/0.0.1827.1080@0.0.1827.1080" timestamp="1576245576069" />
-    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1576578304271">
+    <state x="349" y="252" key="#com.intellij.ide.util.MemberChooser/0.0.1827.1080@0.0.1827.1080" timestamp="1576582703476" />
+    <state x="591" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1576582659762">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1576578304271" />
-    <state width="1784" height="231" key="GridCell.Tab.0.bottom" timestamp="1576581785314">
+    <state x="591" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1576582659762" />
+    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1576582033849">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576581785314" />
-    <state width="1784" height="231" key="GridCell.Tab.0.center" timestamp="1576581785314">
+    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1576582033849" />
+    <state width="1784" height="305" key="GridCell.Tab.0.bottom" timestamp="1576583196817">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576581785314" />
-    <state width="1784" height="231" key="GridCell.Tab.0.left" timestamp="1576581785314">
+    <state width="1784" height="305" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576583196817" />
+    <state width="1784" height="305" key="GridCell.Tab.0.center" timestamp="1576583196817">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576581785314" />
-    <state width="1784" height="231" key="GridCell.Tab.0.right" timestamp="1576581785314">
+    <state width="1784" height="305" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576583196817" />
+    <state width="1784" height="305" key="GridCell.Tab.0.left" timestamp="1576583196817">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576581785314" />
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1576580732172">
+    <state width="1784" height="305" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576583196817" />
+    <state width="1784" height="305" key="GridCell.Tab.0.right" timestamp="1576583196817">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576580732172" />
-    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1576580732172">
+    <state width="1784" height="305" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576583196817" />
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1576583196630">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576580732172" />
-    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1576580732172">
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576583196630" />
+    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1576583196630">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576580732172" />
-    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1576580732172">
+    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576583196630" />
+    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1576583196630">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576580732172" />
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1576578311083">
+    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576583196630" />
+    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1576583196630">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1576578311083" />
+    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576583196630" />
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1576582038646">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1576582038646" />
     <state x="640" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1576575754716">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>

@@ -1,2 +1,4 @@
 tempPlugin
 staticPlugin
+naviPlugin
+toLowerPlugin
