@@ -51,7 +51,11 @@ public class MyThread extends Thread {
 
                     resObj.send(os);
                 }
+                else if(urlObj.getPath().equals("/favicon.ico")) {
+                    // What to do with favicon?
+                }
                 else {
+                    System.out.println("Request Path: " + urlObj.getPath());
                     Plugin plugin = pmg.selectPlugin(reqObj);
                     resObj = (myResponse) plugin.handle(reqObj);
                     resObj.send(os);

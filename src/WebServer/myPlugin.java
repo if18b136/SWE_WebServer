@@ -11,57 +11,31 @@ public class myPlugin implements Plugin {
 
     @Override
     public float canHandle(Request req) {
-        try {
-            String request = req.getUrl().getPath();
-            File pluginFile = new File("D:\\#FH_Technikum\\Semester_3\\SWE\\MyWebServer\\src\\WebServer\\plugins.txt");
-            Scanner sc = new Scanner(pluginFile);
-            String plugin;
-            while (sc.hasNextLine()) {
-                plugin = sc.nextLine();
-                if (plugin.equals(request)) {
-                    return 1;
-                }
-                if(req.getUrl().getRawUrl().contains("test")) {
-                    return 1;
-                }
+        if(req.isValid()) {
+            if(req.getUrl().getPath().equals("/") ) {
+                return (float) 1.0;
             }
-        } catch (FileNotFoundException fnf) {
-            fnf.printStackTrace();
+            else if(req.getUrl().getRawUrl().contains("test")) {
+                return (float) 0.1;
+            }
         }
         return (float) 0.0;
     }
 
     @Override
     public Response handle(Request req) {
-        myResponse res = new myResponse();
-        res.setStatusCode(200);
-        res.setServerHeader("foo");
-        res.setContentType("text/html");
-        res.setContent("<html><body><h1> Hello World </h1> Hello User </body></html>");
-        return res;
-    }
-/*
-    @Override
-    public Response handle(Request req) {
-        //select Plugin that will handle the request
-        selectPlugin(this.mgr,req);
-        myResponse res = new myResponse();
-        // get content into new response object
-        return res;
-    }
+        myResponse resObj = new myResponse();
+        htmlConstructor html = new htmlConstructor();
+        String htmlString = html.getHome();
 
-    private Plugin selectPlugin(PluginManager mgr, Request req) {
-        Plugin plugin = null;
-        float max = 0;
-        for (Plugin p : mgr.getPlugins()) {
-            float canHandle = p.canHandle(req);
-            if (canHandle > max) {
-                max = canHandle;
-                plugin = p;
-            }
-        }
-        return plugin;
+        resObj.setStatusCode(200);
+        resObj.addHeader("Content-Type", "text/html");
+        resObj.addHeader("Content-length", String.valueOf(htmlString.length()));
+        resObj.addHeader("connection", "close");
+        resObj.setContentType("text/html");
+        resObj.setContent(htmlString);
+
+        return resObj;
     }
- */
 
 }

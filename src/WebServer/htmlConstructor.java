@@ -13,7 +13,7 @@ public class htmlConstructor {
                     "<title>SWE1</title>",
                 "</head>",
                 "<body>",
-                    "<nav class=\"navbar navbar-expand-lg navbar-dark bg-dark\">",
+                    "<nav class=\"navbar navbar-dark bg-dark\">",
                         "<div class=\"container d-flex flex-column flex-md-row justify-content-between\">",
                             "<a class=\"nav-item nav-link\" href=\"/\">Home</a>",
                             "<a class=\"nav-item nav-link\" href=\"/temp\">Temperature</a>",
