@@ -5,10 +5,14 @@ import BIF.SWE1.interfaces.PluginManager;
 import BIF.SWE1.interfaces.Request;
 import WebServer.myPluginManager;
 import WebServer.myRequest;
+import WebServer.staticPlugin;
 
 import java.io.InputStream;
 
 public class UEB5 {
+
+	private staticPlugin staticPlugin = new staticPlugin();
+
 
 	public void helloWorld() {
 
@@ -28,14 +32,17 @@ public class UEB5 {
 	}
 
 	public Plugin getStaticFilePlugin() {
-		return null;
+		return  this.staticPlugin;
 	}
 
 	public void setStatiFileFolder(String s) {
-
+		this.staticPlugin.setStaticDir("D:\\#FH_Technikum\\Semester_3\\SWE\\MyWebServer\\deploy\\" + s + "\\");
 	}
 
 	public String getStaticFileUrl(String s) {
-		return null;
+
+		String dirURL = this.staticPlugin.getStaticDir();
+
+		return dirURL + s;
 	}
 }

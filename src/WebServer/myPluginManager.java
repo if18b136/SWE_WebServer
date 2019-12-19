@@ -78,6 +78,7 @@ public class myPluginManager implements PluginManager {
         }
         catch (InstantiationException | IllegalAccessException | ClassNotFoundException e) {
             e.printStackTrace();
+            throw new ClassNotFoundException(); // unit test does not recognise the previously thrown error
         }
     }
 
