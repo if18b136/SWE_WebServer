@@ -20,7 +20,7 @@ public class Startup {
 
     private static void listen(){
         try {
-            java.net.ServerSocket listener = new java.net.ServerSocket(8080);
+            java.net.ServerSocket listener = new java.net.ServerSocket(8081);
             List<MyThread> threads = new LinkedList<MyThread>();
             int thread_num = 1;
 

@@ -56,7 +56,7 @@ public class staticPlugin implements Plugin {
             String path = req.getUrl().getRawUrl();
             boolean fileExists = new File (path).isFile();
 
-            if(fileExists) {
+            if(fileExists) {    // einfach Inhalt anzeigen lassen - MIME Type richtig setzen
                 res.setStatusCode(200);
                 res.addHeader("Content-Type", "text/html");
                 res.addHeader("Content-length", String.valueOf(htmlString.length()));
