@@ -21,8 +21,13 @@ public class Startup {
     private static void listen(){
         try {
             java.net.ServerSocket listener = new java.net.ServerSocket(8081);
-            List<MyThread> threads = new LinkedList<MyThread>();
+            List<Thread> threads = new LinkedList<Thread>();
             int thread_num = 1;
+
+            tempThread temp = new tempThread("Thread " + thread_num);
+            temp.start();
+            threads.add(temp);
+            thread_num++;
 
             while(true){
                 Socket s = listener.accept();
@@ -30,6 +35,8 @@ public class Startup {
 
                 InputStream is = s.getInputStream();
                 OutputStream os = s.getOutputStream();
+
+
 
                 MyThread t = new MyThread("Thread " + thread_num, is, os);
                 t.start();

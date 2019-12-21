@@ -65,5 +65,4 @@ public class MyThread extends Thread {
                 // error message to client that request is not valid
             }
     }
-
 }
