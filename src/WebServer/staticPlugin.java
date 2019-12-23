@@ -84,6 +84,8 @@ public class staticPlugin implements Plugin {
                     case "ico":
                         contentType = "image/vnd.microsoft.icon";
                         break;
+                    case "font":
+                        contentType = "font/woff2";
                 }
                 try{
 

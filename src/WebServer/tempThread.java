@@ -29,7 +29,7 @@ public class tempThread extends Thread {
             int data = rd.getInt(1);
             System.out.println("Thread status: " + threadName + " Temperature database entries: " + data);
 
-            while(data <= 11000) { // 10.950 would be 3 entries per day for the last 10 years
+            while(data < 11000) { // 10.950 would be 3 entries per day for the last 10 years
 
                 // create new timestamp - will be completely random!
                 long offset = Timestamp.valueOf("2010-01-01 00:00:00").getTime();

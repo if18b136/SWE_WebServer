@@ -86,7 +86,11 @@ public class htmlConstructor {
                         "<tbody>"
             );
 
-    private static String tempContent;
+    private static String tempContent = "";
+    private static String tempXML = "";
+
+    private static String XMLDeclaration = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><statistics>";
+    private static String XMLEnd = "</statistics>";
 
     private static String tempEnd = String.join("","",
                         "</tbody>",
@@ -124,10 +128,25 @@ public class htmlConstructor {
         );
     }
 
+    public void appendXML(int id, double temp, Timestamp ts) {
+        String idString = String.valueOf(id);
+        String tempString = String.valueOf(temp);
+        String tsString = String.valueOf(ts);
+        String date = tsString.split(" ")[0];
+        tempXML = String.join("", tempXML,
+                "<date>", date,
+                "   <timestamp>", tsString,
+                "       <id>", idString, "</id>",
+                "       <temperature>", tempString, "</temperature>",
+                "   </timestamp>",
+                "</date>"
+                );
+    }
+
     public String getTemp() {
         return String.join("",begin,tempBegin,tempContent,tempEnd,end);
     }
-
+    public String getXML() { return String.join("",XMLDeclaration,tempXML,XMLEnd); }
     public String getStatic() {
         return String.join("",begin,stat,end);
     }
