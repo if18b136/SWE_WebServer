@@ -37,9 +37,9 @@ public class tempThread extends Thread {
                 long diff = end - offset + 1;
                 Timestamp randomTS = new Timestamp(offset + (long)(Math.random() * diff));
 
-                double min = -10.0;
-                double max = 35.0;
-                double randomTemp = Math.round((min + Math.random() * (max - min)) * 10) / 10;
+                double min = -10.0; // min Temperature
+                double max = 35.0;  // max Temperature
+                double randomTemp = Math.round((min + Math.random() * (max - min)) * 10) / 10.0;
 
                 data++; //next id
 

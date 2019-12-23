@@ -6,13 +6,129 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WebServer/tempThread.java" afterDir="false" />
+    <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="Temperature table without cut or search.">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Maximilian.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/License.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/Useful_Resources.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/addons/datatables-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/addons/datatables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/addons/directives.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/addons/flag.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/addons/jquery.zmd.hierarchical-display.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/addons/rating.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/mdb.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/mdb.lite.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/mdb.lite.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/mdb.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/modules/animations-extended.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Thin.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Thin.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/font/roboto/Roboto-Thin.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/mdb-favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/overlays/01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/overlays/02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/overlays/03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/overlays/04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/overlays/05.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/overlays/06.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/overlays/07.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/overlays/08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/overlays/09.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/svg/arrow_left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/img/svg/arrow_right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/addons/datatables-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/addons/datatables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/addons/directives.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/addons/flag.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/addons/imagesloaded.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/addons/jquery.zmd.hierarchical-display.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/addons/masonry.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/addons/rating.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/mdb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/mdb.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/modules/animations-extended.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/modules/forms-free.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/modules/scrolling-navbar.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/modules/treeview.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/modules/wow.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/js/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/_custom-styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/_custom-variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/addons/_datatables-select.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/addons/_datatables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/addons/_directives.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/addons/_flag.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/addons/_hierarchical-display.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/addons/_rating.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/core/_colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/core/_global.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/core/_helpers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/core/_masks.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/core/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/core/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/core/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/core/_waves.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/core/bootstrap/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/core/bootstrap/_rfs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/core/bootstrap/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_animations-basic.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_badges.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_carousels.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_depreciated.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_dropdowns.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_footers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_input-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_loader.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_modals.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_msc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_navbars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_steppers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/_treeview.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/modules/animations-extended/_module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/free/modules/animations-extended/animations-extended.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/mdb-free.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deploy/MDB/scss/mdb-lite-free.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/MyThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebServer/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/htmlConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/htmlConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/myRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/tempPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/tempPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/tempThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/tempThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,14 +170,14 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\#FH_Technikum\Semester_3\SWE\MyWebServer\src\javaThreads" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\#FH_Technikum\Semester_3\SWE\MyWebServer\src" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="WebServer" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\#FH_Technikum\Semester_3\SWE\MyWebServer\src" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\#FH_Technikum\Semester_3\SWE\MyWebServer\src\javaThreads" />
     </key>
   </component>
   <component name="RunManager" selected="Application.WebServer">
@@ -350,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576855213246</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Separate temperature Thread that creates random Data">
+      <created>1576944395887</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1576944395887</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -369,7 +492,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="socket bsp eingefuegt" />
     <MESSAGE value="Webserver initialisiert" />
     <MESSAGE value="Listen um myUrl erweitert" />
     <MESSAGE value="UE2 Teil Url fertig" />
@@ -394,7 +516,8 @@
     <MESSAGE value="UEB5 until add Plugin" />
     <MESSAGE value="Finished UEB5" />
     <MESSAGE value="DB connection successfull." />
-    <option name="LAST_COMMIT_MESSAGE" value="DB connection successfull." />
+    <MESSAGE value="Separate temperature Thread that creates random Data" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separate temperature Thread that creates random Data" />
   </component>
   <component name="WindowStateProjectService">
     <state x="48" y="201" key="#Project_Structure" timestamp="1576853827322">
@@ -413,62 +536,66 @@
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="591" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1576582659762" />
-    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1576855202898">
+    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1576952796301">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1576855202898" />
+    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1576952796301" />
     <state x="162" y="284" key="FileChooserDialogImpl" timestamp="1576853816542">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="162" y="284" key="FileChooserDialogImpl/0.0.1827.1080@0.0.1827.1080" timestamp="1576853816542" />
-    <state width="1784" height="231" key="GridCell.Tab.0.bottom" timestamp="1576944321800">
+    <state width="1784" height="320" key="GridCell.Tab.0.bottom" timestamp="1577059291621">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576944321800" />
-    <state width="1784" height="231" key="GridCell.Tab.0.center" timestamp="1576944321800">
+    <state width="1784" height="320" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1577059291621" />
+    <state width="1784" height="320" key="GridCell.Tab.0.center" timestamp="1577059291621">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576944321800" />
-    <state width="1784" height="231" key="GridCell.Tab.0.left" timestamp="1576944321800">
+    <state width="1784" height="320" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1577059291621" />
+    <state width="1784" height="320" key="GridCell.Tab.0.left" timestamp="1577059291621">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576944321800" />
-    <state width="1784" height="231" key="GridCell.Tab.0.right" timestamp="1576944321800">
+    <state width="1784" height="320" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1577059291621" />
+    <state width="1784" height="320" key="GridCell.Tab.0.right" timestamp="1577059291621">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="231" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576944321800" />
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1576771824062">
+    <state width="1784" height="320" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1577059291621" />
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1577054834784">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1576771824062" />
-    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1576771824062">
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1577054834784" />
+    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1577054834784">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1576771824062" />
-    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1576771824062">
+    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1577054834784" />
+    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1577054834784">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1576771824062" />
-    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1576771824062">
+    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1577054834784" />
+    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1577054834784">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1576771824062" />
+    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1577054834784" />
     <state x="0" y="182" key="SettingsEditor" timestamp="1576853537868">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="0" y="182" key="SettingsEditor/0.0.1827.1080@0.0.1827.1080" timestamp="1576853537868" />
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1576855217625">
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1576944399591">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1576855217625" />
-    <state x="640" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1576937476315">
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1576944399591" />
+    <state x="640" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1577054962150">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="640" y="363" key="com.intellij.ide.util.TipDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1576937476315" />
+    <state x="640" y="363" key="com.intellij.ide.util.TipDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1577054962150" />
     <state x="160" y="436" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576853676171">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="160" y="436" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1827.1080@0.0.1827.1080" timestamp="1576853676171" />
+    <state x="722" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576949320799">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state x="722" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1827.1080@0.0.1827.1080" timestamp="1576949320799" />
     <state x="112" y="254" key="run.anything.popup" timestamp="1576581525304">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>

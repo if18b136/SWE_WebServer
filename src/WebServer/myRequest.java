@@ -45,6 +45,7 @@ public class myRequest implements Request {
                     this.isValid = false;
                     return false;
                 }
+                System.out.println(method);
                 String[] first_line = method.split(" ");
                 if(first_line.length == 3){
                     this.method = first_line[0].toUpperCase();
@@ -89,6 +90,7 @@ public class myRequest implements Request {
                                  this.contentBytes = this.contentString.getBytes();
                              }
                          }
+                        System.out.println();
                         return true;
                     }
                 }

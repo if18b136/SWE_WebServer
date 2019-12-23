@@ -19,23 +19,25 @@ public class tempPlugin implements Plugin {
     @Override
     public Response handle(Request req) {
         try (Connection db = DriverManager.getConnection(
-                "jdbc:mysql://127.0.0.1:3306/test", "root", "")) {
-
+                "jdbc:mysql://127.0.0.1:3306/temperature", "root", "")) {
+            htmlConstructor html = new htmlConstructor();
             if (db != null) {
                 System.out.println("Connected to the database!");
+
             } else {
                 System.out.println("Failed to make connection!");
+                // throw exception
             }
 
-            PreparedStatement cmd = db.prepareStatement("SELECT * FROM test");
+            PreparedStatement cmd = db.prepareStatement("SELECT * FROM temperature");
             ResultSet rd = cmd.executeQuery();
 
             while(rd.next())
             {
-                int test1 = rd.getInt(1);
-                String test2 = rd.getString(2);
-
-                System.out.println(test1 + " : " + test2);
+                int id = rd.getInt(1);
+                double temperature = rd.getDouble(2);
+                Timestamp timestamp = rd.getTimestamp(3);
+                html.appendTable(id,temperature,timestamp);
             }
 
             rd.close();
@@ -47,14 +49,15 @@ public class tempPlugin implements Plugin {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        System.out.println("Working Directory = " +
+                System.getProperty("user.dir"));
         htmlConstructor html = new htmlConstructor();
         myResponse res = new myResponse();
         String htmlString = html.getTemp();
         res.setStatusCode(200);
         res.addHeader("Content-Type", "text/html");
         res.addHeader("Content-length", String.valueOf(htmlString.length()));
-        res.addHeader("connection", "close");
+        res.addHeader("connection", "keep-alive");
         res.setContentType("text/html");
         res.setContent(htmlString);
         return res;
