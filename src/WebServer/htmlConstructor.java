@@ -34,8 +34,8 @@ public class htmlConstructor {
                             "<a class=\"nav-item nav-link\" href=\"/\">Home</a>",
                             "<a class=\"nav-item nav-link\" href=\"/temp\">Temperature</a>",
                             "<a class=\"nav-item nav-link\" href=\"/static\">Static</a>",
-                            "<a class=\"nav-item nav-link\" href=\"/lower\">ToLower</a>",
-                            "<a class=\"nav-item nav-link\" href=\"/Navi\">Navigation</a>",
+                            "<a class=\"nav-item nav-link\" href=\"toLower\">ToLower</a>",
+                            "<a class=\"nav-item nav-link\" href=\"/navi\">Navigation</a>",
                         "</div>",
                     "</nav>"
             );
@@ -111,6 +111,20 @@ public class htmlConstructor {
                 "</div>"
              );
 
+    private static String toLower = String.join("","",
+                "<div class=\"container\">",
+                    "<h1>toLower Plugin</h1>",
+                    "<form class=\"text-center\" style=\"color: #757575;\" action=\"/toLower\" method=\"post\" enctype=\"plain/text\">",
+                        "<div class=\"md-form amber-textarea active-amber-textarea\">",
+                            "<textarea id=\"form19\" class=\"md-textarea form-control\" name=\"toLowerText\" rows=\"3\"></textarea>",
+                            "<label for=\"form19\">Write your toLower Text Here</label>",
+                        "</div>",
+                    "<button class=\"btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect\" type=\"submit\">Send</button>",
+                    "</form>"
+            );
+
+    private static String lowerText = "";
+
     public String getHome() {
         return String.join("", begin,home,end);
     }
@@ -143,6 +157,10 @@ public class htmlConstructor {
                 );
     }
 
+    public void setLowerText(String s) {
+        lowerText = String.join("", "<div class=\"conatiner\">", s, "</div>" );
+    }
+
     public String getTemp() {
         return String.join("",begin,tempBegin,tempContent,tempEnd,end);
     }
@@ -150,4 +168,5 @@ public class htmlConstructor {
     public String getStatic() {
         return String.join("",begin,stat,end);
     }
+    public String getToLower() { return String.join("",begin,toLower, lowerText, end); }
 }

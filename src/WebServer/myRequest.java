@@ -5,6 +5,8 @@ import BIF.SWE1.interfaces.Url;
 
 import java.io.*;
 
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -57,6 +59,10 @@ public class myRequest implements Request {
                     }
                     else {
                         this.isValid = true;
+                        boolean post = false;
+                        if(this.method.equals("POST")) {
+                            post = true;
+                        }
                         String line;
                         while((line = reader.readLine()) != null && !line.equals("")) {     // set Header-Value Map
                             String[] keyValue = line.split(":",2);
@@ -76,18 +82,33 @@ public class myRequest implements Request {
 
                         // after header is finished, we can read the content (we could also set content-length here manually)
                          if(reader.ready()){    // if no content will be following we want to skip the next part
-                             if((line = reader.readLine()) != null && !line.equals("")) {
-                                 this.contentStream = new ByteArrayInputStream(line.getBytes());
 
-                                 ByteArrayOutputStream result = new ByteArrayOutputStream();
-                                 byte[] buffer = new byte[1024];
-                                 int length;
-                                 while ((length = this.contentStream.read(buffer)) != -1) {
-                                     result.write(buffer, 0, length);
+                             // POST requests don't work with readline
+                             if(post) {
+                                 if (headers.containsKey("content-length")) {
+                                     int length = Integer.parseInt(headers.get("content-length").trim());
+                                     char[] buffer = new char[length * 16];
+                                     reader.read(buffer, 0, length);
+                                     this.contentString = new String(buffer);
+                                     this.contentString = this.contentString.replace("%0D%0A", "<br>"); //replace CRLF with br for html view
+                                     this.contentString = URLDecoder.decode(this.contentString, StandardCharsets.UTF_8);    //decode special characters
                                  }
-                                 this.contentString =  result.toString("UTF-8");
+                             }
+                             else {
+                                 if((line = reader.readLine()) != null && !line.equals("")) {
+                                     this.contentStream = new ByteArrayInputStream(line.getBytes());
 
-                                 this.contentBytes = this.contentString.getBytes();
+                                     ByteArrayOutputStream result = new ByteArrayOutputStream();
+                                     byte[] buffer = new byte[1024];
+                                     int length;
+
+                                     while ((length = this.contentStream.read(buffer)) != -1) {
+                                         result.write(buffer, 0, length);
+                                     }
+
+                                     this.contentString =  result.toString("UTF-8");
+                                     this.contentBytes = this.contentString.getBytes();
+                                 }
                              }
                          }
                         System.out.println();
