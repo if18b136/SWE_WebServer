@@ -8,8 +8,12 @@ import java.util.Map;
 
 public class myUrl implements Url {
 
+    /**
+     * <h3>MyUrl class</h3>
+     * Class to extract all necessary data from the request URL
+     */
     public myUrl(){
-        //Code goes here
+        //Code goes here but there is not really anything that has to be declared at runtime
     }
 
     private String rawUrl;
@@ -20,18 +24,32 @@ public class myUrl implements Url {
     private String fileName;
     private String extension;
 
+    /**
+     * Setter method for setting the raw, unedited URL String
+     * @param path  the URL string (from the client request)
+     */
     public void setUrl(String path){
         this.rawUrl = path;
     }
+
+    //should be unused throughout the whole project - same function as get raw URL
     public String getUrl() {
         return this.rawUrl;
     }
 
+    /**
+     * Getter method for public access to the raw URL of a URL object
+     * @return the raw URL string of a URL object
+     */
     @Override
     public String getRawUrl() {
         return this.rawUrl;
     }
 
+    /**
+     * Cuts the raw URL string into right form to get the path of the URL
+     * @return the created path string of the raw URL
+     */
     @Override
     public String getPath() {
         if(this.rawUrl == null) {
@@ -47,11 +65,17 @@ public class myUrl implements Url {
         }
         else {
             this.path = split[1].split("\\?")[0];
-            this.path = split[1].split("#")[0]; // noch nicht in Webserver getestet
+            this.path = split[1].split("#")[0];
             return this.path;
         }
     }
 
+    /**
+     * Split the raw URL into parameter and add them into the params hash map if the URL contains any
+     * @exception UnsupportedEncodingException on incorrect encoding of key/value
+     * @exception IllegalStateException on unexpected encoding
+     * @return the hash map params in which all key value pairs of every parameter are stored
+     */
     @Override
     public Map<String, String> getParameter() {
         try {
@@ -93,6 +117,12 @@ public class myUrl implements Url {
         }
     }
 
+    /**
+     * Split the raw URL into parameter and count the number
+     * @exception UnsupportedEncodingException on incorrect encoding of key/value
+     * @exception IllegalStateException on unexpected encoding
+     * @return the number of parameter in the URL as integer
+     */
     @Override
     public int getParameterCount() {
         try {
@@ -126,6 +156,10 @@ public class myUrl implements Url {
         }
     }
 
+    /**
+     * Check if the URL and path string have already been set - if so, split path into segments
+     * @return the split path segments as string array
+     */
     @Override
     public String[] getSegments() {
         if(this.rawUrl == null) {
@@ -138,6 +172,10 @@ public class myUrl implements Url {
         return this.segments;
     }
 
+    /**
+     * The last segment represents the file name
+     * @return "" if there is no url or the last segment of the segments array
+     */
     @Override
     public String getFileName() {
         if(this.rawUrl == null || this.path == null) {
@@ -148,6 +186,11 @@ public class myUrl implements Url {
         return this.fileName;
     }
 
+    /**
+     * Get the file type of the requested file.
+     * Split the file name into two parts and extract the file type
+     * @return the file type as string
+     */
     @Override
     public String getExtension() {
         if(this.fileName == null) {
@@ -157,6 +200,10 @@ public class myUrl implements Url {
         return this.extension;
     }
 
+    /**
+     * Get the URL fragment, split the raw URL
+     * @return the fragment of the URL as string
+     */
     @Override
     public String getFragment() {
         if(this.rawUrl == null) {

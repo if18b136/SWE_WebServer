@@ -5,10 +5,13 @@ import BIF.SWE1.interfaces.Response;
 import java.io.*;
 import java.util.Map;
 import java.util.LinkedHashMap;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class myResponse implements Response {
+
+    /**
+     * <h3>Response Class</h3>
+     * Class to create and send response objects
+     */
 
     private Map<String, String> responseMap = new LinkedHashMap<>();
     private Integer statusCode; //integer because int is set to 0 standard
@@ -18,11 +21,20 @@ public class myResponse implements Response {
     private String content;
     private OutputStream network;
 
+    /**
+     * Get the hash map with the response key value pairs
+     * @return the response headers as hash map
+     */
     @Override
     public Map<String, String> getHeaders() {
         return this.responseMap;
     }
 
+    /**
+     * Get the length of the content
+     * @exception UnsupportedEncodingException on error with getBytes encoding
+     * @return content length as integer
+     */
     @Override
     public int getContentLength() {
         try {
@@ -33,11 +45,19 @@ public class myResponse implements Response {
         }
     }
 
+    /**
+     * Get the MIME type of the response content
+     * @return the content type as string
+     */
     @Override
     public String getContentType() {
         return this.contentType;
     }
 
+    /**
+     * Sets the content type of the response.
+     * @param contentType  the
+     */
     @Override
     public void setContentType(String contentType) {
         this.contentType = contentType;
