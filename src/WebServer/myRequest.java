@@ -12,12 +12,12 @@ import java.util.Map;
 //static import for header value for content length parse to int - recommended by intellij
 import static java.lang.Integer.parseInt;
 
+/**
+ * <h3>Request Class</h3>
+ * Class to create and handle request objects
+ */
 public class myRequest implements Request {
 
-    /**
-     * <h3>Request Class</h3>
-     * Class to create and handle request objects
-     */
     private InputStream is;
     private String method;
     private boolean isValid = false;

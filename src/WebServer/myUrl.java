@@ -6,14 +6,14 @@ import java.net.URLDecoder;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * <h3>Url class</h3>
+ * Class to extract all necessary data from the request URL
+ */
 public class myUrl implements Url {
 
-    /**
-     * <h3>MyUrl class</h3>
-     * Class to extract all necessary data from the request URL
-     */
     public myUrl(){
-        //Code goes here but there is not really anything that has to be declared at runtime
+        // Code goes here but there is not really anything that has to be declared at runtime
     }
 
     private String rawUrl;

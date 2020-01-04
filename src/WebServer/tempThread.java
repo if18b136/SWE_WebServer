@@ -2,11 +2,14 @@ package WebServer;
 
 import java.sql.*;
 
+/**
+ * <h3>Temperature Thread</h3>
+ *  * Thread for Temperature Calculation and entries
+ */
+
 public class tempThread extends Thread {
 
     /**
-     * <h3>Temperature Thread</h3>
-     *  * Thread for Temperature Calculation and entries
      * @param threadName    private String number ot the temperature thread
      */
     private String threadName;

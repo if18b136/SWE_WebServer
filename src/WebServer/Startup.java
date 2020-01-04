@@ -11,7 +11,7 @@ import java.util.logging.Logger;
  * <h1>SWE Semesterproject MyWebserver</h1>
  *
  * @author  Maximilian Rotter, if18b136
- * @version 0.7.2
+ * @version 0.8.3
  * @since   16.09.2019
  *
  */

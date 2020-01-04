@@ -8,11 +8,13 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
 
+/**
+ * <h3>Static Plugin</h3>
+ * Plugin for static file handling, for example stylesheets, scripts, etc.
+ */
 public class staticPlugin implements Plugin {
 
     /**
-     * <h3>Static Plugin</h3>
-     * Plugin for static file handling, for example stylesheets, scripts, etc.
      * @param staticDir    private String of the directory where static files can be found
      */
     private static String staticDir;
@@ -76,6 +78,10 @@ public class staticPlugin implements Plugin {
         myResponse res = new myResponse();
 
         if(req.getUrl().getPath().equals("/")) {
+            // needed for plugin reload
+            myPluginManager pmg = new myPluginManager();
+            pmg.loadPlugins();
+
             String htmlString = html.getHome();
             res.setStatusCode(200);
             res.addHeader("Content-Type", "text/html");
@@ -88,9 +94,9 @@ public class staticPlugin implements Plugin {
             //System.out.println("Working Directory = " + System.getProperty("user.dir"));
             String path = req.getUrl().getRawUrl().replace("/","\\");
             path = String.join("",System.getProperty("user.dir"),path);
-            System.out.println("Checking for: " + path);
+            //System.out.println("Checking for: " + path);
             boolean fileExists = new File (path).isFile();
-            System.out.println("File found: " + fileExists);
+            System.out.println(path + " - File found: " + fileExists);
 
             if(fileExists) {
                 String contentType = "", folder = "";
@@ -171,7 +177,7 @@ public class staticPlugin implements Plugin {
 
                         res.setStatusCode(200);
                         float test = data.length();
-                        System.out.println(test + " Content Length (String)");
+                        //System.out.println(test + " Content Length (String)");
                         res.addHeader("Content-length", String.valueOf(data.length()));
                         res.addHeader("connection", "keep-alive");
                         res.addHeader("Content-Type", contentType);

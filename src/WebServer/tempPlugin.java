@@ -5,7 +5,18 @@ import BIF.SWE1.interfaces.Request;
 import BIF.SWE1.interfaces.Response;
 import java.sql.*;
 
+/**
+ * <h3>Temperature Plugin Class</h3>
+ * This plugin handles temperature requests
+ */
 public class tempPlugin implements Plugin {
+
+
+    /**
+     * Look for temperature keywords from the request path
+     * @param req the client request
+     * @return a float if the request can be handled by the plugin or 0 if not
+     */
     @Override
     public float canHandle(Request req) {
         if(req.isValid()) {
@@ -19,6 +30,15 @@ public class tempPlugin implements Plugin {
         return 0;
     }
 
+    /**
+     * Create a connection to the sql db
+     * Check if an XML file is requested (getTemperature)
+     * if yes, determine the date from the url and make a prepared statement for the db
+     * send the results to the html constructor for XML creation and finally send a server response with the XML
+     * if no, all temperature entries in the db will be displayed as a table
+     * @param req the client request
+     * @return the correct server response or a 500 internal error if any exception happened
+     */
     @Override
     public Response handle(Request req) {
         try (Connection db = DriverManager.getConnection(
@@ -28,8 +48,7 @@ public class tempPlugin implements Plugin {
                 System.out.println("Connected to the database!");
 
             } else {
-                System.out.println("Failed to make connection!");
-                // throw exception
+                throw new SQLException("Failed to make connection!");
             }
 
             if(req.getUrl().getPath().contains("GetTemperature")) {
@@ -113,10 +132,9 @@ public class tempPlugin implements Plugin {
             System.out.println("No Entries in database found.");
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            // Can not be reached if the temperature Plugin requests are handled correctly
-            System.out.println("Temperature plugin could not handle request correctly.");
         }
-        return null;
+        myResponse res = new myResponse();
+        res.setStatusCode(500);
+        return res;
     }
 }

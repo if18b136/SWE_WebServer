@@ -4,16 +4,17 @@ import BIF.SWE1.interfaces.Plugin;
 import java.io.*;
 import java.util.InputMismatchException;
 
+/**
+ * <h3>Client Connection Threads</h3>
+ * All client requests are threaded and then handled accordingly
+ */
 public class MyThread extends Thread {
 
     /**
-     * <h3>Client Connection Threads</h3>
-     * All client requests are threaded and then handled accordingly
-     * @param threadName        Private String of thread name
+     * @param threadName Private String of thread name
      * @param is                Private input stream for client request
      * @param os                Private output stream for server response
      */
-
     private String threadName;
     private InputStream is;
     private OutputStream os;
@@ -70,18 +71,20 @@ public class MyThread extends Thread {
 
                     resObj.send(os);
                 } else if (urlObj.getPath().equals("/favicon.ico")) {
-                    // What to do with favicon?
+                    // Ignore favicon
+                    System.out.println("favicon");
                 } else {
-                    System.out.println("Request Path: " + urlObj.getPath());
+                    //System.out.println("Request Path: " + urlObj.getPath());
                     Plugin plugin = pmg.selectPlugin(reqObj);
                     resObj = (myResponse) plugin.handle(reqObj);
                     resObj.send(os);
                 }
             } else {
-                throw new InputMismatchException(this.threadName + ": The send request does not seem to be valid");
+                throw new InputMismatchException(this.threadName + ": The send request does not seem to be valid. Url: " + reqObj.getUrl().getRawUrl());
             }
         }catch(InputMismatchException ime) {
             ime.printStackTrace();
+            return;
         }
     }
 }

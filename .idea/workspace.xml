@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Package Webserver" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="MyWebServer:jar" />
@@ -7,20 +11,93 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-4ba16ec5-b754-48cd-b361-839b0541ae1b.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-6eb68b9f-0c05-440f-9f12-b0d42194b62e.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/tmp-static-files/foo-e23f5761-df8a-43d6-a8d6-a0c647d86ef8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/MyThread.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/Startup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/htmlConstructor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/myPlugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/myPluginManager.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/myRequest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/myResponse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/myUrl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/naviPlugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/staticPlugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/tempPlugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/tempThread.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/WebServer/toLowerPlugin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/allclasses.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/constant-values.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/deprecated-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip/dist/jszip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/jquery/jszip/dist/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/member-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/package-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/type-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JAVADOC/type-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/Startup.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyWebServer/WebServer/myUrl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/MyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/MyThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/Startup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/Startup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/htmlConstructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/htmlConstructor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/myPluginManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myPluginManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/myRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/myResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/myUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/myUrl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/tempPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/tempPlugin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WebServer/tempThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/tempThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/toLowerPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/toLowerPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +114,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="Package Webserver" pattern="src[MyWebServer]:WebServer.*" />
   </component>
   <component name="ProjectId" id="1RKjF2IO5We3SDzxEdwhkfazJ3B" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -393,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577461355910</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="JavaDoc">
+      <created>1577815337679</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1577815337679</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -412,7 +499,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Webserver threading implementiert." />
     <MESSAGE value="Client Request now completely handled." />
     <MESSAGE value="UB3 send() now with String.getBytes()." />
     <MESSAGE value="UB3 send() now with content, first line and server header." />
@@ -437,7 +523,8 @@
     <MESSAGE value="Gettemperature return XML - multiple requests are joined." />
     <MESSAGE value="IMG response works, img cant be displayed correctly" />
     <MESSAGE value="toLower Plugin finished." />
-    <option name="LAST_COMMIT_MESSAGE" value="toLower Plugin finished." />
+    <MESSAGE value="JavaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="JavaDoc" />
   </component>
   <component name="WindowStateProjectService">
     <state x="48" y="201" key="#Project_Structure" timestamp="1576853827322">
@@ -456,58 +543,62 @@
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="591" y="465" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1576582659762" />
-    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1577461354145">
+    <state x="504" y="263" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1578158549687">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1577461354145" />
-    <state x="162" y="284" key="FileChooserDialogImpl" timestamp="1576853816542">
+    <state x="504" y="263" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1827.1080@0.0.1827.1080" timestamp="1578158549687" />
+    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1577815333647">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="162" y="284" key="FileChooserDialogImpl/0.0.1827.1080@0.0.1827.1080" timestamp="1576853816542" />
-    <state width="1784" height="320" key="GridCell.Tab.0.bottom" timestamp="1577790574129">
+    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1577815333647" />
+    <state x="162" y="284" key="FileChooserDialogImpl" timestamp="1578157385899">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="320" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1577790574129" />
-    <state width="1784" height="320" key="GridCell.Tab.0.center" timestamp="1577790574129">
+    <state x="162" y="284" key="FileChooserDialogImpl/0.0.1827.1080@0.0.1827.1080" timestamp="1578157385899" />
+    <state width="1784" height="320" key="GridCell.Tab.0.bottom" timestamp="1578158872102">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="320" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1577790574129" />
-    <state width="1784" height="320" key="GridCell.Tab.0.left" timestamp="1577790574129">
+    <state width="1784" height="320" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1578158872102" />
+    <state width="1784" height="320" key="GridCell.Tab.0.center" timestamp="1578158872102">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="320" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1577790574129" />
-    <state width="1784" height="320" key="GridCell.Tab.0.right" timestamp="1577790574129">
+    <state width="1784" height="320" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1578158872102" />
+    <state width="1784" height="320" key="GridCell.Tab.0.left" timestamp="1578158872102">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="320" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1577790574129" />
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1577462728713">
+    <state width="1784" height="320" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1578158872102" />
+    <state width="1784" height="320" key="GridCell.Tab.0.right" timestamp="1578158872102">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1577462728713" />
-    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1577462728713">
+    <state width="1784" height="320" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1578158872102" />
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1578155053289">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1577462728713" />
-    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1577462728713">
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1578155053289" />
+    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1578155053289">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1577462728713" />
-    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1577462728713">
+    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1578155053289" />
+    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1578155053274">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1577462728713" />
+    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1578155053274" />
+    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1578155053289">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1578155053289" />
     <state x="0" y="182" key="SettingsEditor" timestamp="1576853537868">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="0" y="182" key="SettingsEditor/0.0.1827.1080@0.0.1827.1080" timestamp="1576853537868" />
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1577461358996">
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1577815339884">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1577461358996" />
-    <state x="640" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1577628336888">
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1577815339884" />
+    <state x="640" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1578147171492">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="640" y="363" key="com.intellij.ide.util.TipDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1577628336888" />
+    <state x="640" y="363" key="com.intellij.ide.util.TipDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1578147171492" />
     <state x="160" y="436" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576853676171">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
@@ -516,14 +607,33 @@
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="722" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1827.1080@0.0.1827.1080" timestamp="1576949320799" />
-    <state x="112" y="254" key="run.anything.popup" timestamp="1577443941850">
+    <state x="610" y="138" width="607" height="804" key="find.popup" timestamp="1578151652577">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="112" y="254" key="run.anything.popup/0.0.1827.1080@0.0.1827.1080" timestamp="1577443941850" />
-    <state x="570" y="193" width="672" height="676" key="search.everywhere.popup" timestamp="1577443979167">
+    <state x="610" y="138" width="607" height="804" key="find.popup/0.0.1827.1080@0.0.1827.1080" timestamp="1578151652577" />
+    <state x="112" y="254" key="run.anything.popup" timestamp="1578150455139">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="570" y="193" width="672" height="676" key="search.everywhere.popup/0.0.1827.1080@0.0.1827.1080" timestamp="1577443979167" />
+    <state x="112" y="254" key="run.anything.popup/0.0.1827.1080@0.0.1827.1080" timestamp="1578150455139" />
+    <state x="349" y="199" key="scopes" timestamp="1578158546782">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state x="349" y="199" key="scopes/0.0.1827.1080@0.0.1827.1080" timestamp="1578158546782" />
+    <state x="570" y="193" width="672" height="676" key="search.everywhere.popup" timestamp="1578155614523">
+      <screen x="0" y="0" width="1827" height="1080" />
+    </state>
+    <state x="570" y="193" width="672" height="676" key="search.everywhere.popup/0.0.1827.1080@0.0.1827.1080" timestamp="1578155614523" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/WebServer/MyThread.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyWebServer$WebServer.ic" NAME="WebServer Coverage Results" MODIFIED="1576247462299" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

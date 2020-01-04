@@ -2,8 +2,13 @@ package WebServer;
 
 import java.sql.Timestamp;
 
+/**
+ * <h3>HTML Constructor Class</h3>
+ * Class to create html pages with the correct content
+ */
 public class htmlConstructor {
     private String body;
+
 
     private static String begin = String.join(" ","",
             "<!doctype html>",
@@ -26,19 +31,36 @@ public class htmlConstructor {
                     //"<link rel=\"stylesheet\" href=\"deploy/MDB/css/style.css\">",
                     //<!-- MDBootstrap Datatables  -->
                     "<link href=\"deploy/MDB/css/addons/datatables.min.css\" rel=\"stylesheet\">",
-
                 "</head>",
                 "<body>",
                     "<nav class=\"navbar navbar-dark bg-dark\">",
                         "<div class=\"container d-flex flex-column flex-md-row justify-content-between\">",
                             "<a class=\"nav-item nav-link\" href=\"/\">Home</a>",
                             "<a class=\"nav-item nav-link\" href=\"/temp\">Temperature</a>",
-                            "<a class=\"nav-item nav-link\" href=\"/static\">Static</a>",
+//                            "<a class=\"nav-item nav-link\" href=\"/static\">Static</a>",
                             "<a class=\"nav-item nav-link\" href=\"toLower\">ToLower</a>",
                             "<a class=\"nav-item nav-link\" href=\"/navi\">Navigation</a>",
                         "</div>",
                     "</nav>"
             );
+
+//    private static String navBegin = String.join("", "",
+//            "<body>",
+//                "<nav class=\"navbar navbar-dark bg-dark\">",
+//                    "<div class=\"container d-flex flex-column flex-md-row justify-content-between\">",
+//                        "<a class=\"nav-item nav-link\" href=\"/\">Home</a>",
+//                        "<a class=\"nav-item nav-link\" href=\"/temp\">Temperature</a>",
+//                        "<a class=\"nav-item nav-link\" href=\"/static\">Static</a>",
+//                        "<a class=\"nav-item nav-link\" href=\"toLower\">ToLower</a>",
+//                        "<a class=\"nav-item nav-link\" href=\"/navi\">Navigation</a>"
+//            );
+//
+//    private static String navAdd = "";
+//
+//    private static String navEnd = String.join("", "",
+//                    "</div>",
+//                "</nav>"
+//            );
 
     private static String end = String.join(" ","",
                 //"<script src=\"https://code.jquery.com/jquery-3.4.1.slim.min.js\" integrity=\"sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n\" crossorigin=\"anonymous\"></script>",
@@ -125,10 +147,26 @@ public class htmlConstructor {
 
     private static String lowerText = "";
 
+//    public void addNav(String nav) {
+//        navAdd = String.join("", navAdd,
+//                    "<a class=\"nav-item nav-link\" href=\"/",nav,"\">",nav,"</a>"
+//                );
+//    }
+
+    /**
+     * Construct the standard home page
+     * @return a joined string that represents the homepage
+     */
     public String getHome() {
         return String.join("", begin,home,end);
     }
 
+    /**
+     * Expand the temperature table that will be displayed for the temperature plugin html page
+     * @param id the primary key of the db entry (not needed)
+     * @param temp the temperature
+     * @param ts the timestamp
+     */
     public void appendTable(int id, double temp, Timestamp ts) {
         String idString = String.valueOf(id);
         String tempString = String.valueOf(temp);
@@ -142,6 +180,12 @@ public class htmlConstructor {
         );
     }
 
+    /**
+     * Append db entries to the xml string that will be shown when a certain day is requested
+     * @param id the primary key of the db entry (not needed)
+     * @param temp the temperature
+     * @param ts the timestamp
+     */
     public void appendXML(int id, double temp, Timestamp ts) {
         String idString = String.valueOf(id);
         String tempString = String.valueOf(temp);
@@ -157,16 +201,44 @@ public class htmlConstructor {
                 );
     }
 
+    /**
+     * Set the text that will be displayed in the toLower plugin under the text input field
+     * @param s the lowercase text
+     */
     public void setLowerText(String s) {
         lowerText = String.join("", "<div class=\"conatiner\">", s, "</div>" );
     }
 
+    /**
+     * Create the html page for the temperature plugin
+     * @return the html page as string
+     */
     public String getTemp() {
         return String.join("",begin,tempBegin,tempContent,tempEnd,end);
     }
+
+    /**
+     * Create the xml file as a string - used for getting all timestamps and data of a certain date in the temperature plugin
+     * @return the XML for a certain day as a string
+     */
     public String getXML() { return String.join("",XMLDeclaration,tempXML,XMLEnd); }
+
+    /**
+     * Return the html page for the static file plugin
+     * @return the html page for the static file plugin
+     */
     public String getStatic() {
         return String.join("",begin,stat,end);
     }
-    public String getToLower() { return String.join("",begin,toLower, lowerText, end); }
+
+    /**
+     * Create the html page for the to Lower plugin
+     * reset the input in order to wipe the content if site gets reloaded
+     * @return the html page for the to lower plugin as a string
+     */
+    public String getToLower() {
+        String toLowerString = String.join("",begin,toLower, lowerText, end);
+        lowerText = "";
+        return  toLowerString;
+    }
 }
