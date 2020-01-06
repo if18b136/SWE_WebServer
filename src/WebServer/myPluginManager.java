@@ -113,6 +113,9 @@ public class myPluginManager implements PluginManager {
             Plugin newPlugin = (Plugin) Class.forName(pluginString).newInstance();
             this.add(newPlugin);
         }
+        else {
+            throw new ClassNotFoundException("No class with name " + pluginString + " found.");
+        }
     }
 
     /**

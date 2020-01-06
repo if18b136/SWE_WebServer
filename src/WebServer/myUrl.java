@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * <h3>Url class</h3>
+ * <h3>;Url class</h3>
  * Class to extract all necessary data from the request URL
  */
 public class myUrl implements Url {
@@ -60,12 +60,24 @@ public class myUrl implements Url {
         if(split.length != 3) {
 
             this.path = this.rawUrl.split("\\?")[0];
-            this.path = this.path.split("#")[0];
+            if(this.path.split("#")[0].equals("D:\\")) {
+                String[] dir = this.path.split("#");
+                this.path = String.join("#",dir[0],dir[1]);
+            }
+            else {
+                this.path = this.path.split("#")[0];
+            }
             return this.path;
         }
         else {
             this.path = split[1].split("\\?")[0];
-            this.path = split[1].split("#")[0];
+            if(split[1].split("#")[0].equals("D:\\")) {
+                String[] dir = split[1].split("#");
+                this.path = String.join("#",dir[0],dir[1]);
+            }
+            else {
+                this.path = split[1].split("#")[0];
+            }
             return this.path;
         }
     }

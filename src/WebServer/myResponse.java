@@ -45,6 +45,14 @@ public class myResponse implements Response {
     }
 
     /**
+     * Get the written content of a response - implemented for unit testing of plugin handling
+     * @return the content that will be sent as response to the client
+     */
+    public String getContent() {
+        return this.content;
+    }
+
+    /**
      * Get the MIME type of the response content
      * @return the content type as string
      */

@@ -64,37 +64,36 @@ public class tempPlugin implements Plugin {
                         gotDate = true;
                     }
                 }
-
                 date = date.substring(1);  //the lazy way to get the first - away
                 PreparedStatement cmd = db.prepareStatement("SELECT * FROM temperature WHERE DATE(timestamp) = ?");
                 cmd.setString(1, date);
-
                 ResultSet rd = cmd.executeQuery();
 
+                boolean notEmpty = false;   //if no entries are found we have to respond with http 404
                 while(rd.next()) {
                     int id = rd.getInt(1);
                     double temperature = rd.getDouble(2);
                     Timestamp timestamp = rd.getTimestamp(3);
                     // enter the stats into the xml file
-
+                    notEmpty = true;
                     html.appendXML(id,temperature,timestamp);
                 }
-
                 rd.close();
                 cmd.close();
-
                 myResponse res = new myResponse();
 
-                //String htmlString = html.getml();
-                String XML = html.getXML();
-
-                res.setStatusCode(200);
-                res.addHeader("Content-Type", "text/xml");
-                res.addHeader("Content-length", String.valueOf(XML.length()));
-                res.addHeader("connection", "close");
-                res.setContentType("text/xml");
-                res.setContent(XML);
-
+                if(notEmpty) {
+                    String XML = html.getXML();
+                    res.setStatusCode(200);
+                    res.addHeader("Content-Type", "text/xml");
+                    res.addHeader("Content-length", String.valueOf(XML.length()));
+                    res.addHeader("connection", "close");
+                    res.setContentType("text/xml");
+                    res.setContent(XML);
+                } else {
+                    res.setStatusCode(404);
+                    res.addHeader("connection", "close");
+                }
                 return res;
             }
             else {

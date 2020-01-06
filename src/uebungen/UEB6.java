@@ -10,10 +10,10 @@ import java.time.LocalDate;
 
 public class UEB6 {
 
-	private WebServer.staticPlugin staticPlugin = new staticPlugin();
-	private WebServer.naviPlugin naviPlugin = new naviPlugin();
-	private WebServer.tempPlugin tempPlugin = new tempPlugin();
-	private WebServer.toLowerPlugin toLowerPlugin = new toLowerPlugin();
+	private staticPlugin staticPlugin = new staticPlugin();
+	private naviPlugin naviPlugin = new naviPlugin();
+	private tempPlugin tempPlugin = new tempPlugin();
+	private toLowerPlugin toLowerPlugin = new toLowerPlugin();
 
 
 	public void helloWorld() {

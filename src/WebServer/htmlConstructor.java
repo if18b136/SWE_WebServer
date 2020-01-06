@@ -7,8 +7,6 @@ import java.sql.Timestamp;
  * Class to create html pages with the correct content
  */
 public class htmlConstructor {
-    private String body;
-
 
     private static String begin = String.join(" ","",
             "<!doctype html>",
@@ -206,7 +204,7 @@ public class htmlConstructor {
      * @param s the lowercase text
      */
     public void setLowerText(String s) {
-        lowerText = String.join("", "<div class=\"conatiner\">", s, "</div>" );
+        lowerText = String.join("", "<div class=\"container\">",s, "</div>" );
     }
 
     /**
@@ -237,7 +235,7 @@ public class htmlConstructor {
      * @return the html page for the to lower plugin as a string
      */
     public String getToLower() {
-        String toLowerString = String.join("",begin,toLower, lowerText, end);
+        String toLowerString = String.join("",begin,toLower,lowerText,end);
         lowerText = "";
         return  toLowerString;
     }

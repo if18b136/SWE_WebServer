@@ -7,6 +7,7 @@ import BIF.SWE1.interfaces.Response;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
+import java.util.Base64;
 
 /**
  * <h3>Static Plugin</h3>
@@ -89,18 +90,26 @@ public class staticPlugin implements Plugin {
             res.addHeader("connection", "keep-alive");
             res.setContentType("text/html");
             res.setContent(htmlString);
+            return res;
         }
         else if(req.getUrl().getPath().contains("/deploy/MDB") || req.getUrl().getPath().contains(staticDir)) {
-            //System.out.println("Working Directory = " + System.getProperty("user.dir"));
-            String path = req.getUrl().getRawUrl().replace("/","\\");
-            path = String.join("",System.getProperty("user.dir"),path);
-            //System.out.println("Checking for: " + path);
+            System.out.println("Working Directory = " + System.getProperty("user.dir"));
+            String path = req.getUrl().getPath().replace("/","\\");
+            char abs = path.charAt(1);
+            if(abs != ':') {
+                if(path.split("\\\\")[1].equals("deploy")) {
+                    path = String.join("",System.getProperty("user.dir"),path.substring(7));
+                } else {
+                    path = String.join("",System.getProperty("user.dir"),path);
+                }
+            }
+            System.out.println("Checking for: " + path);
             boolean fileExists = new File (path).isFile();
             System.out.println(path + " - File found: " + fileExists);
 
             if(fileExists) {
                 String contentType = "", folder = "";
-                String nameSplit = req.getUrl().getPath().split("/")[3];    //this only works if the static directory has the expected layout - watch out when changing
+                String nameSplit = req.getUrl().getPath().replace("/","\\").split("\\\\")[3];    //this only works if the static directory has the expected layout - watch out when changing
 
                 switch (nameSplit.toLowerCase()) {
                     case "js":
@@ -153,15 +162,18 @@ public class staticPlugin implements Plugin {
                         BufferedImage img = ImageIO.read(new File(path));
                         ByteArrayOutputStream bos = new ByteArrayOutputStream();
                         ImageIO.write(img, folder, bos);
+                        bos.flush();
                         byte[] data = bos.toByteArray();
+                        String base64String = Base64.getEncoder().encodeToString(data);
 
-                        float test = data.length;
+                        float test = base64String.length();
                         System.out.println(test + " Content Length (byte array)");
                         res.setStatusCode(200);
                         res.addHeader("connection", "keep-alive");
                         res.addHeader("Content-Type", contentType);
                         res.setContentType(contentType);
-                        res.setContent(data);
+                        res.setContent(base64String);
+                        return res;
                     }
                     else {
 
@@ -172,7 +184,7 @@ public class staticPlugin implements Plugin {
                         while((line = input.readLine()) != null) {
                             data = String.join("\r\n", data, line);
                         }
-
+                        data = data.substring(2);
                         input.close();
 
                         res.setStatusCode(200);
@@ -183,6 +195,7 @@ public class staticPlugin implements Plugin {
                         res.addHeader("Content-Type", contentType);
                         res.setContentType(contentType);
                         res.setContent(data);
+                        return res;
                     }
                 }
                 catch(IOException ioe) {
@@ -192,9 +205,11 @@ public class staticPlugin implements Plugin {
             else{
                 res.setStatusCode(404);
                 res.addHeader("connection", "close");
+                return res;
             }
         }
-
+        res.setStatusCode(404);
+        res.addHeader("connection", "close");
         return res;
 
         // Obsolete - staticFile handling was included in the MDB check above
