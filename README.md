@@ -34,7 +34,7 @@ Während der gesamten Umsetzung musste laufend das Verständnis über Java und H
 
 <h2>Worauf bin ich stolz</h2>
 
-Auf meine Gesamtleistung und konseuente Arbeitshaltung, die sich in der Gesamtanzahl der Arbeitsstunden recht deutlich widerspiegelt.
+Auf meine Gesamtleistung und konsequente Arbeitshaltung, die sich in der Gesamtanzahl der Arbeitsstunden recht deutlich widerspiegelt.
 Weiters auf die komplette Einbindung von Material Design Bootstrap als Front End Tool über Java.
 
 
