@@ -97,7 +97,7 @@ public class staticPlugin implements Plugin {
             String path = req.getUrl().getPath().replace("/","\\");
             char abs = path.charAt(1);
             if(abs != ':') {
-                if(path.split("\\\\")[1].equals("deploy")) {
+                if(path.split("\\\\")[1].equals("deploy") && !path.split("\\\\")[2].equals("MDB")) {
                     path = String.join("",System.getProperty("user.dir"),path.substring(7));
                 } else {
                     path = String.join("",System.getProperty("user.dir"),path);

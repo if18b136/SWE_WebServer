@@ -11,45 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ae27146-7a26-4799-8f2b-556e70b4fbb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/MyThread.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/MyThread.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/Startup.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/Startup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/htmlConstructor.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/htmlConstructor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/myPlugin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/myPlugin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/myPluginManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/myPluginManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/myRequest.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/myRequest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/myResponse.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/myResponse.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/myUrl.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/myUrl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/naviPlugin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/naviPlugin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/staticPlugin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/staticPlugin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/tempPlugin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/tempPlugin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/tempThread.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/tempThread.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/WebServer/toLowerPlugin.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/WebServer/toLowerPlugin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/allclasses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/member-search-index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/member-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/package-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JAVADOC/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/JAVADOC/type-search-index.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/MyWebServer_jar/MyWebServer.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebServer/staticPlugin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -446,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578314398987</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Javadoc rebuild.">
+      <created>1578314613999</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1578314613999</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -465,7 +436,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="UB3 send() now with content, first line and server header." />
     <MESSAGE value="UB3 response should fail sending no content." />
     <MESSAGE value="UB3 send fail throws extra Exception in catch." />
     <MESSAGE value="UB3 TestPlugin finished." />
@@ -490,7 +460,8 @@
     <MESSAGE value="JavaDoc" />
     <MESSAGE value="JavaDoc fertig." />
     <MESSAGE value="Finished own Unit Tests, cleanup UEBUnit Tests." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished own Unit Tests, cleanup UEBUnit Tests." />
+    <MESSAGE value="Javadoc rebuild." />
+    <option name="LAST_COMMIT_MESSAGE" value="Javadoc rebuild." />
   </component>
   <component name="WindowStateProjectService">
     <state x="48" y="201" key="#Project_Structure" timestamp="1576853827322">
@@ -513,70 +484,70 @@
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="504" y="263" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1827.1080@0.0.1827.1080" timestamp="1578314438560" />
-    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1578314394909">
+    <state x="235" y="137" key="CommitChangelistDialog2" timestamp="1578314609998">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1578314394909" />
+    <state x="235" y="137" key="CommitChangelistDialog2/0.0.1827.1080@0.0.1827.1080" timestamp="1578314609998" />
     <state x="162" y="284" key="FileChooserDialogImpl" timestamp="1578157385899">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="162" y="284" key="FileChooserDialogImpl/0.0.1827.1080@0.0.1827.1080" timestamp="1578157385899" />
-    <state width="1784" height="305" key="GridCell.Tab.0.bottom" timestamp="1578314438763">
+    <state width="1784" height="320" key="GridCell.Tab.0.bottom" timestamp="1578387351477">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1578314438763" />
-    <state width="1784" height="305" key="GridCell.Tab.0.center" timestamp="1578314438763">
+    <state width="1784" height="320" key="GridCell.Tab.0.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1578387351477" />
+    <state width="1784" height="320" key="GridCell.Tab.0.center" timestamp="1578387351477">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1578314438763" />
-    <state width="1784" height="305" key="GridCell.Tab.0.left" timestamp="1578314438763">
+    <state width="1784" height="320" key="GridCell.Tab.0.center/0.0.1827.1080@0.0.1827.1080" timestamp="1578387351477" />
+    <state width="1784" height="320" key="GridCell.Tab.0.left" timestamp="1578387351477">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1578314438763" />
-    <state width="1784" height="305" key="GridCell.Tab.0.right" timestamp="1578314438763">
+    <state width="1784" height="320" key="GridCell.Tab.0.left/0.0.1827.1080@0.0.1827.1080" timestamp="1578387351477" />
+    <state width="1784" height="320" key="GridCell.Tab.0.right" timestamp="1578387351477">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1578314438763" />
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1578314438763">
+    <state width="1784" height="320" key="GridCell.Tab.0.right/0.0.1827.1080@0.0.1827.1080" timestamp="1578387351477" />
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom" timestamp="1578317704171">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1578314438763" />
-    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1578314438763">
+    <state width="1784" height="305" key="GridCell.Tab.1.bottom/0.0.1827.1080@0.0.1827.1080" timestamp="1578317704171" />
+    <state width="1784" height="305" key="GridCell.Tab.1.center" timestamp="1578317704171">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1578314438763" />
-    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1578314438763">
+    <state width="1784" height="305" key="GridCell.Tab.1.center/0.0.1827.1080@0.0.1827.1080" timestamp="1578317704171" />
+    <state width="1784" height="305" key="GridCell.Tab.1.left" timestamp="1578317704171">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1578314438763" />
-    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1578314438763">
+    <state width="1784" height="305" key="GridCell.Tab.1.left/0.0.1827.1080@0.0.1827.1080" timestamp="1578317704171" />
+    <state width="1784" height="305" key="GridCell.Tab.1.right" timestamp="1578317704171">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1578314438763" />
+    <state width="1784" height="305" key="GridCell.Tab.1.right/0.0.1827.1080@0.0.1827.1080" timestamp="1578317704171" />
     <state x="0" y="182" key="SettingsEditor" timestamp="1576853537868">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="0" y="182" key="SettingsEditor/0.0.1827.1080@0.0.1827.1080" timestamp="1576853537868" />
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1578314401320">
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2" timestamp="1578314616248">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1578314401320" />
+    <state x="198" y="276" key="Vcs.Push.Dialog.v2/0.0.1827.1080@0.0.1827.1080" timestamp="1578314616248" />
     <state width="1723" height="548" key="XDebugger.FullValuePopup" timestamp="1578235267590">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state width="1723" height="548" key="XDebugger.FullValuePopup/0.0.1827.1080@0.0.1827.1080" timestamp="1578235267590" />
-    <state x="640" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1578228921528">
+    <state x="640" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1578387050204">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="640" y="363" key="com.intellij.ide.util.TipDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1578228921528" />
+    <state x="640" y="363" key="com.intellij.ide.util.TipDialog/0.0.1827.1080@0.0.1827.1080" timestamp="1578387050204" />
     <state x="160" y="436" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1576853676171">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
     <state x="160" y="436" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1827.1080@0.0.1827.1080" timestamp="1576853676171" />
-    <state x="722" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576949320799">
+    <state x="722" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1578317638330">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
-    <state x="722" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1827.1080@0.0.1827.1080" timestamp="1576949320799" />
+    <state x="722" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1827.1080@0.0.1827.1080" timestamp="1578317638330" />
     <state x="610" y="138" width="607" height="804" key="find.popup" timestamp="1578151652577">
       <screen x="0" y="0" width="1827" height="1080" />
     </state>
