@@ -7,6 +7,9 @@ import BIF.SWE1.interfaces.Response;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Base64;
 
 /**
@@ -93,17 +96,17 @@ public class staticPlugin implements Plugin {
             return res;
         }
         else if(req.getUrl().getPath().contains("/deploy/MDB") || req.getUrl().getPath().contains(staticDir)) {
-            System.out.println("Working Directory = " + System.getProperty("user.dir"));
+            //System.out.println("Working Directory = " + System.getProperty("user.dir"));
             String path = req.getUrl().getPath().replace("/","\\");
             char abs = path.charAt(1);
             if(abs != ':') {
-                if(path.split("\\\\")[1].equals("deploy") && !path.split("\\\\")[2].equals("MDB")) {
-                    path = String.join("",System.getProperty("user.dir"),path.substring(7));
+                if(path.split("\\\\")[1].equals("deploy") /*&& !path.split("\\\\")[2].equals("MDB")*/) {
+                    path = String.join("",System.getProperty("user.dir"),path/*.substring(7)*/);
                 } else {
                     path = String.join("",System.getProperty("user.dir"),path);
                 }
             }
-            System.out.println("Checking for: " + path);
+            //System.out.println("Checking for: " + path);
             boolean fileExists = new File (path).isFile();
             System.out.println(path + " - File found: " + fileExists);
 
@@ -158,22 +161,15 @@ public class staticPlugin implements Plugin {
                 }
                 try{
                     if(contentType.contains("image")) {
-                        /* TODO: 2019-12-27 img cant be displayed correctly */
-                        BufferedImage img = ImageIO.read(new File(path));
-                        ByteArrayOutputStream bos = new ByteArrayOutputStream();
-                        ImageIO.write(img, folder, bos);
-                        bos.flush();
-                        byte[] data = bos.toByteArray();
-                        String base64String = Base64.getEncoder().encodeToString(data);
+                        byte[] content = new byte[0];
+                        Path imgPath = Paths.get(path);
+                        content = Files.readAllBytes(imgPath);
 
-                        float test = base64String.length();
-                        System.out.println(test + " Content Length (byte array)");
                         res.setStatusCode(200);
                         res.addHeader("connection", "keep-alive");
                         res.addHeader("Content-Type", contentType);
                         res.setContentType(contentType);
-                        res.setContent(base64String);
-                        return res;
+                        res.setContent(content);
                     }
                     else {
 
@@ -195,8 +191,8 @@ public class staticPlugin implements Plugin {
                         res.addHeader("Content-Type", contentType);
                         res.setContentType(contentType);
                         res.setContent(data);
-                        return res;
                     }
+                    return res;
                 }
                 catch(IOException ioe) {
                     ioe.printStackTrace();

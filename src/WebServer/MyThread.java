@@ -60,12 +60,13 @@ public class MyThread extends Thread {
                 urlObj = reqObj.getUrl();
 
                 // default webpage if path is empty
-                if (urlObj.getPath().equals("/") || urlObj.getPath().equals("//")) { // eventuell in PluginManager verschieben und generalisieren zsm mit anderen paths
+                if (urlObj.getPath().equals("") || urlObj.getPath().equals("/")) { // eventuell in PluginManager verschieben und generalisieren zsm mit anderen paths
+                    System.out.println();
                     String htmlString = html.getHome();
                     resObj.setStatusCode(200);
                     resObj.addHeader("Content-Type", "text/html");
                     resObj.addHeader("Content-length", String.valueOf(htmlString.length()));
-                    resObj.addHeader("connection", "close");
+                    resObj.addHeader("connection", "keep-alive");
                     resObj.setContentType("text/html");
                     resObj.setContent(htmlString);
 

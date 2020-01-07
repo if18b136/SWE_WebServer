@@ -18,6 +18,7 @@ public class myResponse implements Response {
     private String contentType;
     private String serverHeader = "BIF-SWE1-Server";
     private String content;
+    private byte[] byteContent = null;
     private OutputStream network;
 
     /**
@@ -155,6 +156,7 @@ public class myResponse implements Response {
     @Override
     public void setContent(byte[] content) {
         this.content = new String(content);
+        this.byteContent = content;
     }
 
     /**
@@ -202,7 +204,11 @@ public class myResponse implements Response {
             String lineEnd = "\r\n";
             network.write(lineEnd.getBytes());
             if(this.content != null) {
-                network.write(this.content.getBytes());
+                if(this.byteContent != null) {
+                    network.write(this.byteContent);
+                } else {
+                    network.write(this.content.getBytes());
+                }
             }
             else {
                 if(this.contentType != null) {

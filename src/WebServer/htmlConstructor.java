@@ -36,7 +36,7 @@ public class htmlConstructor {
                             "<a class=\"nav-item nav-link\" href=\"/\">Home</a>",
                             "<a class=\"nav-item nav-link\" href=\"/temp\">Temperature</a>",
 //                            "<a class=\"nav-item nav-link\" href=\"/static\">Static</a>",
-                            "<a class=\"nav-item nav-link\" href=\"toLower\">ToLower</a>",
+                            "<a class=\"nav-item nav-link\" href=\"/toLower\">ToLower</a>",
                             "<a class=\"nav-item nav-link\" href=\"/navi\">Navigation</a>",
                         "</div>",
                     "</nav>"
@@ -78,6 +78,11 @@ public class htmlConstructor {
                     "$(document).ready(function () {",
                         "$('#TEMPERATURE').DataTable();",
                         "$('.dataTables_length').addClass('bs-select');",
+//                        // Data Picker Initialization
+//                        "let $input = $('.datepicker').pickadate();",
+//                        "let picker = $input.pickadate('picker');",
+//                        "let date = new Date(1999, 1, 23);",
+//                        "picker.set('select', date);",
                     "});",
                 "</script>",
             "</body>",
@@ -95,6 +100,13 @@ public class htmlConstructor {
                     "<h1>Temperature Plugin</h1>",
                 "</div>",
                 "<div class=\"container\">",
+                    "<form action=\"/GetTemperature\" method=\"post\" enctype=\"plain/text\">",
+                        "Choose a Date:<br>",
+                        "<input type=\"date\" name=\"date\"><br>",
+                        "<input type=\"submit\"><br>",
+                    "</form>",
+                "</div>",
+             "<div class=\"container\">",
                     "<table id=\"TEMPERATURE\" class=\"table table-striped table-bordered table-sm\" cellspacing=\"0\" width=\"100%\">",
                         "<thead>",
                             "<tr>",
@@ -151,6 +163,28 @@ public class htmlConstructor {
 //                );
 //    }
 
+    private static String navi = String.join("","",
+            "<div class=\"container\">",
+                "<form action=\"/navi\" method=\"post\">",
+            "<button class=\"btn btn-outline-info btn-rounded btn-block z-depth-0 my-2 waves-effect\" type=\"submit\">Load Data</button>",
+                "</form>",
+                "<form class=\"text-center\" style=\"color: #757575;\" action=\"/navi\" method=\"post\" accept-charset=\"UTF-8\">",
+                    "<div class=\"md-form amber-textarea active-amber-textarea\">",
+                    "<textarea id=\"form19\" class=\"md-textarea form-control\" name=\"address\" rows=\"3\"></textarea>",
+                    "<label for=\"form19\">Check out if a certain Address is in the street map...</label>",
+                    "</div>",
+                    "<button class=\"btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect\" type=\"submit\">Send</button>",
+                "</form>",
+            "</div>",
+            "<div class=\"container\">"
+            );
+
+    private static String naviText = "";
+
+    private static String naviEnd = String.join("","",
+            "</div>"
+            );
+
     /**
      * Construct the standard home page
      * @return a joined string that represents the homepage
@@ -171,9 +205,9 @@ public class htmlConstructor {
         String tsString = String.valueOf(ts);
         tempContent = String.join("",tempContent,
                 "<tr>",
-                    "<td>",idString,"</td>",
-                    "<td>",tempString,"</td>",
-                    "<td>",tsString,"</td>",
+                "<td>",idString,"</td>",
+                "<td>",tempString,"</td>",
+                "<td>",tsString,"</td>",
                 "</tr>"
         );
     }
@@ -205,6 +239,10 @@ public class htmlConstructor {
      */
     public void setLowerText(String s) {
         lowerText = String.join("", "<div class=\"container\">",s, "</div>" );
+    }
+
+    public void addMap(String address) {
+        naviText = String.join("", naviText, address, "<br>");
     }
 
     /**
@@ -239,4 +277,11 @@ public class htmlConstructor {
         lowerText = "";
         return  toLowerString;
     }
+
+    public String getNavi() {
+        String naviString = String.join("",begin,navi,naviText,naviEnd,end);
+        naviText = "";
+        return  naviString;
+    }
+
 }

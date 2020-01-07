@@ -4,6 +4,7 @@ import BIF.SWE1.interfaces.Plugin;
 import BIF.SWE1.interfaces.Request;
 import BIF.SWE1.interfaces.Response;
 import java.sql.*;
+import java.util.Map;
 
 /**
  * <h3>Temperature Plugin Class</h3>
@@ -53,18 +54,22 @@ public class tempPlugin implements Plugin {
 
             if(req.getUrl().getPath().contains("GetTemperature")) {
                 // create XML
-                String[] dateArr = req.getUrl().getPath().split("/");
                 String date = "";
-                boolean gotDate = false;
-                for(String part : dateArr){
-                    if(gotDate) {
-                        date = String.join("-", date, part);
-                    }
-                    else if(part.equals("GetTemperature")) {
-                        gotDate = true;
-                    }
+                if(req.getMethod().equals("POST")) {
+                    date = req.getContentString().substring(5);
                 }
-                date = date.substring(1);  //the lazy way to get the first - away
+                else {
+                    String[] dateArr = req.getUrl().getPath().split("/");
+                    boolean gotDate = false;
+                    for (String part : dateArr) {
+                        if (gotDate) {
+                            date = String.join("-", date, part);
+                        } else if (part.equals("GetTemperature")) {
+                            gotDate = true;
+                        }
+                    }
+                    date = date.substring(1);  //the lazy way to get the first - away
+                }
                 PreparedStatement cmd = db.prepareStatement("SELECT * FROM temperature WHERE DATE(timestamp) = ?");
                 cmd.setString(1, date);
                 ResultSet rd = cmd.executeQuery();

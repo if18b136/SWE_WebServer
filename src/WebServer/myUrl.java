@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * <h3>;Url class</h3>
+ * <h3>Url class</h3>
  * Class to extract all necessary data from the request URL
  */
 public class myUrl implements Url {
