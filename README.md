@@ -21,7 +21,7 @@ Hier kann ein Text samt Sonderzeichen in Kleinbuchstaben transformiert werden - 
 Das statische Plugin besitzt keinen eigenen Link, da es zu jeder Zeit aufgerufen werden kann, indem der Pfad zu einer Datei, die sich im statischen Verzeichnis befindet als Anhang zur URL hinzugefügt wird.
 
 <h3>Navigation Plugin</h3>
-Das Navigationsplugin wurde aus zeitlichen Gründen nicht implementiert.
+Das Navigationsplugin besitzt zwei Buttons und ein  textfeld. Über den Load Data Button kann die ausgewählte OSM in eine Hatshtable geladen werden. In das Textfeld kann ein Straßenname eingegeben und überprüft werden, ob diese Straße in der Karte vorhanden ist.
 
 
 <h2>Lösungsbeschreibung</h2>
@@ -39,7 +39,4 @@ Weiters auf die komplette Einbindung von Material Design Bootstrap als Front End
 
 
 <h2>Was würde ich das nächste mal anders machen?</h2>
-
-Arbeitsaufteilung innerhalb einer Gruppe - durch das fehlende Navi Plugin verliere ich 15% der Punkte, da ich die Umsetzung zeitlich nicht mehr mit den anderen Semesterprojekten und Prüfungen vereinbaren konnte.
-
-Mehr Druck auf die Lektoren ausüben bei einer erneuten nicht vorhandenen Einführung in ein Projekt dieses Ausmaßes.
+Nichts wesentliches.

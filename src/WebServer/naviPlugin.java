@@ -22,12 +22,20 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-
+/**
+ * <h3>Navigation Plugin</h3>
+ * Creates a Hashtable out of a Open Street Map and can tell you if a Street is in said map.
+ */
 public class naviPlugin implements Plugin {
 
-	public static Map<String, LinkedList<String>> map = new Hashtable<>();
-	public static boolean loading = false;
+	private static Map<String, LinkedList<String>> map = new Hashtable<>();
+	private static boolean loading = false;
 
+	/**
+	 * simple handle function to determine is a request should be handled by the navi plugin
+	 * @param req client request
+	 * @return a float if the request can be handled by the plugin or else return 0
+	 */
 	@Override
 	public float canHandle(Request req) {
 		if(req.isValid()) {
@@ -37,7 +45,14 @@ public class naviPlugin implements Plugin {
 		}
 		return 0;
 	}
-	
+
+	/**
+	 * Handle function for the navi plugin. Path is hardcoded for convenience
+	 * Request case: POST & no content length - interpret as Load Data Button pressed
+	 * Request case: POST & content length - Search if a certain street is in the hashTable
+	 * @param req client request
+	 * @return the correct server response as html page
+	 */
 	@Override
 	public Response handle(Request req) {
 		Path path = Paths.get("D:\\OSM\\map.osm");
@@ -79,6 +94,7 @@ public class naviPlugin implements Plugin {
 		res.setContent(htmlString);
 		return res;
 	}
+
 
     private void processFile(File file) {
         try {
