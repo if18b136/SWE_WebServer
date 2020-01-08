@@ -39,4 +39,4 @@ Weiters auf die komplette Einbindung von Material Design Bootstrap als Front End
 
 
 <h2>Was würde ich das nächste mal anders machen?</h2>
-Nichts wesentliches.
+Keine "advanced" Benutzeroberfläche - ich konnte dadurch zwar das static plugin eingehend testen, jedoch war es zeitlich gesehen ein außerordentlicher Mehraufwand, wodurch ich am Ende nicht mehr in der Lage war, die letzten wesentlichen Bugs zu analysieren.
