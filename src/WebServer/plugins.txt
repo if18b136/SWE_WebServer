@@ -2,3 +2,4 @@ tempPlugin
 staticPlugin
 naviPlugin
 toLowerPlugin
+loginPlugin

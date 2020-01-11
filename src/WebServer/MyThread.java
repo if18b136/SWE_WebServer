@@ -2,6 +2,7 @@ package WebServer;
 
 import BIF.SWE1.interfaces.Plugin;
 import java.io.*;
+import java.sql.SQLException;
 import java.util.InputMismatchException;
 
 /**
@@ -83,7 +84,7 @@ public class MyThread extends Thread {
             } else {
                 throw new InputMismatchException(this.threadName + ": The send request does not seem to be valid. Url: " + reqObj.getUrl().getRawUrl());
             }
-        }catch(InputMismatchException ime) {
+        }catch(InputMismatchException | SQLException ime) {
             ime.printStackTrace();
             return;
         }

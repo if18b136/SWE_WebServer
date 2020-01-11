@@ -44,10 +44,14 @@ public class Startup {
             List<Thread> threads = new LinkedList<Thread>();
             int thread_num = 1;
 
+            /* auskommentiert fuer datenbankenprojekt
+
+
             tempThread temp = new tempThread("Thread " + thread_num);
             temp.start();
             threads.add(temp);
             thread_num++;
+            */
 
             while(true){
                 Socket s = listener.accept();

@@ -38,7 +38,8 @@ public class htmlConstructor {
 //                            "<a class=\"nav-item nav-link\" href=\"/static\">Static</a>",
                             "<a class=\"nav-item nav-link\" href=\"/toLower\">ToLower</a>",
                             "<a class=\"nav-item nav-link\" href=\"/navi\">Navigation</a>",
-                        "</div>",
+                            "<a class=\"nav-item nav-link\" href=\"/login\">Login</a>",
+            "</div>",
                     "</nav>"
             );
 
@@ -166,7 +167,7 @@ public class htmlConstructor {
     private static String navi = String.join("","",
             "<div class=\"container\">",
                 "<form action=\"/navi\" method=\"post\">",
-            "<button class=\"btn btn-outline-info btn-rounded btn-block z-depth-0 my-2 waves-effect\" type=\"submit\">Load Data</button>",
+                    "<button class=\"btn btn-outline-info btn-rounded btn-block z-depth-0 my-2 waves-effect\" type=\"submit\">Load Data</button>",
                 "</form>",
                 "<form class=\"text-center\" style=\"color: #757575;\" action=\"/navi\" method=\"post\" accept-charset=\"UTF-8\">",
                     "<div class=\"md-form amber-textarea active-amber-textarea\">",
@@ -182,6 +183,67 @@ public class htmlConstructor {
     private static String naviText = "";
 
     private static String naviEnd = String.join("","",
+            "</div>"
+            );
+
+    private static String loginAs = "not Set"; // doesn't need to be set to not set but it helps with debugging
+
+    private static String login = String.join("", "",
+            "<div class=\"flex-center flex-column\">",
+                "<form action=\"/login\" method=\"post\">",
+                    "<h3>Login as: </h3>",
+                    "<input type=\"submit\" name=\"user\" value=\"sysadmin\"/>",
+                    "<input type=\"submit\" name=\"user\" value=\"lva\" />",
+                    "<input type=\"submit\" name=\"user\" value=\"lektor\" />",
+                    "<input type=\"submit\" name=\"user\" value=\"student\" />",
+                "</form>",
+            "</div>"
+            );
+
+
+    private static String loginForm = String.join("","",
+            "<div class=\"flex-center flex-column\">",
+                "<form action=\"/login\" method=\"post\">",
+                    "Username: <input type=\"text\" name=\"un\"><br>\n",
+                    "Password: <input type=\"password\" name=\"password\"><br>\n",
+                    "<div>\n" +
+                        "<input type=\"radio\" id=\"sysadmin\" name=\"user\" value=\"sysadmin\" checked> <label for=\"sysadmin\">Sysadmin</label>\n" +
+                        "<input type=\"radio\" id=\"lva\" name=\"user\" value=\"lva\"> <label for=\"lva\">LVA</label>\n" +
+                        "<input type=\"radio\" id=\"lektor\" name=\"user\" value=\"lektor\"> <label for=\"lektor\">Lektor</label>\n" +
+                        "<input type=\"radio\" id=\"student\" name=\"user\" value=\"student\"> <label for=\"student\">Student</label>\n" +
+                    "</div>",
+                    "<input type=\"submit\" value=\"Login\">",
+                "</form>",
+            "</div>"
+            );
+
+    private static String loggedIn = String.join("","");
+
+    private static String lvaList = String.join("", "",
+            "<div class=\"container\">",
+                "<h1>Welcome</h1>",
+            "</div>"
+    );
+
+    private static String lvaTableBegin =String.join("", "",
+            "<div class=\"container\">",
+            "<table id=\"LVAs\" class=\"table table-striped table-bordered table-sm\" cellspacing=\"0\" width=\"100%\">",
+            "<thead>",
+            "<tr>",
+            "<th class=\"th-sm\">LVA</th>",
+            "</tr>",
+            "</thead>",
+            "<tbody>"
+    );
+    private static String lvaTable ="";
+    private static String lvaTableEnd = String.join("","",
+            "</tbody>",
+            "<tfoot>",
+            "<tr>",
+            "<th>LVA</th>",
+            "</tr>",
+            "</tfoot>",
+            "</table>",
             "</div>"
             );
 
@@ -233,6 +295,14 @@ public class htmlConstructor {
                 );
     }
 
+    public void appendLVA(String lva) {
+        lvaTable = String.join("", lvaTable,
+                "<tr>",
+                    "<td>",lva,"</td>",
+                "</tr>"
+        );
+    }
+
     /**
      * Set the text that will be displayed in the toLower plugin under the text input field
      * @param s the lowercase text
@@ -282,6 +352,29 @@ public class htmlConstructor {
         String naviString = String.join("",begin,navi,naviText,naviEnd,end);
         naviText = "";
         return  naviString;
+    }
+
+    public String getLogin() {
+        return String.join("",begin,login,end);
+    }
+
+    public String getLoginForm() {
+        return String.join("",begin,loginForm,end);
+    }
+
+    public void setLoginAs(String s) { loginAs = s; }
+
+    public String getloggedIn(String user) {
+        return String.join("",begin,"<h3>Hello ", user, "</h3>", end);
+    }
+
+    public String getLoginWrong() {
+        String warning = "<div> user or password wrong. </div>";
+        return String.join("",begin,loginForm,warning,end);
+    }
+
+    public String getLvaList() {
+        return String.join("",begin,lvaList,lvaTableBegin,lvaTable,lvaTableEnd,end);
     }
 
 }
