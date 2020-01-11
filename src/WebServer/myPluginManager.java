@@ -45,7 +45,7 @@ public class myPluginManager implements PluginManager {
      */
     public void loadPlugins(){
         try{
-            File pluginFile = new File("D:\\#FH_Technikum\\Semester_3\\SWE\\MyWebServer\\src\\WebServer\\plugins.txt");
+            File pluginFile = new File("D:\\#FH_Technikum\\Semester_3\\SWE\\MyWebServer\\src\\WebServer\\plugins.txt"); // change to dynamic path
             Scanner sc = new Scanner(pluginFile);
             String pluginName;
             while (sc.hasNextLine()) {

@@ -207,10 +207,10 @@ public class htmlConstructor {
                     "Username: <input type=\"text\" name=\"un\"><br>\n",
                     "Password: <input type=\"password\" name=\"password\"><br>\n",
                     "<div>\n" +
-                        "<input type=\"radio\" id=\"sysadmin\" name=\"user\" value=\"sysadmin\" checked> <label for=\"sysadmin\">Sysadmin</label>\n" +
-                        "<input type=\"radio\" id=\"lva\" name=\"user\" value=\"lva\"> <label for=\"lva\">LVA</label>\n" +
-                        "<input type=\"radio\" id=\"lektor\" name=\"user\" value=\"lektor\"> <label for=\"lektor\">Lektor</label>\n" +
-                        "<input type=\"radio\" id=\"student\" name=\"user\" value=\"student\"> <label for=\"student\">Student</label>\n" +
+                        "<input type=\"radio\" id=\"sysadmin\" name=\"user\" value=\"sysadmin!\" checked> <label for=\"sysadmin\">Sysadmin</label>\n" +
+                        "<input type=\"radio\" id=\"sgo\" name=\"user\" value=\"sgo!\"> <label for=\"sgo\">Studiengangsorg</label>\n" +
+                        "<input type=\"radio\" id=\"lektor\" name=\"user\" value=\"lektor!\"> <label for=\"lektor\">Lektor</label>\n" +
+                        "<input type=\"radio\" id=\"student\" name=\"user\" value=\"student!\"> <label for=\"student\">Student</label>\n" +
                     "</div>",
                     "<input type=\"submit\" value=\"Login\">",
                 "</form>",
@@ -250,6 +250,76 @@ public class htmlConstructor {
                 "</table>",
             "</div>"
             );
+
+    private static String resLvaTableBegin =String.join("", "",
+            "<div class=\"container\">",
+            "<table id=\"LVAs\" class=\"table table-striped table-bordered table-sm\" cellspacing=\"0\" width=\"100%\">",
+            "<thead>",
+            "<tr>",
+            "<th class=\"th-sm\">LVA</th>",
+            "<th class=\"th-sm\">Bezeichnung</th>",
+            "</tr>",
+            "</thead>",
+            "<tbody>"
+    );
+    private static String resLvaTable ="";
+    private static String resLvaTableEnd = String.join("","",
+            "</tbody>",
+            "<tfoot>",
+            "<tr>",
+            "<th>LVA</th>",
+            "<th>Bezeichnung</th>",
+            "</tr>",
+            "</tfoot>",
+            "</table>",
+            "</div>"
+    );
+
+    private static String sgTableBegin =String.join("", "",
+            "<div class=\"container\">",
+            "<table id=\"Studiengaenge\" class=\"table table-striped table-bordered table-sm\" cellspacing=\"0\" width=\"100%\">",
+                "<thead>",
+                    "<tr>",
+                        "<th class=\"th-sm\">ID</th>",
+                        "<th class=\"th-sm\">Studiengang</th>",
+                        "<th class=\"th-sm\">Jahrgang</th>",
+                        "<th class=\"th-sm\">Studiengangsleiter</th>",
+                    "</tr>",
+                "</thead>",
+                "<tbody>"
+    );
+    private static String sgTable ="";
+    private static String sgTableEnd = String.join("","",
+                "</tbody>",
+                    "<tfoot>",
+                        "<tr>",
+                            "<th>ID</th>",
+                            "<th>Studiengang</th>",
+                            "<th>Jahrgang</th>",
+                            "<th>Studiengangsleiter</th>",
+                        "</tr>",
+                    "</tfoot>",
+                "</table>",
+            "</div>"
+    );
+
+    private static String addSgForm = String.join("", "",
+            "<div class=\"flex-center flex-column\">",
+                "<form action=\"/login?addSG\" method=\"post\">",
+                    "<input type=\"text\" name=\"sg\" placeholder=\"Studiengang\">\n",
+                    "<input type=\"text\" name=\"jg\"placeholder=\"Jahrgang\">\n",
+                    "<input type=\"text\" name=\"uid\"placeholder=\"SG-Leiter\">\n",
+                    "<input type=\"submit\" value=\"add Sg\">",
+                "</form>",
+            "</div>",
+            "<div class=\"flex-center flex-column\">",
+                "<form action=\"/login?delSG\" method=\"post\">",
+                    "<input type=\"text\" name=\"id\" placeholder=\"Studiengangs-ID\">\n",
+                    "<input type=\"submit\" value=\"delete Sg\">",
+                "</form>",
+            "</div>"
+            );
+
 
     /**
      * Construct the standard home page
@@ -305,6 +375,26 @@ public class htmlConstructor {
                     "<td>",lva,"</td>",
                     "<td>",name,"</td>",
                     "<td>",vorname,"</td>",
+                "</tr>"
+        );
+    }
+
+    public void appendResLVA(String lva, String bezeichnung) {
+        resLvaTable = String.join("", resLvaTable,
+                "<tr>",
+                "<td>",lva,"</td>",
+                "<td>",bezeichnung,"</td>",
+                "</tr>"
+        );
+    }
+
+    public void appendSg(String id, String sg, String jg, String sgl) {
+        sgTable = String.join("", sgTable,
+                "<tr>",
+                    "<td>",id,"</td>",
+                    "<td>",sg,"</td>",
+                    "<td>",jg,"</td>",
+                    "<td>",sgl,"</td>",
                 "</tr>"
         );
     }
@@ -383,7 +473,18 @@ public class htmlConstructor {
         String lvaString = String.join("",begin,lvaList,lvaTableBegin,lvaTable,lvaTableEnd,end);
         lvaTable = "";
         return lvaString;
+    }
 
+    public String getResLvaList() {
+        String lvaString = String.join("",begin,lvaList,resLvaTableBegin,resLvaTable,resLvaTableEnd,end);
+        resLvaTable = "";
+        return lvaString;
+    }
+
+    public String getSgList() {
+        String lvaString = String.join("",begin,lvaList,sgTableBegin,sgTable,sgTableEnd,addSgForm,end);
+        sgTable = "";
+        return lvaString;
     }
 
 }
