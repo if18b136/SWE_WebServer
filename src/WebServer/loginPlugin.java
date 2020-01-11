@@ -4,6 +4,7 @@ import BIF.SWE1.interfaces.Plugin;
 import BIF.SWE1.interfaces.Request;
 import BIF.SWE1.interfaces.Response;
 import Database.database;
+import oracle.jdbc.OracleTypes;
 
 import java.sql.*;
 
@@ -30,7 +31,7 @@ public class loginPlugin implements Plugin {
             int login = sum4(req.getContentString().substring(3,11),req.getContentString().substring(21,25));
             if(login == 1) {
                 //prepared statement here
-                getLVAs(req.getContentString().substring(3,11));
+                getLvaCursor(req.getContentString().substring(3,11));
                 String htmlString = html.getLvaList();
                 res.setStatusCode(200);
                 res.addHeader("Content-Type", "text/html");
@@ -66,75 +67,6 @@ public class loginPlugin implements Plugin {
         }
 
         return res;
-
-        /*if(req.getMethod().equals("POST")) {
-            if(req.getContentString().substring(0,4).equals("user")) {
-                html.setLoginAs(req.getContentString().substring(5));
-                System.out.println(req.getContentString().substring(5));
-                String htmlString = html.getLoginForm();
-
-                res.setStatusCode(200);
-                res.addHeader("Content-Type", "text/html");
-                res.addHeader("Content-length", String.valueOf(htmlString.length()));
-                res.addHeader("connection", "keep-alive");
-                res.setContentType("text/html");
-                res.setContent(htmlString);
-            }
-            else {
-//                System.out.println(req.getContentString());
-//                System.out.println(req.getContentString().substring(3,11));
-//                System.out.println(req.getContentString().substring(21,25));
-//                System.out.println(req.getContentString().substring(31));
-                String type="";
-                switch(req.getContentString().charAt(32)) {
-                    case 'y':
-                        type = "sysadmin";
-                        break;
-                    case 'g':
-                        type = "sgo";
-                        break;
-                    case 'e':
-                        type = "lektor";
-                        break;
-                    case 't':
-                        type = "student";
-                        break;
-                }
-                Database.database db = new database();
-                db.connect(type, type);
-                if(loginCheck(type,type,req.getContentString().substring(3,11),req.getContentString().substring(21,25))) {
-                    String htmlString = html.getloggedIn(req.getContentString().substring(3,11));
-                    res.setStatusCode(200);
-                    res.addHeader("Content-Type", "text/html");
-                    res.addHeader("Content-length", String.valueOf(htmlString.length()));
-                    res.addHeader("connection", "keep-alive");
-                    res.setContentType("text/html");
-                    res.setContent(htmlString);
-                }
-                else {
-                    String htmlString = html.getLoginWrong();
-                    res.setStatusCode(200);
-                    res.addHeader("Content-Type", "text/html");
-                    res.addHeader("Content-length", String.valueOf(htmlString.length()));
-                    res.addHeader("connection", "keep-alive");
-                    res.setContentType("text/html");
-                    res.setContent(htmlString);
-                }
-                return res;
-            }
-        }
-        else {
-            String htmlString = html.getLoginForm();
-            res.setStatusCode(200);
-            res.addHeader("Content-Type", "text/html");
-            res.addHeader("Content-length", String.valueOf(htmlString.length()));
-            res.addHeader("connection", "keep-alive");
-            res.setContentType("text/html");
-            res.setContent(htmlString);
-        }
-        return res;
-
-         */
     }
 
     public int loginCheck(String username, String password) throws SQLException {
@@ -177,15 +109,19 @@ public class loginPlugin implements Plugin {
         return null;
     }
 
-    public void getLVAs(String un) throws SQLException {
+    public void getLvaCursor(String username) throws SQLException {
         htmlConstructor html = new htmlConstructor();
         Connection connect = database.getInstance().connect();
-        PreparedStatement pst = connect.prepareStatement("SELECT Titel FROM LVA INNER JOIN studiengang ON studiengang.Studiengang_ID = LVA.fk_studiengang_Id INNER JOIN account on account.fk_studiengang_ID = studiengang.studiengang_id WHERE USERNAME = ?");
-        pst.setString(1,un);
-        ResultSet rd = pst.executeQuery();
-        while(rd.next()) {
-            String lva = rd.getString(1);
-            html.appendLVA(lva);
+        CallableStatement cstmt = connect.prepareCall("{call sp_lva_info(?,?)}");
+        cstmt.setString(1, username);
+        cstmt.registerOutParameter(2, OracleTypes.CURSOR);
+        cstmt.execute();
+        ResultSet rd = (ResultSet) cstmt.getObject(2);
+        while (rd.next()) {
+            String lva = rd.getString("titel");
+            String bezeichnung = rd.getString("nachname");
+            String lektor = rd.getString("vorname");
+            html.appendLVA(lva,bezeichnung,lektor);
         }
     }
 

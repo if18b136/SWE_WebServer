@@ -227,23 +227,27 @@ public class htmlConstructor {
 
     private static String lvaTableBegin =String.join("", "",
             "<div class=\"container\">",
-            "<table id=\"LVAs\" class=\"table table-striped table-bordered table-sm\" cellspacing=\"0\" width=\"100%\">",
-            "<thead>",
-            "<tr>",
-            "<th class=\"th-sm\">LVA</th>",
-            "</tr>",
-            "</thead>",
-            "<tbody>"
+                "<table id=\"LVAs\" class=\"table table-striped table-bordered table-sm\" cellspacing=\"0\" width=\"100%\">",
+                    "<thead>",
+                        "<tr>",
+                            "<th class=\"th-sm\">LVA</th>",
+                            "<th class=\"th-sm\">Lektor Name</th>",
+                            "<th class=\"th-sm\">Lektor Vorname</th>",
+                        "</tr>",
+                    "</thead>",
+                    "<tbody>"
     );
     private static String lvaTable ="";
     private static String lvaTableEnd = String.join("","",
-            "</tbody>",
-            "<tfoot>",
-            "<tr>",
-            "<th>LVA</th>",
-            "</tr>",
-            "</tfoot>",
-            "</table>",
+                    "</tbody>",
+                    "<tfoot>",
+                        "<tr>",
+                            "<th>LVA</th>",
+                            "<th>Lektor Name</th>",
+                            "<th>Lektor Vorname</th>",
+                        "</tr>",
+                    "</tfoot>",
+                "</table>",
             "</div>"
             );
 
@@ -295,10 +299,12 @@ public class htmlConstructor {
                 );
     }
 
-    public void appendLVA(String lva) {
+    public void appendLVA(String lva, String name, String vorname) {
         lvaTable = String.join("", lvaTable,
                 "<tr>",
                     "<td>",lva,"</td>",
+                    "<td>",name,"</td>",
+                    "<td>",vorname,"</td>",
                 "</tr>"
         );
     }
@@ -374,7 +380,10 @@ public class htmlConstructor {
     }
 
     public String getLvaList() {
-        return String.join("",begin,lvaList,lvaTableBegin,lvaTable,lvaTableEnd,end);
+        String lvaString = String.join("",begin,lvaList,lvaTableBegin,lvaTable,lvaTableEnd,end);
+        lvaTable = "";
+        return lvaString;
+
     }
 
 }

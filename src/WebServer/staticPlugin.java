@@ -4,13 +4,10 @@ import BIF.SWE1.interfaces.Plugin;
 import BIF.SWE1.interfaces.Request;
 import BIF.SWE1.interfaces.Response;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Base64;
 
 /**
  * <h3>Static Plugin</h3>
