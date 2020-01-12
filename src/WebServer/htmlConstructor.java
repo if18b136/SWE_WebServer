@@ -8,6 +8,10 @@ import java.sql.Timestamp;
  */
 public class htmlConstructor {
 
+    public static String username = "";
+    public static String lvaID ="";
+    public static String lvaBez = "";
+
     private static String begin = String.join(" ","",
             "<!doctype html>",
             "<html lang=\"en\">",
@@ -42,6 +46,41 @@ public class htmlConstructor {
             "</div>",
                     "</nav>"
             );
+
+    private static String beginLog = String.join(" ","",
+            "<!doctype html>",
+            "<html lang=\"en\">",
+            "<head>",
+            "<meta charset=\"utf-8\">",
+            "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">",
+            "<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">",
+            "<link rel=\"icon\" href=\"deploy/MDB/img/mdb-favicon.ico\" type=\"image/x-icon\">",
+
+            "<title>SWE1</title>",
+            "<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">",
+            //Font Awesome -->
+            "<link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.11.2/css/all.css\">",
+            //Bootstrap core CSS -->
+            "<link rel=\"stylesheet\" href=\"deploy/MDB/css/bootstrap.min.css\">",
+            //Material Design Bootstrap -->
+            "<link rel=\"stylesheet\" href=\"deploy/MDB/css/mdb.min.css\">",
+            //Your custom styles (optional) -->
+            //"<link rel=\"stylesheet\" href=\"deploy/MDB/css/style.css\">",
+            //<!-- MDBootstrap Datatables  -->
+            "<link href=\"deploy/MDB/css/addons/datatables.min.css\" rel=\"stylesheet\">",
+            "</head>",
+            "<body>",
+            "<nav class=\"navbar navbar-dark bg-dark\">",
+            "<div class=\"container d-flex flex-column flex-md-row justify-content-between\">",
+            "<a class=\"nav-item nav-link\" href=\"/\">Home</a>",
+            "<a class=\"nav-item nav-link\" href=\"/temp\">Temperature</a>",
+//                            "<a class=\"nav-item nav-link\" href=\"/static\">Static</a>",
+            "<a class=\"nav-item nav-link\" href=\"/toLower\">ToLower</a>",
+            "<a class=\"nav-item nav-link\" href=\"/navi\">Navigation</a>",
+            "<a class=\"nav-item nav-link\" href=\"/login\">Logout</a>",
+            "</div>",
+            "</nav>"
+    );
 
 //    private static String navBegin = String.join("", "",
 //            "<body>",
@@ -79,11 +118,6 @@ public class htmlConstructor {
                     "$(document).ready(function () {",
                         "$('#TEMPERATURE').DataTable();",
                         "$('.dataTables_length').addClass('bs-select');",
-//                        // Data Picker Initialization
-//                        "let $input = $('.datepicker').pickadate();",
-//                        "let picker = $input.pickadate('picker');",
-//                        "let date = new Date(1999, 1, 23);",
-//                        "picker.set('select', date);",
                     "});",
                 "</script>",
             "</body>",
@@ -186,8 +220,6 @@ public class htmlConstructor {
             "</div>"
             );
 
-    private static String loginAs = "not Set"; // doesn't need to be set to not set but it helps with debugging
-
     private static String login = String.join("", "",
             "<div class=\"flex-center flex-column\">",
                 "<form action=\"/login\" method=\"post\">",
@@ -217,11 +249,9 @@ public class htmlConstructor {
             "</div>"
             );
 
-    private static String loggedIn = String.join("","");
-
     private static String lvaList = String.join("", "",
             "<div class=\"container\">",
-                "<h1>Welcome</h1>",
+                "<h1>Welcome", htmlConstructor.username, "</h1>",
             "</div>"
     );
 
@@ -321,6 +351,81 @@ public class htmlConstructor {
             );
 
 
+    private static String sgLvaTableBegin =String.join("", "",
+            "<div class=\"container\">",
+                "<table id=\"LVAs\" class=\"table table-striped table-bordered table-sm\" cellspacing=\"0\" width=\"100%\">",
+                    "<thead>",
+                        "<tr>",
+                            "<th class=\"th-sm\">ID</th>",
+                            "<th class=\"th-sm\">LVA</th>",
+                            "<th class=\"th-sm\">Lektor Name</th>",
+                            "<th class=\"th-sm\">Lektor Vorname</th>",
+                        "</tr>",
+                    "</thead>",
+                "<tbody>"
+    );
+    private static String sgLvaTable ="";
+    private static String sgLvaTableEnd = String.join("","",
+                "</tbody>",
+                "<tfoot>",
+                    "<tr>",
+                        "<th class=\"th-sm\">ID</th>",
+                        "<th class=\"th-sm\">LVA</th>",
+                        "<th class=\"th-sm\">Lektor Name</th>",
+                        "<th class=\"th-sm\">Lektor Vorname</th>",
+                    "</tr>",
+                "</tfoot>",
+            "</table>",
+            "</div>"
+    );
+
+    private static String dmSgLva = String.join("", "",
+            "<div class=\"flex-center flex-column\">",
+                "<form action=\"/sg/",htmlConstructor.lvaID,"/",htmlConstructor.lvaBez,"?addLVA\" method=\"post\">",
+                    "<input type=\"text\" name=\"lva\" placeholder=\"Lehrveranstaltung\">\n",
+                    "<input type=\"text\" name=\"name\"placeholder=\"Lektor-UID\">\n",
+                    "<input type=\"text\" name=\"uid\"placeholder=\"Studiengangs-ID\">\n",
+                    "<input type=\"submit\" value=\"add LVA\">",
+                "</form>",
+            "</div>",
+            "<div class=\"flex-center flex-column\">",
+                "<form action=\"/sg/",htmlConstructor.lvaID,"/",htmlConstructor.lvaBez,"?addLVA\" method=\"post\">",
+                    "<input type=\"text\" name=\"id\" placeholder=\"LVA-ID\">\n",
+                    "<input type=\"submit\" value=\"delete LVA\">",
+                "</form>",
+            "</div>"
+    );
+
+    private static String lvaUnitTableBegin =String.join("", "",
+            "<div class=\"container\">",
+            "<table id=\"LVAs\" class=\"table table-striped table-bordered table-sm\" cellspacing=\"0\" width=\"100%\">",
+            "<thead>",
+            "<tr>",
+            "<th class=\"th-sm\">Bezeichnung</th>",
+            "<th class=\"th-sm\">Beginn</th>",
+            "<th class=\"th-sm\">Ende Name</th>",
+            "<th class=\"th-sm\">Lektor Nachname</th>",
+            "<th class=\"th-sm\">Lektor Vormame</th>",
+            "</tr>",
+            "</thead>",
+            "<tbody>"
+    );
+    private static String lvaUnitTable ="";
+    private static String lvaUnitTableEnd = String.join("","",
+            "</tbody>",
+            "<tfoot>",
+            "<tr>",
+            "<th class=\"th-sm\">Bezeichnung</th>",
+            "<th class=\"th-sm\">Beginn</th>",
+            "<th class=\"th-sm\">Ende Name</th>",
+            "<th class=\"th-sm\">Lektor Nachname</th>",
+            "<th class=\"th-sm\">Lektor Vormame</th>",
+            "</tr>",
+            "</tfoot>",
+            "</table>",
+            "</div>"
+    );
+
     /**
      * Construct the standard home page
      * @return a joined string that represents the homepage
@@ -391,10 +496,33 @@ public class htmlConstructor {
     public void appendSg(String id, String sg, String jg, String sgl) {
         sgTable = String.join("", sgTable,
                 "<tr>",
-                    "<td>",id,"</td>",
-                    "<td>",sg,"</td>",
+                    "<td><a href=\"/sg/",id,"/",sg,"\">",id,"</a></td>",
+                    "<td><a href=\"/sg/",id,"/",sg,"\">",sg,"</a></td>",
                     "<td>",jg,"</td>",
                     "<td>",sgl,"</td>",
+                "</tr>"
+        );
+    }
+
+    public void appendSgLvA(String id,String bez,String nachname,String vorname){
+        sgLvaTable = String.join("", sgLvaTable,
+                "<tr>",
+                "<td><a href=\"/sgo/lva/",bez,"/",id,"/",nachname,"\">",id,"</a></td>",
+                "<td><a href=\"/sgo/lva/",bez,"/",id,"/",nachname,"\">",bez,"</a></td>",
+                "<td>",nachname,"</td>",
+                "<td>",vorname,"</td>",
+                "</tr>"
+        );
+    }
+
+    public void appendLvaUnit(String bez,String begin,String ende, String nachname,String vorname){
+        lvaUnitTable = String.join("", lvaUnitTable,
+                "<tr>",
+                "<td>",bez,"</td>",
+                "<td>",begin,"</td>",
+                "<td>",ende,"</td>",
+                "<td>",nachname,"</td>",
+                "<td>",vorname,"</td>",
                 "</tr>"
         );
     }
@@ -458,33 +586,49 @@ public class htmlConstructor {
         return String.join("",begin,loginForm,end);
     }
 
-    public void setLoginAs(String s) { loginAs = s; }
-
-    public String getloggedIn(String user) {
-        return String.join("",begin,"<h3>Hello ", user, "</h3>", end);
-    }
-
-    public String getLoginWrong() {
-        String warning = "<div> user or password wrong. </div>";
-        return String.join("",begin,loginForm,warning,end);
-    }
-
     public String getLvaList() {
-        String lvaString = String.join("",begin,lvaList,lvaTableBegin,lvaTable,lvaTableEnd,end);
+        String lvaString = String.join("",beginLog,lvaList,lvaTableBegin,lvaTable,lvaTableEnd,end);
         lvaTable = "";
         return lvaString;
     }
 
     public String getResLvaList() {
-        String lvaString = String.join("",begin,lvaList,resLvaTableBegin,resLvaTable,resLvaTableEnd,end);
+        String lvaString = String.join("",beginLog,lvaList,resLvaTableBegin,resLvaTable,resLvaTableEnd,end);
         resLvaTable = "";
         return lvaString;
     }
 
     public String getSgList() {
-        String lvaString = String.join("",begin,lvaList,sgTableBegin,sgTable,sgTableEnd,addSgForm,end);
+        String lvaString = String.join("",beginLog,lvaList,sgTableBegin,sgTable,sgTableEnd,addSgForm,end);
         sgTable = "";
         return lvaString;
     }
 
+    public String getSgLvaList() {
+        System.out.println(htmlConstructor.lvaBez + "  " + htmlConstructor.lvaID);
+        dmSgLva = String.join("", "",
+                "<div class=\"flex-center flex-column\">",
+                "<form action=\"/sg/",htmlConstructor.lvaID,"/",htmlConstructor.lvaBez,"?addLVA\" method=\"post\">",
+                "<input type=\"text\" name=\"lva\" placeholder=\"Lehrveranstaltung\">\n",
+                "<input type=\"text\" name=\"name\"placeholder=\"Lektor-ID\">\n",
+                "<input type=\"submit\" value=\"add LVA\">",
+                "</form>",
+                "</div>",
+                "<div class=\"flex-center flex-column\">",
+                "<form action=\"/sg/",htmlConstructor.lvaID,"/",htmlConstructor.lvaBez,"?addLVA\" method=\"post\">",
+                "<input type=\"text\" name=\"id\" placeholder=\"LVA-ID\">\n",
+                "<input type=\"submit\" value=\"delete LVA\">",
+                "</form>",
+                "</div>"
+        );
+        String lvaString = String.join("",beginLog,lvaList,sgLvaTableBegin,sgLvaTable,sgLvaTableEnd,dmSgLva,end);
+        sgLvaTable = "";
+        return lvaString;
+    }
+
+    public String getLvaUnitList() {
+        String lvaString = String.join("",beginLog,lvaList,lvaUnitTableBegin,lvaUnitTable,lvaUnitTableEnd,end);
+        lvaUnitTable = "";
+        return lvaString;
+    }
 }
